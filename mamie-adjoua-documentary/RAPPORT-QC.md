@@ -45,7 +45,7 @@ Les jours de la semaine ont été vérifiés au calendrier : jeudi 22/10, lundi 
 ## 2 sexies. Mur d'écrans et photos du journal (retour client)
 
 - Arrière-plan : un mur de 16 captures de publications sur les réseaux sociaux défile lentement, en 4 colonnes inclinées,
-  derrière toutes les scènes sur fond sombre. Il illustre l'ampleur de la polémique.
+  derrière toutes les scènes sur fond sombre. Il illustre l'ampleur de la polémique. À la demande du client, il est volontairement discret (opacité 30 %, léger flou, voile sombre) pour faire ressortir le contenu.
 - Captures écartées : visuels marqués « Contient des médias générés par IA » (bus volant, fausse scène « 13 adultes »),
   appel téléphonique privé, collage sans rapport. La barre d'état du téléphone du client est retirée.
 - La une de L'Éléphant Déchaîné (capture d'une publication en ligne) a permis d'extraire la vraie une, la photo du bus

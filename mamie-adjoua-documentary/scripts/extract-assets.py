@@ -81,7 +81,8 @@ def main() -> None:
         im = Image.open(p).convert("RGB")
         im = im.crop((0, 150, im.width, im.height))
         im = im.resize((300, int(300 * im.height / im.width)), Image.LANCZOS)
-        im = ImageEnhance.Color(im).enhance(0.55)
+        im = ImageEnhance.Color(im).enhance(0.45)
+        im = im.filter(ImageFilter.GaussianBlur(1.4))  # léger flou : texture d'arrière-plan
         dst = social_dir / f"ecran-{idx:02d}.jpg"
         im.save(dst, quality=80)
         keep.append(f"images/social/{dst.name}")

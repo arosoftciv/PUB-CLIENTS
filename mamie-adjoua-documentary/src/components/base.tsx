@@ -8,7 +8,7 @@ import media from "../data/media.json";
 const SOCIAL_SCREENS = ((media as { socialScreens?: string[] }).socialScreens ?? []) as string[];
 
 /** Mur d'écrans de réseaux sociaux qui défile lentement en arrière-plan (polémique virale). */
-export const SocialWall: React.FC<{ opacity?: number; seed?: number }> = ({ opacity = 0.6, seed = 0 }) => {
+export const SocialWall: React.FC<{ opacity?: number; seed?: number }> = ({ opacity = 0.3, seed = 0 }) => {
   const frame = useCurrentFrame();
   const screens = SOCIAL_SCREENS;
   if (!screens.length) return null;
@@ -50,7 +50,7 @@ export const Backdrop: React.FC<{ tint?: string; children?: React.ReactNode; wal
     {wall ? <SocialWall /> : null}
     <AbsoluteFill
       style={{
-        background: `radial-gradient(120% 80% at 50% 35%, ${tint ?? "rgba(22,26,32,0.6)"} 0%, rgba(11,13,16,0.8) 75%)`,
+        background: `radial-gradient(120% 80% at 50% 35%, ${tint ?? "rgba(22,26,32,0.72)"} 0%, rgba(11,13,16,0.88) 75%)`,
       }}
     />
     {children}
