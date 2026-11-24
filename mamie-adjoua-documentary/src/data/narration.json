@@ -48,7 +48,7 @@
       "segments": [
         {
           "id": "carton",
-          "silent": 3.6
+          "silent": 3.0
         }
       ]
     },
@@ -115,7 +115,7 @@
     {
       "id": "s05",
       "name": "Révélation 1",
-      "lead": 1.4,
+      "lead": 1.2,
       "tail": 0.8,
       "pages": [
         3,
@@ -159,7 +159,7 @@
     {
       "id": "s06",
       "name": "Révélation 2",
-      "lead": 1.4,
+      "lead": 1.2,
       "tail": 0.8,
       "pages": [
         4,
@@ -204,7 +204,7 @@
     {
       "id": "s07",
       "name": "Révélation 3",
-      "lead": 1.4,
+      "lead": 1.2,
       "tail": 1.0,
       "pages": [
         2,
@@ -256,7 +256,7 @@
     {
       "id": "s08",
       "name": "Révélation 4",
-      "lead": 1.4,
+      "lead": 1.2,
       "tail": 0.8,
       "pages": [
         6
@@ -291,7 +291,7 @@
     {
       "id": "s09",
       "name": "Révélation 5",
-      "lead": 1.4,
+      "lead": 1.2,
       "tail": 0.8,
       "pages": [
         8
@@ -364,7 +364,7 @@
     {
       "id": "s10",
       "name": "Révélation 6",
-      "lead": 1.4,
+      "lead": 1.2,
       "tail": 0.8,
       "pages": [
         7
@@ -393,7 +393,7 @@
     {
       "id": "s11",
       "name": "Révélation 7",
-      "lead": 1.4,
+      "lead": 1.2,
       "tail": 0.8,
       "pages": [
         8
@@ -437,35 +437,35 @@
       "segments": [
         {
           "id": "title",
-          "silent": 2.0
+          "silent": 1.6
         },
         {
           "id": "e1",
-          "silent": 2.6
+          "silent": 2.0
         },
         {
           "id": "e2",
-          "silent": 2.6
+          "silent": 2.0
         },
         {
           "id": "e3",
-          "silent": 2.6
+          "silent": 2.0
         },
         {
           "id": "e4",
-          "silent": 2.6
+          "silent": 2.0
         },
         {
           "id": "e5",
-          "silent": 2.6
+          "silent": 2.0
         },
         {
           "id": "e6",
-          "silent": 2.6
+          "silent": 2.0
         },
         {
           "id": "e7",
-          "silent": 3.4
+          "silent": 2.8
         }
       ]
     },
@@ -555,7 +555,7 @@
       "id": "s15",
       "name": "Signature finale",
       "lead": 1.2,
-      "tail": 3.2,
+      "tail": 3.0,
       "pages": [],
       "segments": [
         {
@@ -574,7 +574,7 @@
       "id": "s17",
       "name": "Appel à l'abonnement",
       "lead": 0.5,
-      "tail": 1.6,
+      "tail": 1.0,
       "pages": [],
       "segments": [
         {
@@ -607,7 +607,7 @@
       "segments": [
         {
           "id": "credits",
-          "silent": 10.0
+          "silent": 7.5
         }
       ]
     }

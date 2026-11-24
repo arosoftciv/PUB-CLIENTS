@@ -1,0 +1,22 @@
+[
+ {
+  "id": "video",
+  "start": 0.0,
+  "end": 9.324
+ },
+ {
+  "id": "denonce",
+  "start": 9.824,
+  "end": 26.142
+ },
+ {
+  "id": "plusloin",
+  "start": 26.742,
+  "end": 28.697
+ },
+ {
+  "id": "soupcon",
+  "start": 29.197,
+  "end": 38.923
+ }
+]

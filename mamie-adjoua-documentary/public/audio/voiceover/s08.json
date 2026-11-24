@@ -1,0 +1,27 @@
+[
+ {
+  "id": "titre",
+  "start": 0.0,
+  "end": 4.037
+ },
+ {
+  "id": "verse",
+  "start": 4.637,
+  "end": 15.624
+ },
+ {
+  "id": "educatrices",
+  "start": 15.974,
+  "end": 26.899
+ },
+ {
+  "id": "admin",
+  "start": 27.399,
+  "end": 36.519
+ },
+ {
+  "id": "circuit",
+  "start": 37.019,
+  "end": 43.993
+ }
+]

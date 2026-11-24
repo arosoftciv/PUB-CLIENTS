@@ -1,17 +1,18 @@
 # Rapport de contrôle qualité — « Lycée Mamie Adjoua : les mystères du portail fermé »
 
-Date : 24 novembre 2026 · Version : maquette finale v1, **sans voix-off**
+Date : 24 novembre 2026 · Version : v2, **avec voix-off** (ElevenLabs, voix « Martinez »)
 
 ## 1. Synthèse
 
 | Point | Résultat |
 |---|---|
-| Durée | 8 min 58 s (timing **estimé** : 1 044 mots à 147 mots/min, plus les pauses, la chronologie et le générique) |
+| Durée | 9 min 59 s, calée sur la voix-off réelle (sous la limite de 10 min de l'application TikTok) · teaser 61 s |
 | Format | 1080 × 1920, 30 i/s, H.264 + AAC 48 kHz. Version 4K 2160 × 3840 rendue nativement (`--scale=2`) |
 | Loudness | -14,4 LUFS intégré. Crête vraie -0,9 dBTP après encodage AAC (-1,0 dBTP sur le master WAV) |
 | Captures de contrôle | 102 images (3 à 13 par scène) dans `output/qc/`, toutes vérifiées visuellement |
 
-**Écart par rapport au brief :** la durée cible de 5 à 6 minutes ne peut pas être tenue avec le script fourni
+**Écart par rapport au brief :** la durée cible de 5 à 6 minutes ne peut pas être tenue avec le script fourni. Le hook dure environ 24 s
+avec la voix réelle, au-dessus de la cible de 15 à 20 s
 (1 044 mots). Le brief interdit d'accélérer la narration ; il faut donc raccourcir le texte (voir § 6).
 
 ## 2. Fidélité et déontologie
@@ -99,8 +100,13 @@ Les jours de la semaine ont été vérifiés au calendrier : jeudi 22/10, lundi 
 - Musique et effets sonores 100 % originaux (synthèse numérique) : drone en ré mineur, pulsation à 72 bpm, montée
   dans la scène 13 ; tic-tac, fermeture et réouverture du portail, papier, signaux numériques, impacts.
 - Ducking automatique (environ -10 dB) sur les plages de narration, déjà calé pour la future voix-off.
-- **Voix-off absente.** Aucun crédit d'API payante n'a été consommé, faute d'autorisation. La vidéo actuelle
-  est une maquette musicale sous-titrée.
+- **Voix-off** : générée avec ElevenLabs sur autorisation du client. Voix « Martinez » (masculine, grave, accent africain),
+  modèle eleven_multilingual_v2, une piste par scène, environ 7 300 crédits consommés.
+  Le calage se fait phrase par phrase (`scripts/align-voiceover.py`) : détection des pauses, puis découpage et
+  réassemblage avec les pauses du script. Diction ni accélérée ni modifiée. Animations, sous-titres et ducking
+  suivent les timestamps réels.
+- Mixage : -14,0 LUFS intégré. Passages parlés vers -13,5 LUFS, musique seule vers -16/-17 LUFS, musique abaissée de 10 dB sous la voix.
+- Pour respecter 10 min, seuls les temps sans voix ont été resserrés (chronologie, carton, générique, ouverture des chapitres).
 
 ## 5. Ressources manquantes (solutions temporaires signalées)
 

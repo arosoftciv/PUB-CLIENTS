@@ -8,3 +8,4 @@ public/audio/music/bed.wav
 source/uploads/02-*
 source/video-eleve*
 public/video/
+public/audio/voiceover/*.wav

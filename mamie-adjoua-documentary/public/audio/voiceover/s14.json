@@ -1,0 +1,27 @@
+[
+ {
+  "id": "prudent",
+  "start": 0.0,
+  "end": 3.524
+ },
+ {
+  "id": "causalite",
+  "start": 4.024,
+  "end": 17.138
+ },
+ {
+  "id": "gouvernance",
+  "start": 17.738,
+  "end": 28.346
+ },
+ {
+  "id": "simple",
+  "start": 29.146,
+  "end": 34.365
+ },
+ {
+  "id": "debat",
+  "start": 34.715,
+  "end": 41.637
+ }
+]

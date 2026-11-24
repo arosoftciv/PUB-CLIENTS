@@ -1,0 +1,32 @@
+[
+ {
+  "id": "titre",
+  "start": 0.0,
+  "end": 4.036
+ },
+ {
+  "id": "vendredi",
+  "start": 4.636,
+  "end": 15.246
+ },
+ {
+  "id": "entrer",
+  "start": 15.596,
+  "end": 22.127
+ },
+ {
+  "id": "nettoyage",
+  "start": 22.477,
+  "end": 28.641
+ },
+ {
+  "id": "hierarchie",
+  "start": 29.241,
+  "end": 40.288
+ },
+ {
+  "id": "proviseure",
+  "start": 40.638,
+  "end": 43.715
+ }
+]

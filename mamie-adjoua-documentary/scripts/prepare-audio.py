@@ -233,7 +233,7 @@ TEASER = [  # (scene, segment ids) — contexte + contradictions principales
     ("s01", ["chronique", "enquete"]),
     ("s03", ["soupcon"]),
     ("s06", ["drena"]),
-    ("s07", ["constat", "resume", "contradiction"]),
+    ("s07", ["constat", "contradiction"]),
 ]
 
 
@@ -250,8 +250,8 @@ def build_teaser(tl: dict) -> dict:
             clips.append({"scene": sid, "seg": seg_id, "srcStart": round(sc["start"] + a, 3),
                           "start": round(t, 3), "duration": round(b - a, 3), "text": seg["text"]})
             t += b - a
-    outro = 6.5
-    return {"intro": 2.5, "clips": clips, "outro": outro, "total": round(2.5 + t + outro, 3)}
+    outro = 5.5
+    return {"intro": 2.0, "clips": clips, "outro": outro, "total": round(2.0 + t + outro, 3)}
 
 
 # ---------------------------------------------------------------- synthèse

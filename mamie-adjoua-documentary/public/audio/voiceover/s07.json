@@ -1,0 +1,42 @@
+[
+ {
+  "id": "titre",
+  "start": 0.0,
+  "end": 4.024
+ },
+ {
+  "id": "videoprov",
+  "start": 4.624,
+  "end": 14.042
+ },
+ {
+  "id": "publication",
+  "start": 14.392,
+  "end": 25.268
+ },
+ {
+  "id": "pastout",
+  "start": 25.868,
+  "end": 26.934
+ },
+ {
+  "id": "constat",
+  "start": 27.434,
+  "end": 37.334
+ },
+ {
+  "id": "suivi",
+  "start": 37.684,
+  "end": 44.975
+ },
+ {
+  "id": "resume",
+  "start": 45.575,
+  "end": 54.019
+ },
+ {
+  "id": "contradiction",
+  "start": 54.619,
+  "end": 56.147
+ }
+]

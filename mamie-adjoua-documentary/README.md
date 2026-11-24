@@ -49,7 +49,13 @@ npx remotion still  Couverture output/couverture.jpg --image-format=jpeg --jpeg-
 python3 scripts/validate-render.py             # contrôle codecs / fps / loudness
 ```
 
-## Ajouter la voix-off (référentiel temporel)
+## Voix-off actuelle
+
+Voix « Martinez » (ElevenLabs, eleven_multilingual_v2), pistes brutes dans `source/voiceover-raw/sXX.mp3`.
+`python3 scripts/align-voiceover.py` découpe chaque piste phrase par phrase et produit `public/audio/voiceover/sXX.wav` + `sXX.json`.
+Ensuite, `prepare-audio.py` recale toute la timeline.
+
+## Ajouter ou remplacer la voix-off (référentiel temporel)
 
 1. Enregistrez ou générez une piste par scène à partir de `voiceover.txt` (narrateur humain) ou de
    `voiceover-tts.txt` (version phonétique pour un moteur TTS comme ElevenLabs).

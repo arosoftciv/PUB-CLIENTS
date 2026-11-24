@@ -1,0 +1,37 @@
+[
+ {
+  "id": "titre",
+  "start": 0.0,
+  "end": 5.321
+ },
+ {
+  "id": "annonce",
+  "start": 5.921,
+  "end": 15.407
+ },
+ {
+  "id": "tarif",
+  "start": 15.757,
+  "end": 20.415
+ },
+ {
+  "id": "coges",
+  "start": 21.015,
+  "end": 31.475
+ },
+ {
+  "id": "reduction",
+  "start": 31.825,
+  "end": 37.334
+ },
+ {
+  "id": "drena",
+  "start": 37.834,
+  "end": 50.356
+ },
+ {
+  "id": "verifier",
+  "start": 50.956,
+  "end": 55.132
+ }
+]

@@ -1,0 +1,67 @@
+[
+ {
+  "id": "titre",
+  "start": 0.0,
+  "end": 4.07
+ },
+ {
+  "id": "antecedents",
+  "start": 4.67,
+  "end": 14.779
+ },
+ {
+  "id": "heures",
+  "start": 15.129,
+  "end": 26.85
+ },
+ {
+  "id": "archives",
+  "start": 27.45,
+  "end": 35.828
+ },
+ {
+  "id": "notes",
+  "start": 36.178,
+  "end": 38.956
+ },
+ {
+  "id": "t1",
+  "start": 39.356,
+  "end": 41.825
+ },
+ {
+  "id": "t2",
+  "start": 42.125,
+  "end": 44.895
+ },
+ {
+  "id": "t3",
+  "start": 45.195,
+  "end": 48.119
+ },
+ {
+  "id": "moyenne",
+  "start": 48.519,
+  "end": 52.488
+ },
+ {
+  "id": "bien",
+  "start": 52.988,
+  "end": 56.311
+ },
+ {
+  "id": "aucune",
+  "start": 56.711,
+  "end": 61.432
+ },
+ {
+  "id": "justif",
+  "start": 62.032,
+  "end": 72.375
+ },
+ {
+  "id": "nuance",
+  "start": 72.725,
+  "end": 79.078
+ }
+]
