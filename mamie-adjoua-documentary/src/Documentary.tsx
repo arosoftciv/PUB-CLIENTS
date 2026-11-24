@@ -4,7 +4,8 @@ import { AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame, interpolate
 import "./styles/theme";
 import { C, F, SAFE, CONTENT_W, clamp } from "./styles/theme";
 import { TL, CUES, TEASER_CUES, f, SceneTiming } from "./data/timeline";
-import { FilmFinish } from "./components/base";
+import { FilmFinish, BrandBug } from "./components/base";
+import { ASSETS } from "./data/assets";
 import { SubtitleOverlay, DocumentaryTitle } from "./components/editorial";
 import { Cover } from "./scenes/Cover";
 import { S01Hook, S02TitleCard, S03Video, S04Investigation } from "./scenes/intro";
@@ -13,7 +14,7 @@ import { S12Chronology, S13Questions, S14Conclusion, S15Signature, S16Credits, S
 import { appear } from "./animations/anim";
 
 const SCENES: Record<string, React.FC<{ sc: SceneTiming }>> = {
-  s00: () => <Cover grain={false} />,
+  s00: () => <Cover grain={false} logo={false} />,
   s01: S01Hook,
   s02: S02TitleCard,
   s03: S03Video,
@@ -73,6 +74,7 @@ export const Documentary: React.FC<{ subtitles: boolean }> = ({ subtitles }) => 
   <AbsoluteFill style={{ background: C.black }}>
     <DocumentaryVisuals />
     <FilmFinish />
+    <BrandBug src={ASSETS.arosoftLogo} />
     {subtitles ? <SubtitleOverlay cues={CUES} hide={hideCue as never} /> : null}
     <Audio src={staticFile("audio/mix/master.wav")} />
   </AbsoluteFill>
@@ -135,6 +137,7 @@ export const Teaser: React.FC<{ subtitles: boolean }> = ({ subtitles }) => {
         <TeaserCard kind="outro" />
       </Sequence>
       <FilmFinish />
+      <BrandBug src={ASSETS.arosoftLogo} />
       {subtitles ? <SubtitleOverlay cues={TEASER_CUES} /> : null}
       <Audio src={staticFile("audio/mix/teaser.wav")} />
     </AbsoluteFill>

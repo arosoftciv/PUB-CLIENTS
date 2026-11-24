@@ -5,7 +5,7 @@ import { C, F } from "../styles/theme";
 import { ASSETS } from "../data/assets";
 import { FilmFinish } from "../components/base";
 
-export const Cover: React.FC<{ grain?: boolean }> = ({ grain = true }) => (
+export const Cover: React.FC<{ grain?: boolean; logo?: boolean }> = ({ grain = true, logo = true }) => (
   <AbsoluteFill style={{ background: C.black }}>
     {/* fond : même visuel, agrandi, flouté et assombri */}
     <AbsoluteFill style={{ overflow: "hidden" }}>
@@ -17,8 +17,8 @@ export const Cover: React.FC<{ grain?: boolean }> = ({ grain = true }) => (
     <div style={{ position: "absolute", left: 40, top: 70, width: 1000, boxShadow: "0 30px 90px rgba(0,0,0,0.8)" }}>
       <Img src={staticFile(ASSETS.coverPoster)} style={{ width: 1000, height: 1500, objectFit: "cover", display: "block" }} />
     </div>
-    {ASSETS.arosoftLogo ? (
-      <Img src={staticFile(ASSETS.arosoftLogo)} style={{ position: "absolute", right: 52, top: 86, width: 96 }} />
+    {logo && ASSETS.arosoftLogo ? (
+      <Img src={staticFile(ASSETS.arosoftLogo)} style={{ position: "absolute", right: 60, top: 90, height: 72, width: "auto", maxWidth: 200, objectFit: "contain", filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.55))" }} />
     ) : null}
     <div style={{ position: "absolute", left: 40, right: 40, top: 1600, textAlign: "center" }}>
       <div style={{ fontFamily: F.title, fontWeight: 800, fontSize: 70, color: C.white, lineHeight: 1, letterSpacing: 1 }}>

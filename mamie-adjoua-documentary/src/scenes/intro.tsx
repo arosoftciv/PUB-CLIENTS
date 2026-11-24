@@ -193,7 +193,6 @@ export const S02TitleCard: React.FC<P> = ({ sc }) => {
         <Photo src={ASSETS.busPhoto} frame={frame} dur={D} grade="cold" style={{ left: 0, top: 1150, width: SAFE.W, height: 770, opacity: 0.35 }} />
       ) : null}
       <AbsoluteFill style={{ background: "radial-gradient(90% 60% at 50% 45%, rgba(11,13,16,0.35), rgba(11,13,16,0.92))" }} />
-      {ASSETS.arosoftLogo ? <Img src={staticFile(ASSETS.arosoftLogo)} style={{ position: "absolute", right: SAFE.right, top: SAFE.top - 60, width: 84 }} /> : null}
       <div style={{ position: "absolute", left: SAFE.left, top: 640, width: CONTENT_W, textAlign: "center" }}>
         <div style={{ height: 4, width: 220 * line, background: C.red, margin: "0 auto 40px" }} />
         <DocumentaryTitle align="center" at={4} stagger={8} lines={[{ text: "LES MYSTÈRES", size: 124 }, { text: "DU PORTAIL FERMÉ", size: 124 }]} />

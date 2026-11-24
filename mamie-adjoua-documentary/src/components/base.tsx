@@ -175,3 +175,12 @@ export const Chip: React.FC<{ children: React.ReactNode; color?: string; style?:
 export const Caption: React.FC<{ children: React.ReactNode; style?: React.CSSProperties }> = ({ children, style }) => (
   <div style={{ fontFamily: F.mono, fontSize: 20, color: C.dim, letterSpacing: 0.5, ...style }}>{children}</div>
 );
+
+/** Logo AroSoft en miniature, en haut à droite (fond transparent), présent sur toute la vidéo. */
+export const BrandBug: React.FC<{ src: string | null }> = ({ src }) =>
+  src ? (
+    <Img
+      src={staticFile(src)}
+      style={{ position: "absolute", right: 44, top: 104, height: 64, width: "auto", maxWidth: 190, objectFit: "contain", opacity: 0.92, filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.55))" }}
+    />
+  ) : null;

@@ -1,3 +1,5 @@
+import media from "./media.json";
+
 // Registre des ressources visuelles. `null` = ressource manquante (PDF source non fourni) :
 // la scène affiche alors une animation typographique / un schéma neutre étiqueté.
 // Dès que le PDF est fourni, déposer les extractions dans public/images/... et renseigner le chemin.
@@ -16,7 +18,7 @@ export const ASSETS = {
   articlePartenariat: null as string | null, // p. 4 : extrait annonce
   articleHierarchie: null as string | null, // p. 8 : extrait instructions hiérarchie
   newspaperFrontPage: null as string | null, // p. 1 : véritable une du journal
-  arosoftLogo: null as string | null, // public/branding/arosoft.png (fond transparent)
+  arosoftLogo: ((media as { arosoftLogo?: string | null }).arosoftLogo ?? null) as string | null, // généré par extract-assets.py (fond transparent)
 };
 
 /** Vidéo de l'élève (son coupé) : flouter l'image si true. Décision éditoriale du client : affichée nette. */

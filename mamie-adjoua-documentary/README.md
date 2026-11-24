@@ -77,7 +77,7 @@ La vidéo est réencodée sans piste audio et apparaît en scène S03. Floutage 
   (nécessite `pip install pymupdf`).
 - Recadrez les photos et renseignez leur chemin dans `src/data/assets.ts`
   (`busPhoto`, `ceremonyPhoto`, `marcoryPhoto`…). Les scènes remplacent alors automatiquement les schémas.
-- Logo AroSoft : `public/branding/arosoft.png` (fond transparent), puis `arosoftLogo` dans `assets.ts`.
+- Logo AroSoft : déposer `source/arosoft-logo.png` (ou .jpg / .webp), puis lancer `python3 scripts/extract-assets.py`. Le fond blanc est retiré automatiquement. Le logo s'affiche en miniature en haut à droite sur toute la vidéo et le teaser, ainsi que sur la couverture et au générique.
 
 ## Architecture
 

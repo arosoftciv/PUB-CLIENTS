@@ -17,6 +17,7 @@ Règles appliquées :
 """
 from pathlib import Path
 from PIL import Image, ImageFilter, ImageEnhance
+import numpy as np
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "source" / "uploads"
@@ -72,6 +73,29 @@ def main() -> None:
         print("→ vidéo élève (sans audio)", media["studentVideo"])
     else:
         print("! Vidéo de l'élève absente : déposer source/video-eleve.mp4 puis relancer ce script.")
+    # Logo AroSoft (optionnel) : source/arosoft-logo.(png|jpg|jpeg|webp|svg)
+    # → PNG à fond transparent (le blanc uni est rendu transparent si l'image n'a pas d'alpha), recadré au contenu.
+    media["arosoftLogo"] = None
+    logo = next((p for ext in ("png", "webp", "jpg", "jpeg") for p in (ROOT / "source").glob(f"arosoft-logo*.{ext}")), None)
+    if logo:
+        im = Image.open(logo).convert("RGBA")
+        px = np.asarray(im).astype(np.float32)
+        if px[..., 3].min() > 250:  # pas de transparence : retirer le fond blanc
+            whiteness = px[..., :3].min(axis=2)
+            alpha = np.clip((255 - whiteness) / (255 - 225) * 255, 0, 255)
+            px[..., 3] = np.minimum(px[..., 3], alpha)
+        im = Image.fromarray(px.astype(np.uint8), "RGBA")
+        bbox = im.getbbox()
+        if bbox:
+            im = im.crop(bbox)
+        im.thumbnail((800, 800), Image.LANCZOS)
+        dst = ROOT / "public" / "branding" / "arosoft.png"
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        im.save(dst)
+        media["arosoftLogo"] = "branding/arosoft.png"
+        print("→ logo AroSoft (fond transparent)", im.size)
+    else:
+        print("! Logo AroSoft absent : déposer source/arosoft-logo.png puis relancer ce script.")
     (ROOT / "src" / "data" / "media.json").write_text(json.dumps(media, indent=1))
 
     # PDF optionnel
