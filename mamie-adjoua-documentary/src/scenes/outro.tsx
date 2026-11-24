@@ -206,3 +206,61 @@ export const S16Credits: React.FC<P> = () => {
   );
 };
 
+
+/** Cloche de notification générique (aucune marque de plateforme). */
+const Bell: React.FC<{ swing: number; size?: number; color?: string }> = ({ swing, size = 220, color = C.white }) => (
+  <svg width={size} height={size} viewBox="0 0 100 100" style={{ rotate: `${swing}deg`, transformOrigin: "50% 8%", overflow: "visible" }}>
+    <path d="M50 10 C33 10 25 24 25 40 L25 60 L16 72 L84 72 L75 60 L75 40 C75 24 67 10 50 10 Z" fill={color} />
+    <circle cx={50} cy={8} r={5} fill={color} />
+    <path d="M40 78 A10 10 0 0 0 60 78 Z" fill={color} />
+  </svg>
+);
+
+export const S17CallToAction: React.FC<P> = ({ sc }) => {
+  const frame = useCurrentFrame();
+  const g = (id: string) => segFrame(sc, id);
+  const ab = g("abonnez");
+  const pressAt = ab + f(1.3);
+  const press = interpolate(frame, [pressAt, pressAt + 4, pressAt + 10], [1, 0.93, 1], clamp);
+  const subscribed = frame >= pressAt + 4;
+  const bellAt = ab + f(1.9);
+  const t = Math.max(0, frame - bellAt);
+  const swing = frame >= bellAt ? Math.sin(t * 0.9) * 22 * Math.exp(-t / 22) : 0;
+  const ring = appear(frame, bellAt, 6) * (1 - appear(frame, bellAt + 20, 20));
+  return (
+    <Backdrop tint="#1A1215">
+      <div style={{ position: "absolute", left: SAFE.left, top: 380, width: CONTENT_W, textAlign: "center" }}>
+        <DocumentaryTitle align="center" at={g("aime")} lines={[{ text: "VOUS AVEZ AIMÉ ?", size: 120 }]} />
+      </div>
+      <div style={{ position: "absolute", left: SAFE.left, top: 600, width: CONTENT_W, display: "flex", justifyContent: "center", ...rise(appear(frame, ab, 16), 30) }}>
+        <div
+          style={{
+            fontFamily: F.title,
+            fontWeight: 800,
+            fontSize: 88,
+            letterSpacing: 2,
+            color: subscribed ? C.dim : C.white,
+            background: subscribed ? C.anthracite : C.red,
+            border: `3px solid ${subscribed ? C.grey : C.red}`,
+            padding: "14px 56px",
+            borderRadius: 14,
+            transform: `scale(${press})`,
+            boxShadow: subscribed ? "none" : "0 20px 60px rgba(185,45,50,0.45)",
+          }}
+        >
+          {subscribed ? "ABONNÉ ✓" : "ABONNEZ-VOUS"}
+        </div>
+      </div>
+      <div style={{ position: "absolute", left: 0, width: SAFE.W - 0, top: 800, display: "flex", justifyContent: "center", opacity: appear(frame, bellAt - 10, 14) }}>
+        <div style={{ position: "relative" }}>
+          <div style={{ position: "absolute", left: -40, top: -40, width: 300, height: 300, borderRadius: 150, border: `4px solid ${C.amber}`, opacity: ring, transform: `scale(${0.8 + (1 - ring) * 0.4})` }} />
+          <Bell swing={swing} color={frame >= bellAt ? C.amber : C.white} />
+        </div>
+      </div>
+      <div style={{ position: "absolute", left: SAFE.left, top: 1080, width: CONTENT_W, textAlign: "center", ...rise(appear(frame, bellAt + 6, 18), 20) }}>
+        <div style={{ fontFamily: F.text, fontWeight: 600, fontSize: 40, color: C.white, lineHeight: 1.3 }}>Activez la cloche de notification</div>
+        <div style={{ fontFamily: F.text, fontSize: 34, color: C.dim, lineHeight: 1.3, marginTop: 8 }}>pour rester informés de l'actualité</div>
+      </div>
+    </Backdrop>
+  );
+};

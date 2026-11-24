@@ -6,13 +6,13 @@ Date : 24 novembre 2026 · Version : maquette finale v1, **sans voix-off**
 
 | Point | Résultat |
 |---|---|
-| Durée | 9 min 04 s (timing **estimé** : 1 060 mots à 147 mots/min, plus les pauses, la chronologie et le générique) |
+| Durée | 9 min 13 s (timing **estimé** : 1 075 mots à 147 mots/min, plus les pauses, la chronologie et le générique) |
 | Format | 1080 × 1920, 30 i/s, H.264 + AAC 48 kHz. Version 4K 2160 × 3840 rendue nativement (`--scale=2`) |
 | Loudness | -14,4 LUFS intégré. Crête vraie -0,9 dBTP après encodage AAC (-1,0 dBTP sur le master WAV) |
 | Captures de contrôle | 102 images (3 à 13 par scène) dans `output/qc/`, toutes vérifiées visuellement |
 
 **Écart par rapport au brief :** la durée cible de 5 à 6 minutes ne peut pas être tenue avec le script fourni
-(1 060 mots). Le brief interdit d'accélérer la narration ; il faut donc raccourcir le texte (voir § 6).
+(1 075 mots). Le brief interdit d'accélérer la narration ; il faut donc raccourcir le texte (voir § 6).
 
 ## 2. Fidélité et déontologie
 
@@ -41,6 +41,12 @@ Date : 24 novembre 2026 · Version : maquette finale v1, **sans voix-off**
   Pour retirer toutes les captures de personnes : `USE_PEOPLE_CAPTURES = false` dans `src/data/assets.ts`.
 
 Les jours de la semaine ont été vérifiés au calendrier : jeudi 22/10, lundi 16/11, vendredi 20/11 et lundi 23/11/2026 sont exacts.
+
+## 2 bis. Appel à l'abonnement (ajout client)
+
+- Scène S17, placée entre la signature et les sources. Voix-off et texte : « Vous avez aimé ? Abonnez-vous et activez la cloche de notification pour rester informés de l'actualité. » (« informer » corrigé en « informés »).
+- Animation : bouton « ABONNEZ-VOUS » → « ABONNÉ ✓ », cloche générique qui sonne (aucun logo de plateforme).
+- Teaser : même phrase ajoutée à l'écran de fin.
 
 ## 3. Qualité visuelle (constat sur les captures)
 

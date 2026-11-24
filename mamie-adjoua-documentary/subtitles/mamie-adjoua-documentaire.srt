@@ -666,3 +666,16 @@ Le portail s'est rouvert.
 140
 00:08:48,666 --> 00:08:50,298
 Mais les questions demeurent.
+
+141
+00:08:54,400 --> 00:08:55,624
+Vous avez aimé ?
+
+142
+00:08:56,024 --> 00:08:58,848
+Abonnez-vous et activez
+la cloche de notification
+
+143
+00:08:58,848 --> 00:09:00,922
+pour rester informés de l'actualité.

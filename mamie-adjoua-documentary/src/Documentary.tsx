@@ -9,7 +9,7 @@ import { SubtitleOverlay, DocumentaryTitle } from "./components/editorial";
 import { Cover } from "./scenes/Cover";
 import { S01Hook, S02Context, S03Video, S04Investigation } from "./scenes/intro";
 import { S05Revelation1, S06Revelation2, S07Revelation3, S08Revelation4, S09Revelation5, S10Revelation6, S11Revelation7 } from "./scenes/revelations";
-import { S12Chronology, S13Questions, S14Conclusion, S15Signature, S16Credits } from "./scenes/outro";
+import { S12Chronology, S13Questions, S14Conclusion, S15Signature, S16Credits, S17CallToAction } from "./scenes/outro";
 import { appear } from "./animations/anim";
 
 const SCENES: Record<string, React.FC<{ sc: SceneTiming }>> = {
@@ -30,6 +30,7 @@ const SCENES: Record<string, React.FC<{ sc: SceneTiming }>> = {
   s14: S14Conclusion,
   s15: S15Signature,
   s16: S16Credits,
+  s17: S17CallToAction,
 };
 
 /** Fondu enchaîné court en entrée de scène (sauf coupe sèche après la couverture). */
@@ -41,7 +42,7 @@ const SceneFade: React.FC<{ children: React.ReactNode; id: string; dur: number }
 };
 
 // sous-titres masqués quand le même texte est déjà affiché à l'écran
-const HIDE_SUBS = new Set(["s15"]);
+const HIDE_SUBS = new Set(["s15", "s17"]);
 const QUESTION_SEGS = TL.scenes.find((s) => s.id === "s13")!.segments.filter((s) => s.id.startsWith("q"));
 const s13Start = TL.scenes.find((s) => s.id === "s13")!.start;
 const hideCue = (c: { scene?: string; text: string; start?: number }) => {
@@ -104,6 +105,9 @@ const TeaserCard: React.FC<{ kind: "intro" | "outro" }> = ({ kind }) => {
             </div>
             <div style={{ fontFamily: F.mono, fontSize: 22, color: C.dim, marginTop: 30, lineHeight: 1.5, opacity: appear(frame, 30, 16) }}>
               Source : L'Éléphant Déchaîné, édition spéciale du 23/11/2026. Faits rapportés, non vérifiés de manière indépendante.
+            </div>
+            <div style={{ fontFamily: F.text, fontWeight: 600, fontSize: 34, color: C.white, marginTop: 50, lineHeight: 1.35, opacity: appear(frame, 45, 16) }}>
+              Vous avez aimé ? <span style={{ color: C.red }}>Abonnez-vous</span> et activez la cloche de notification pour rester informés de l'actualité.
             </div>
           </>
         )}

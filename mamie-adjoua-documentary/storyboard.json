@@ -2,9 +2,9 @@
   "title": "Lycée Mamie Adjoua — Les mystères du portail fermé",
   "fps": 30,
   "resolution": "1080x1920",
-  "total_seconds": 543.9,
+  "total_seconds": 552.933,
   "timing_source": "estimation (voix-off absente)",
-  "narration_words": 1060,
+  "narration_words": 1075,
   "scenes": [
     {
       "id": "s00",
@@ -268,10 +268,22 @@
       ]
     },
     {
+      "id": "s17",
+      "name": "Appel à l'abonnement",
+      "start": "00:08:53.900",
+      "end": "00:09:02.933",
+      "duration_s": 9.033,
+      "source_pages": [],
+      "narration": [
+        "Vous avez aimé ?",
+        "Abonnez-vous et activez la cloche de notification pour rester informés de l'actualité."
+      ]
+    },
+    {
       "id": "s16",
       "name": "Sources et crédits",
-      "start": "00:08:53.900",
-      "end": "00:09:03.900",
+      "start": "00:09:02.933",
+      "end": "00:09:12.933",
       "duration_s": 10.0,
       "source_pages": [
         1,

@@ -1,6 +1,6 @@
 {
  "fps": 30,
- "total": 543.9,
+ "total": 552.933,
  "estimated": true,
  "voiceScenes": [],
  "scenes": [
@@ -711,9 +711,32 @@
    ]
   },
   {
+   "id": "s17",
+   "name": "Appel à l'abonnement",
+   "start": 533.9,
+   "duration": 9.033,
+   "voStart": 0.5,
+   "voFile": null,
+   "pages": [],
+   "segments": [
+    {
+     "id": "aime",
+     "start": 0.5,
+     "end": 1.724,
+     "text": "Vous avez aimé ?"
+    },
+    {
+     "id": "abonnez",
+     "start": 2.124,
+     "end": 7.022,
+     "text": "Abonnez-vous et activez la cloche de notification pour rester informés de l'actualité."
+    }
+   ]
+  },
+  {
    "id": "s16",
    "name": "Sources et crédits",
-   "start": 533.9,
+   "start": 542.933,
    "duration": 10.0,
    "voStart": 0,
    "voFile": null,
@@ -797,7 +820,7 @@
     "text": "Une contradiction majeure."
    }
   ],
-  "outro": 5.0,
-  "total": 59.748
+  "outro": 6.5,
+  "total": 61.248
  }
 }

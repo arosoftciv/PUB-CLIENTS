@@ -243,7 +243,7 @@ def build_teaser(tl: dict) -> dict:
             clips.append({"scene": sid, "seg": seg_id, "srcStart": round(sc["start"] + a, 3),
                           "start": round(t, 3), "duration": round(b - a, 3), "text": seg["text"]})
             t += b - a
-    outro = 5.0
+    outro = 6.5
     return {"intro": 2.5, "clips": clips, "outro": outro, "total": round(2.5 + t + outro, 3)}
 
 
@@ -349,7 +349,7 @@ MOOD = {
     "s00": (0.2, 0), "s01": (0.0, 0), "s02": (0.45, 0), "s03": (0.5, 1), "s04": (0.6, 1),
     "s05": (0.55, 1), "s06": (0.6, 1), "s07": (0.75, 1), "s08": (0.6, 1), "s09": (0.6, 1),
     "s10": (0.55, 1), "s11": (0.6, 1), "s12": (0.7, 1), "s13": (0.85, 1), "s14": (0.45, 0),
-    "s15": (0.3, 0), "s16": (0.2, 0),
+    "s15": (0.3, 0), "s17": (0.35, 0), "s16": (0.2, 0),
 }
 
 
@@ -403,6 +403,8 @@ def cue_list(tl: dict) -> list[tuple[float, str, float]]:
             cues += [(seg["prudent"], "paper", 0.7)]
         elif sid == "s15":
             cues += [(seg["rouvert"], "impact_soft", 0.6), (seg["demeurent"], "impact", 0.7)]
+        elif sid == "s17":
+            cues += [(seg["abonnez"] + 1.43, "blip", 0.6), (seg["abonnez"] + 1.9, "notif", 0.8), (seg["abonnez"] + 2.2, "notif", 0.6)]
     return cues
 
 
