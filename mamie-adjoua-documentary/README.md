@@ -60,6 +60,11 @@ python3 scripts/validate-render.py             # contrôle codecs / fps / loudne
 4. Relancez `python3 scripts/prepare-audio.py`, puis les rendus. Scènes, animations, sous-titres, ducking
    et mixage se recalent automatiquement. La narration n'est jamais accélérée.
 
+## Ajouter la vidéo de l'élève (son coupé)
+
+Déposez le fichier sous `source/video-eleve.mp4` (ou .mov / .webm), puis lancez `python3 scripts/extract-assets.py`.
+La vidéo est réencodée sans piste audio et apparaît en scène S03. Floutage optionnel : `STUDENT_VIDEO_BLUR` dans `src/data/assets.ts`.
+
 ## Ajouter les ressources du PDF
 
 - Déposez le PDF dans `source/`, puis relancez `extract-assets.py` : les pages sont extraites en PNG

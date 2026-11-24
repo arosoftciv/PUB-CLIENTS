@@ -491,12 +491,12 @@ export const SubtitleOverlay: React.FC<{ cues: { start: number; end: number; tex
           borderRadius: 6,
           fontFamily: F.text,
           fontWeight: 600,
-          fontSize: 44,
+          fontSize: 42,
           lineHeight: 1.28,
           color: C.white,
           textAlign: "center",
           whiteSpace: "pre-line",
-          maxWidth: 940,
+          maxWidth: 960,
         }}
       >
         {parts.map((s, i) =>

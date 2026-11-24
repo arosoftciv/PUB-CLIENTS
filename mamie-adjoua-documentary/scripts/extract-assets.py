@@ -53,6 +53,26 @@ def main() -> None:
     cap4 = Image.open(SRC / "04-capture-directeur-regional.jpg")
     save(upscale(cap4.crop((0, 0, 335, 310)), 3), "people/directeur-regional-capture.jpg")
 
+    # Vidéo publiée par l'élève (optionnelle) : source/video-eleve.(mp4|mov|webm)
+    # → réencodée en H.264, PISTE AUDIO SUPPRIMÉE (aucune voix), durée enregistrée pour Remotion.
+    import json, subprocess
+    media = {"studentVideo": None}
+    vid = next((p for ext in ("mp4", "mov", "webm", "m4v") for p in (ROOT / "source").glob(f"video-eleve*.{ext}")), None)
+    if vid:
+        dst = ROOT / "public" / "video" / "video-eleve.mp4"
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(vid), "-an", "-vf", "scale='min(1080,iw)':-2,fps=30",
+                        "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", str(dst)], check=True)
+        info = json.loads(subprocess.run(["ffprobe", "-v", "error", "-print_format", "json", "-show_streams", "-show_format", str(dst)],
+                                         capture_output=True, text=True, check=True).stdout)
+        v = next(x for x in info["streams"] if x["codec_type"] == "video")
+        media["studentVideo"] = {"src": "video/video-eleve.mp4", "duration": float(info["format"]["duration"]),
+                                 "width": int(v["width"]), "height": int(v["height"])}
+        print("→ vidéo élève (sans audio)", media["studentVideo"])
+    else:
+        print("! Vidéo de l'élève absente : déposer source/video-eleve.mp4 puis relancer ce script.")
+    (ROOT / "src" / "data" / "media.json").write_text(json.dumps(media, indent=1))
+
     # PDF optionnel
     pdf = next((ROOT / "source").glob("*.pdf"), None)
     if pdf:

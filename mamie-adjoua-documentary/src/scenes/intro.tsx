@@ -1,13 +1,17 @@
 // Scènes 01 à 04 : accroche, contexte, vidéo virale, présentation de l'investigation.
 import React from "react";
-import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Img, Loop, OffthreadVideo, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { C, F, SAFE, CONTENT_W, clamp, EASE } from "../styles/theme";
 import { appear, between, rise, wipe } from "../animations/anim";
 import { SceneTiming, segFrame, f } from "../data/timeline";
 import { Backdrop, Photo, SourceReference, ReconstitutionTag, Chip, Caption, Attribution } from "../components/base";
 import { AnimatedClock, DocumentaryTitle } from "../components/editorial";
 import { GateGraphic, Phone, Notification, Silhouette, BusGraphic, NewspaperReveal } from "../components/illustrations";
-import { ASSETS } from "../data/assets";
+import { ASSETS, STUDENT_VIDEO_BLUR } from "../data/assets";
+import media from "../data/media.json";
+
+type StudentVideo = { src: string; duration: number; width: number; height: number } | null;
+const STUDENT_VIDEO = (media as { studentVideo: StudentVideo }).studentVideo;
 
 type P = { sc: SceneTiming };
 
@@ -217,24 +221,58 @@ export const S03Video: React.FC<P> = ({ sc }) => {
   const calAt = den + f(7.0);
   const gateP = interpolate(frame, [gateAt, gateAt + 10], [0, 1], { ...clamp, easing: EASE.inOut });
   const partA = 1 - appear(frame, loin, 16);
+  // la vidéo de l'élève occupe l'écran pendant « Tout est parti d'une vidéo… », puis se range à gauche
+  const shrink = interpolate(frame, [den - 6, den + 14], [0, 1], { ...clamp, easing: EASE.inOut });
   const days = ["LUN", "MAR", "MER", "JEU", "VEN"];
   const linkP = appear(frame, sou + f(2.4), 30);
   return (
     <Backdrop>
       {/* Partie A : téléphone + éléments de la dénonciation */}
       <div style={{ opacity: partA }}>
-        <div style={{ position: "absolute", left: SAFE.left, top: 240, opacity: p0 }}>
-          <Phone width={360}>
-            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(#1B2027, #0E1115)" }} />
-            <div style={{ position: "absolute", left: 40, top: 200 }}>
-              <Silhouette size={260} />
+        {STUDENT_VIDEO ? (
+          <>
+            {/* Vidéo publiée par l'élève, son coupé : grand format, puis réduite à gauche */}
+            <div
+              style={{
+                position: "absolute",
+                left: interpolate(shrink, [0, 1], [(SAFE.W - 500) / 2, SAFE.left]),
+                top: 230,
+                opacity: p0,
+                transform: `scale(${interpolate(shrink, [0, 1], [1, 0.72])})`,
+                transformOrigin: "top left",
+              }}
+            >
+              <Phone width={500}>
+                <Loop durationInFrames={Math.max(1, Math.round(STUDENT_VIDEO.duration * 30))}>
+                  <OffthreadVideo
+                    src={staticFile(STUDENT_VIDEO.src)}
+                    muted
+                    style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", filter: STUDENT_VIDEO_BLUR ? "blur(18px)" : undefined }}
+                  />
+                </Loop>
+                <div style={{ position: "absolute", right: 18, top: 60, background: "rgba(11,13,16,0.75)", color: C.white, fontFamily: F.mono, fontSize: 18, padding: "6px 10px", borderRadius: 6 }}>
+                  SON COUPÉ
+                </div>
+              </Phone>
             </div>
-            <div style={{ position: "absolute", left: 24, right: 24, bottom: 40, fontFamily: F.mono, fontSize: 18, color: C.dim, textAlign: "center" }}>
-              IDENTITÉ PROTÉGÉE
-            </div>
-          </Phone>
-        </div>
-        <div style={{ position: "absolute", left: 480, top: 270, width: 460, ...rise(appear(frame, 10, 20)) }}>
+            <Caption style={{ position: "absolute", left: SAFE.left, width: CONTENT_W, textAlign: "center", top: 1275, opacity: p0 * (1 - shrink) }}>
+              Vidéo publiée par l'élève · 16/11/2026 · son coupé
+            </Caption>
+          </>
+        ) : (
+          <div style={{ position: "absolute", left: SAFE.left, top: 240, opacity: p0 }}>
+            <Phone width={360}>
+              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(#1B2027, #0E1115)" }} />
+              <div style={{ position: "absolute", left: 40, top: 200 }}>
+                <Silhouette size={260} />
+              </div>
+              <div style={{ position: "absolute", left: 24, right: 24, bottom: 40, fontFamily: F.mono, fontSize: 18, color: C.dim, textAlign: "center" }}>
+                IDENTITÉ PROTÉGÉE
+              </div>
+            </Phone>
+          </div>
+        )}
+        <div style={{ position: "absolute", left: 480, top: 270, width: 460, ...rise(appear(frame, STUDENT_VIDEO ? den + 10 : 10, 20)) }}>
           <div style={{ fontFamily: F.mono, fontSize: 24, color: C.red, letterSpacing: 3 }}>UNE ÉLÈVE DE 16 ANS</div>
           <div style={{ fontFamily: F.title, fontWeight: 800, fontSize: 84, color: C.white, lineHeight: 1 }}>TERMINALE D</div>
           <div style={{ fontFamily: F.text, fontSize: 30, color: C.dim, marginTop: 14, lineHeight: 1.3 }}>dénonce une mesure de l'administration du lycée</div>

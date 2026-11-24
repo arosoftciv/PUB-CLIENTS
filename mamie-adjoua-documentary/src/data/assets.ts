@@ -19,5 +19,8 @@ export const ASSETS = {
   arosoftLogo: null as string | null, // public/branding/arosoft.png (fond transparent)
 };
 
+/** Vidéo de l'élève (son coupé) : flouter l'image si true. Décision éditoriale du client : affichée nette. */
+export const STUDENT_VIDEO_BLUR = false;
+
 /** Les captures de personnes publiques sont affichées uniquement si true. */
 export const USE_PEOPLE_CAPTURES = true;

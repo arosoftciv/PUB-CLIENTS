@@ -154,7 +154,7 @@ def _balance(text: str, max_line: int) -> str:
     return " ".join(ws[:best_i]) + "\n" + " ".join(ws[best_i:])
 
 
-def chunk_sentence(text: str, max_line: int = 40) -> list[str]:
+def chunk_sentence(text: str, max_line: int = 36) -> list[str]:
     """Découpe en cues de 2 lignes max, en privilégiant la ponctuation."""
     max_cue = max_line * 2 - 4
     # dates et heures insécables (« 16 novembre 2026 », « 7 heures 30 »)

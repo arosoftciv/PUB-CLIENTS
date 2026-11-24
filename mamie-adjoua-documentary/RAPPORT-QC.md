@@ -42,6 +42,17 @@ Date : 24 novembre 2026 · Version : maquette finale v1, **sans voix-off**
 
 Les jours de la semaine ont été vérifiés au calendrier : jeudi 22/10, lundi 16/11, vendredi 20/11 et lundi 23/11/2026 sont exacts.
 
+## 2 quater. Vidéo de l'élève (décision éditoriale du client)
+
+- À la demande du client, au motif que la vidéo circule déjà largement en ligne, la vidéo publiée par l'élève est
+  montrée en scène S03, **sans aucun son** : la piste audio est supprimée dès l'import, et l'image porte le badge « SON COUPÉ ».
+  Elle apparaît plein cadre sur « Tout est parti d'une vidéo… », puis se range à gauche.
+  Légende : « Vidéo publiée par l'élève · 16/11/2026 · son coupé ».
+- Cette décision s'écarte de la consigne initiale de protection de l'identité de la mineure.
+  Un floutage reste disponible : `STUDENT_VIDEO_BLUR = true` dans `src/data/assets.ts`.
+- **Fichier non encore fourni.** À déposer sous `source/video-eleve.mp4`, puis lancer `python3 scripts/extract-assets.py`
+  et refaire le rendu. D'ici là, la silhouette anonyme reste affichée. L'intégration a été testée avec une mire.
+
 ## 2 ter. Nouvelle accroche (révision client)
 
 - Le hook S01 (19,4 s, estimé) suit exactement le texte fourni, en 3 séquences synchronisées sur la voix-off :
