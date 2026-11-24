@@ -1,6 +1,6 @@
 {
  "fps": 30,
- "total": 497.8,
+ "total": 496.567,
  "estimated": false,
  "voiceScenes": [
   "s01",
@@ -208,7 +208,7 @@
    "id": "s06",
    "name": "Révélation 2",
    "start": 118.2,
-   "duration": 46.2,
+   "duration": 45.633,
    "voStart": 1.4,
    "voFile": "audio/voiceover/s06.wav",
    "pages": [
@@ -231,31 +231,31 @@
     {
      "id": "tarif",
      "start": 14.011,
-     "end": 18.342,
+     "end": 17.783,
      "text": "Le tarif mensuel est fixé à vingt-sept mille francs CFA par élève."
     },
     {
      "id": "coges",
-     "start": 18.942,
-     "end": 25.933,
+     "start": 18.383,
+     "end": 25.374,
      "text": "Selon l'enquête, les parents d'élèves et les responsables du COGES n'auraient pas été associés aux négociations initiales."
     },
     {
      "id": "reduction",
-     "start": 26.283,
-     "end": 30.921,
+     "start": 25.724,
+     "end": 30.363,
      "text": "Plusieurs parents auraient demandé une réduction du tarif, sans obtenir satisfaction."
     },
     {
      "id": "drena",
-     "start": 31.421,
-     "end": 41.336,
+     "start": 30.863,
+     "end": 40.777,
      "text": "Mais lorsque la polémique éclate, le directeur régional de l'Éducation nationale affirme qu'aucune convention n'a été signée et que le projet n'a jamais véritablement démarré."
     },
     {
      "id": "verifier",
-     "start": 41.936,
-     "end": 45.034,
+     "start": 41.377,
+     "end": 44.475,
      "text": "L'Éléphant Déchaîné décide alors de vérifier cette affirmation."
     }
    ]
@@ -263,7 +263,7 @@
   {
    "id": "s07",
    "name": "Révélation 3",
-   "start": 164.4,
+   "start": 163.833,
    "duration": 45.0,
    "voStart": 1.4,
    "voFile": "audio/voiceover/s07.wav",
@@ -327,8 +327,8 @@
   {
    "id": "s08",
    "name": "Révélation 4",
-   "start": 209.4,
-   "duration": 39.133,
+   "start": 208.833,
+   "duration": 38.467,
    "voStart": 1.4,
    "voFile": "audio/voiceover/s08.wav",
    "pages": [
@@ -344,25 +344,25 @@
     {
      "id": "verse",
      "start": 5.361,
-     "end": 14.339,
+     "end": 13.68,
      "text": "Selon les témoignages recueillis auprès des élèves et des parents, les vingt-sept mille francs CFA seraient versés directement auprès de l'administration du lycée."
     },
     {
      "id": "educatrices",
-     "start": 14.689,
-     "end": 23.61,
+     "start": 14.03,
+     "end": 22.951,
      "text": "Certaines éducatrices auraient également multiplié les sollicitations auprès des élèves pour les encourager à convaincre leurs parents de souscrire au service."
     },
     {
      "id": "admin",
-     "start": 24.11,
-     "end": 32.097,
+     "start": 23.451,
+     "end": 31.438,
      "text": "Pourtant, l'administration affirme que l'adhésion est entièrement volontaire et que le lycée ne tire aucun bénéfice financier de cette opération."
     },
     {
      "id": "circuit",
-     "start": 32.597,
-     "end": 37.911,
+     "start": 31.938,
+     "end": 37.251,
      "text": "L'enquête ne permet cependant pas de déterminer précisément le circuit financier de ces encaissements."
     }
    ]
@@ -370,7 +370,7 @@
   {
    "id": "s09",
    "name": "Révélation 5",
-   "start": 248.533,
+   "start": 247.3,
    "duration": 66.133,
    "voStart": 1.4,
    "voFile": "audio/voiceover/s09.wav",
@@ -461,7 +461,7 @@
   {
    "id": "s10",
    "name": "Révélation 6",
-   "start": 314.667,
+   "start": 313.433,
    "duration": 27.533,
    "voStart": 1.4,
    "voFile": "audio/voiceover/s10.wav",
@@ -498,7 +498,7 @@
   {
    "id": "s11",
    "name": "Révélation 7",
-   "start": 342.2,
+   "start": 340.967,
    "duration": 36.8,
    "voStart": 1.4,
    "voFile": "audio/voiceover/s11.wav",
@@ -547,7 +547,7 @@
   {
    "id": "s12",
    "name": "Chronologie",
-   "start": 379.0,
+   "start": 377.767,
    "duration": 21.0,
    "voStart": 0,
    "voFile": null,
@@ -606,7 +606,7 @@
   {
    "id": "s13",
    "name": "Les questions sans réponse",
-   "start": 400.0,
+   "start": 398.767,
    "duration": 36.633,
    "voStart": 0.8,
    "voFile": "audio/voiceover/s13.wav",
@@ -665,7 +665,7 @@
   {
    "id": "s14",
    "name": "Conclusion journalistique",
-   "start": 436.633,
+   "start": 435.4,
    "duration": 36.3,
    "voStart": 0.6,
    "voFile": "audio/voiceover/s14.wav",
@@ -706,7 +706,7 @@
   {
    "id": "s15",
    "name": "Signature finale",
-   "start": 472.933,
+   "start": 471.7,
    "duration": 8.067,
    "voStart": 1.2,
    "voFile": "audio/voiceover/s15.wav",
@@ -729,7 +729,7 @@
   {
    "id": "s17",
    "name": "Appel à l'abonnement",
-   "start": 481.0,
+   "start": 479.767,
    "duration": 7.8,
    "voStart": 0.5,
    "voFile": "audio/voiceover/s17.wav",
@@ -752,7 +752,7 @@
   {
    "id": "s16",
    "name": "Sources et crédits",
-   "start": 488.8,
+   "start": 487.567,
    "duration": 9.0,
    "voStart": 0,
    "voFile": null,
@@ -806,37 +806,37 @@
    {
     "scene": "s06",
     "seg": "drena",
-    "srcStart": 149.371,
+    "srcStart": 148.813,
     "start": 21.275,
-    "duration": 10.615,
+    "duration": 10.614,
     "text": "Mais lorsque la polémique éclate, le directeur régional de l'Éducation nationale affirme qu'aucune convention n'a été signée et que le projet n'a jamais véritablement démarré."
    },
    {
     "scene": "s07",
     "seg": "constat",
-    "srcStart": 186.311,
-    "start": 31.89,
+    "srcStart": 185.744,
+    "start": 31.889,
     "duration": 8.467,
     "text": "Le vendredi 20 novembre, à 6 heures 54, les journalistes constatent la présence de deux bus spéciaux devant le lycée."
    },
    {
     "scene": "s07",
     "seg": "resume",
-    "srcStart": 200.181,
-    "start": 40.357,
+    "srcStart": 199.614,
+    "start": 40.356,
     "duration": 6.066,
     "text": "Un service présenté comme n'ayant jamais démarré, mais dont les bus transportent effectivement des élèves."
    },
    {
     "scene": "s07",
     "seg": "contradiction",
-    "srcStart": 206.147,
-    "start": 46.423,
+    "srcStart": 205.58,
+    "start": 46.422,
     "duration": 2.186,
     "text": "Une contradiction majeure."
    }
   ],
   "outro": 5.5,
-  "total": 56.109
+  "total": 56.108
  }
 }

@@ -69,7 +69,7 @@
  },
  "s06": {
   "raw_s": 43.84,
-  "aligned_s": 43.63,
+  "aligned_s": 43.08,
   "sentences": 7,
   "silences": 15,
   "boundaries": [
@@ -115,7 +115,7 @@
  },
  "s08": {
   "raw_s": 36.83,
-  "aligned_s": 36.51,
+  "aligned_s": 35.85,
   "sentences": 5,
   "silences": 11,
   "boundaries": [

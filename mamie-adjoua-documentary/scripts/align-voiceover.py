@@ -95,6 +95,20 @@ def main() -> None:
             a = max(0.0, bounds[2 * k] - 0.04)
             b = min(total, bounds[2 * k + 1] + 0.10)
             pieces.append(audio[int(a * SR): int(b * SR)])
+        # remplacements de phrases isolées : source/voiceover-raw/overrides/sXX__<id>.mp3
+        for k, sg in enumerate(segs):
+            ov = RAW / "overrides" / f"{sc['id']}__{sg['id']}.mp3"
+            if ov.exists():
+                a2 = load(ov)
+                sl = silences(ov)
+                h = sl[0][1] if sl and sl[0][0] < 0.05 else 0.0
+                t2 = sl[-1][0] if sl and sl[-1][1] > len(a2) / SR - 0.05 else len(a2) / SR
+                piece = a2[int(max(0, h - 0.04) * SR): int(min(len(a2) / SR, t2 + 0.10) * SR)]
+                # niveau aligné sur le reste de la scène
+                ref = np.sqrt(np.mean(np.concatenate([p for j, p in enumerate(pieces) if j != k]) ** 2))
+                cur = np.sqrt(np.mean(piece ** 2)) or 1
+                pieces[k] = piece * (ref / cur)
+                print(f"  ↺ phrase remplacée : {sc['id']}/{sg['id']}")
         # réassemblage avec les pauses du script
         out, marks, t = [], [], 0.0
         for k, (s, piece) in enumerate(zip(segs, pieces)):

@@ -103,6 +103,7 @@ Les jours de la semaine ont été vérifiés au calendrier : jeudi 22/10, lundi 
   (premade, choix du client), modèle eleven_multilingual_v2, une piste par scène, environ 7 300 crédits.
   Une première version avec la voix « Martinez » (environ 7 300 crédits) a été remplacée à la demande du client.
   Elle reste archivée dans `source/voiceover-raw/martinez/`.
+- « CFA » est prononcé « céfa » : les 2 phrases concernées (S06 tarif, S08 paiements) ont été régénérées seules (environ 230 crédits) puis insérées (`source/voiceover-raw/overrides/`).
 - Brian est une voix d'origine anglophone. Son français peut garder une légère couleur d'accent : à valider à l'écoute.
   Le calage se fait phrase par phrase (`scripts/align-voiceover.py`) : détection des pauses, puis découpage et
   réassemblage avec les pauses du script. Diction ni accélérée ni modifiée. Animations, sous-titres et ducking

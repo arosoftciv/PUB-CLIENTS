@@ -52,6 +52,7 @@ TTS_REPLACE = [
 TTS_PHONETIC = [
     (r"\bCOGES\b", "Cogèsse"),
     (r"\bSOTRA\b", "Sotra"),
+    (r"\bCFA\b", "céfa"),
 ]
 
 

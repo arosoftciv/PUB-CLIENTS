@@ -12,26 +12,26 @@
  {
   "id": "tarif",
   "start": 12.611,
-  "end": 16.942
+  "end": 16.383
  },
  {
   "id": "coges",
-  "start": 17.542,
-  "end": 24.533
+  "start": 16.983,
+  "end": 23.974
  },
  {
   "id": "reduction",
-  "start": 24.883,
-  "end": 29.521
+  "start": 24.324,
+  "end": 28.963
  },
  {
   "id": "drena",
-  "start": 30.021,
-  "end": 39.936
+  "start": 29.463,
+  "end": 39.377
  },
  {
   "id": "verifier",
-  "start": 40.536,
-  "end": 43.634
+  "start": 39.977,
+  "end": 43.075
  }
 ]

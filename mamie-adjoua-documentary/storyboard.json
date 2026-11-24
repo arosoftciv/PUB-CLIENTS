@@ -2,7 +2,7 @@
   "title": "Lycée Mamie Adjoua — Les mystères du portail fermé",
   "fps": 30,
   "resolution": "1080x1920",
-  "total_seconds": 497.8,
+  "total_seconds": 496.567,
   "timing_source": "voix-off réelle",
   "narration_words": 1044,
   "scenes": [
@@ -92,8 +92,8 @@
       "id": "s06",
       "name": "Révélation 2",
       "start": "00:01:58.200",
-      "end": "00:02:44.400",
-      "duration_s": 46.2,
+      "end": "00:02:43.833",
+      "duration_s": 45.633,
       "source_pages": [
         4,
         5
@@ -111,8 +111,8 @@
     {
       "id": "s07",
       "name": "Révélation 3",
-      "start": "00:02:44.400",
-      "end": "00:03:29.400",
+      "start": "00:02:43.833",
+      "end": "00:03:28.833",
       "duration_s": 45.0,
       "source_pages": [
         2,
@@ -134,9 +134,9 @@
     {
       "id": "s08",
       "name": "Révélation 4",
-      "start": "00:03:29.400",
-      "end": "00:04:08.533",
-      "duration_s": 39.133,
+      "start": "00:03:28.833",
+      "end": "00:04:07.300",
+      "duration_s": 38.467,
       "source_pages": [
         6
       ],
@@ -151,8 +151,8 @@
     {
       "id": "s09",
       "name": "Révélation 5",
-      "start": "00:04:08.533",
-      "end": "00:05:14.666",
+      "start": "00:04:07.300",
+      "end": "00:05:13.433",
       "duration_s": 66.133,
       "source_pages": [
         8
@@ -176,8 +176,8 @@
     {
       "id": "s10",
       "name": "Révélation 6",
-      "start": "00:05:14.667",
-      "end": "00:05:42.200",
+      "start": "00:05:13.433",
+      "end": "00:05:40.966",
       "duration_s": 27.533,
       "source_pages": [
         7
@@ -192,8 +192,8 @@
     {
       "id": "s11",
       "name": "Révélation 7",
-      "start": "00:05:42.200",
-      "end": "00:06:19.000",
+      "start": "00:05:40.967",
+      "end": "00:06:17.767",
       "duration_s": 36.8,
       "source_pages": [
         8
@@ -210,8 +210,8 @@
     {
       "id": "s12",
       "name": "Chronologie",
-      "start": "00:06:19.000",
-      "end": "00:06:40.000",
+      "start": "00:06:17.767",
+      "end": "00:06:38.767",
       "duration_s": 21.0,
       "source_pages": [],
       "narration": []
@@ -219,8 +219,8 @@
     {
       "id": "s13",
       "name": "Les questions sans réponse",
-      "start": "00:06:40.000",
-      "end": "00:07:16.633",
+      "start": "00:06:38.767",
+      "end": "00:07:15.400",
       "duration_s": 36.633,
       "source_pages": [],
       "narration": [
@@ -237,8 +237,8 @@
     {
       "id": "s14",
       "name": "Conclusion journalistique",
-      "start": "00:07:16.633",
-      "end": "00:07:52.933",
+      "start": "00:07:15.400",
+      "end": "00:07:51.700",
       "duration_s": 36.3,
       "source_pages": [],
       "narration": [
@@ -252,8 +252,8 @@
     {
       "id": "s15",
       "name": "Signature finale",
-      "start": "00:07:52.933",
-      "end": "00:08:01.000",
+      "start": "00:07:51.700",
+      "end": "00:07:59.767",
       "duration_s": 8.067,
       "source_pages": [],
       "narration": [
@@ -264,8 +264,8 @@
     {
       "id": "s17",
       "name": "Appel à l'abonnement",
-      "start": "00:08:01.000",
-      "end": "00:08:08.800",
+      "start": "00:07:59.767",
+      "end": "00:08:07.567",
       "duration_s": 7.8,
       "source_pages": [],
       "narration": [
@@ -276,8 +276,8 @@
     {
       "id": "s16",
       "name": "Sources et crédits",
-      "start": "00:08:08.800",
-      "end": "00:08:17.800",
+      "start": "00:08:07.567",
+      "end": "00:08:16.567",
       "duration_s": 9.0,
       "source_pages": [
         1,
