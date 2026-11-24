@@ -1,0 +1,128 @@
+[
+  {
+    "file": "apercu-nouveau-hook.mp4",
+    "size_mb": 12.7,
+    "res": "1080x1920",
+    "duration_s": 30.02,
+    "lufs": "-14.67",
+    "tp": "-0.90",
+    "checks": {
+      "h264": true,
+      "aac": true,
+      "48kHz": true,
+      "30fps": true,
+      "9:16": true,
+      "loudness≈-14": true,
+      "truepeak≤-1": true
+    },
+    "ok": true
+  },
+  {
+    "file": "apercu-video-eleve.mp4",
+    "size_mb": 9.5,
+    "res": "1080x1920",
+    "duration_s": 28.05,
+    "lufs": "-17.49",
+    "tp": "-0.99",
+    "checks": {
+      "h264": true,
+      "aac": true,
+      "48kHz": true,
+      "30fps": true,
+      "9:16": true,
+      "loudness≈-14": false,
+      "truepeak≤-1": true
+    },
+    "ok": false
+  },
+  {
+    "file": "apercu-voix-off.mp4",
+    "size_mb": 19.7,
+    "res": "1080x1920",
+    "duration_s": 50.01,
+    "lufs": "-13.71",
+    "tp": "-1.00",
+    "checks": {
+      "h264": true,
+      "aac": true,
+      "48kHz": true,
+      "30fps": true,
+      "9:16": true,
+      "loudness≈-14": true,
+      "truepeak≤-1": true
+    },
+    "ok": true
+  },
+  {
+    "file": "mamie-adjoua-documentaire-1080p-sans-soustitres.mp4",
+    "size_mb": 145.1,
+    "res": "1080x1920",
+    "duration_s": 497.81,
+    "lufs": "-14.03",
+    "tp": "-0.97",
+    "checks": {
+      "h264": true,
+      "aac": true,
+      "48kHz": true,
+      "30fps": true,
+      "9:16": true,
+      "loudness≈-14": true,
+      "truepeak≤-1": true
+    },
+    "ok": true
+  },
+  {
+    "file": "mamie-adjoua-documentaire-1080p-soustitres.mp4",
+    "size_mb": 150.0,
+    "res": "1080x1920",
+    "duration_s": 497.81,
+    "lufs": "-14.03",
+    "tp": "-0.97",
+    "checks": {
+      "h264": true,
+      "aac": true,
+      "48kHz": true,
+      "30fps": true,
+      "9:16": true,
+      "loudness≈-14": true,
+      "truepeak≤-1": true
+    },
+    "ok": true
+  },
+  {
+    "file": "mamie-adjoua-documentaire-4k-soustitres.mp4",
+    "size_mb": 611.1,
+    "res": "2160x3840",
+    "duration_s": 497.81,
+    "lufs": "-14.03",
+    "tp": "-0.97",
+    "checks": {
+      "h264": true,
+      "aac": true,
+      "48kHz": true,
+      "30fps": true,
+      "9:16": true,
+      "loudness≈-14": true,
+      "truepeak≤-1": true
+    },
+    "ok": true
+  },
+  {
+    "file": "mamie-adjoua-teaser-1080p.mp4",
+    "size_mb": 23.4,
+    "res": "1080x1920",
+    "duration_s": 56.11,
+    "lufs": "-14.02",
+    "tp": "-1.23",
+    "checks": {
+      "h264": true,
+      "aac": true,
+      "48kHz": true,
+      "30fps": true,
+      "9:16": true,
+      "loudness≈-14": true,
+      "truepeak≤-1": true
+    },
+    "ok": true
+  }
+]
