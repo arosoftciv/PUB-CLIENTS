@@ -1,135 +1,213 @@
 // Scènes 01 à 04 : accroche, contexte, vidéo virale, présentation de l'investigation.
 import React from "react";
-import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { C, F, SAFE, CONTENT_W, clamp, EASE } from "../styles/theme";
 import { appear, between, rise, wipe } from "../animations/anim";
 import { SceneTiming, segFrame, f } from "../data/timeline";
 import { Backdrop, Photo, SourceReference, ReconstitutionTag, Chip, Caption, Attribution } from "../components/base";
 import { AnimatedClock, DocumentaryTitle } from "../components/editorial";
-import { GateGraphic, MapCI, Phone, Notification, Silhouette, BusGraphic, NewspaperReveal } from "../components/illustrations";
+import { GateGraphic, Phone, Notification, Silhouette, BusGraphic, NewspaperReveal } from "../components/illustrations";
 import { ASSETS } from "../data/assets";
-import map from "../data/map.json";
 
 type P = { sc: SceneTiming };
 
-// ------------------------------------------------------------------ S01
+// ------------------------------------------------------------------ S01 — Hook
+/** Bulle de commentaire générique (aucun texte inventé). */
+const CommentBubble: React.FC<{ p: number; w?: number; style?: React.CSSProperties }> = ({ p, w = 300, style }) => (
+  <div style={{ position: "absolute", opacity: p, transform: `translateY(${(1 - p) * 30}px) scale(${0.9 + p * 0.1})`, ...style }}>
+    <div style={{ background: "rgba(245,245,240,0.94)", borderRadius: 22, padding: "16px 20px", width: w, display: "flex", gap: 14, alignItems: "center" }}>
+      <div style={{ width: 44, height: 44, borderRadius: 22, background: "#9AA4AD", flexShrink: 0 }} />
+      <div style={{ flex: 1 }}>
+        <div style={{ height: 12, borderRadius: 6, background: "#B8BFC6", width: "80%", marginBottom: 10 }} />
+        <div style={{ height: 12, borderRadius: 6, background: "#CDD2D7", width: "55%" }} />
+      </div>
+    </div>
+    <div style={{ width: 0, height: 0, borderLeft: "14px solid transparent", borderRight: "14px solid transparent", borderTop: "16px solid rgba(245,245,240,0.94)", marginLeft: 36 }} />
+  </div>
+);
+
+const ShareIcon: React.FC<{ glyph: string; p: number; x: number; y: number }> = ({ glyph, p, x, y }) => (
+  <div
+    style={{
+      position: "absolute",
+      left: x,
+      top: y - p * 140,
+      width: 74,
+      height: 74,
+      borderRadius: 37,
+      background: C.red,
+      color: C.white,
+      fontSize: 36,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      opacity: p > 0 ? Math.min(1, p * 4) * (1 - Math.max(0, p - 0.7) / 0.3) : 0,
+      boxShadow: "0 10px 30px rgba(0,0,0,0.4)",
+    }}
+  >
+    {glyph}
+  </div>
+);
+
 export const S01Hook: React.FC<P> = ({ sc }) => {
   const frame = useCurrentFrame();
-  const flip = f(2.0);
-  const gateAt = f(2.45);
-  const titleAt = f(3.4);
-  const gateP = interpolate(frame, [gateAt - 8, gateAt], [0, 1], { ...clamp, easing: EASE.inOut });
-  const shake = frame >= gateAt && frame < gateAt + 8 ? Math.sin(frame * 3) * (gateAt + 8 - frame) * 1.5 : 0;
-  const clockUp = interpolate(frame, [titleAt - 10, titleAt + 10], [0, 1], { ...clamp, easing: EASE.inOut });
-  const gateFade = interpolate(frame, [titleAt - 6, titleAt + 10], [1, 0], clamp);
+  const ch = segFrame(sc, "chronique");
+  const en = segFrame(sc, "enquete");
+  const rs = segFrame(sc, "resume");
+  // --- Séquence 1 : l'affaire
+  const seq1 = 1 - appear(frame, en - 8, 12);
+  const titleAt = ch + f(2.4); // « … le lycée d'excellence Mamie Adjoua »
+  const chipAt = ch + f(5.0); // « … défraye la chronique »
+  const socialAt = ch + f(2.6);
+  // --- Séquence 2 : le journal
+  const seq2 = Math.min(appear(frame, en - 6, 12), 1 - appear(frame, rs - 8, 10));
+  const zoom = interpolate(frame, [en, rs], [1, 1.35], { ...clamp, easing: EASE.inOut });
+  const cardsAt = en + f(2.4);
+  // --- Séquence 3 : la promesse (montage rapide)
+  const seq3 = appear(frame, rs - 6, 8);
+  const beat = f(0.85);
+  const montage = [0, 1, 2, 3].map((k) => rs + f(0.15) + k * beat);
+  const slot = (k: number) => Math.min(appear(frame, montage[k], 5), k < 3 ? 1 - appear(frame, montage[k + 1], 5) : 1);
   return (
-    <AbsoluteFill style={{ background: C.black, transform: `translateX(${shake}px)` }}>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 560 - clockUp * 290, display: "flex", justifyContent: "center", transform: `scale(${1 - clockUp * 0.35})` }}>
-        <AnimatedClock from="07:29" to="07:30" flipAt={flip} at={4} size={230} />
-      </div>
-      <div style={{ position: "absolute", left: 160, top: 860 - clockUp * 120, opacity: appear(frame, gateAt - 10, 6) * gateFade }}>
-        <GateGraphic p={gateP} width={760} height={520} />
-      </div>
-      <div style={{ position: "absolute", left: SAFE.left, top: 620, width: CONTENT_W }}>
-        <DocumentaryTitle
-          at={titleAt}
-          stagger={9}
-          lines={[
-            { text: "7 H 30", font: "mono", size: 96, color: C.red, weight: 600 },
-            { text: "UN PORTAIL FERMÉ", size: 150 },
-            { text: "UNE JOURNÉE DE COURS PERDUE ?", size: 84, color: C.amber },
-          ]}
-        />
-      </div>
+    <AbsoluteFill style={{ background: C.black }}>
+      {/* ===== Séquence 1 ===== */}
+      {seq1 > 0 ? (
+        <AbsoluteFill style={{ opacity: seq1 }}>
+          <Photo src={ASSETS.gate1} frame={frame} dur={en} from={{ s: 1.08, x: 0, y: 0 }} to={{ s: 1.22, x: -10, y: 40 }} style={{ left: 0, top: 0, width: SAFE.W, height: SAFE.H }} />
+          <AbsoluteFill style={{ background: "linear-gradient(rgba(11,13,16,0.55) 0%, rgba(11,13,16,0.25) 35%, rgba(11,13,16,0.9) 75%)" }} />
+          {/* Polémique sur les réseaux : éléments génériques */}
+          <Notification icon="▶" text="Nouvelle vidéo" p={between(frame, socialAt, Infinity)} style={{ position: "absolute", left: SAFE.left, top: 230, width: 340 }} />
+          <Notification icon="↗" text="Partagé" p={between(frame, socialAt + f(0.45), Infinity)} style={{ position: "absolute", left: 520, top: 320, width: 300 }} />
+          <CommentBubble p={appear(frame, socialAt + f(0.9), 14)} style={{ left: SAFE.left + 30, top: 420 }} />
+          <CommentBubble p={appear(frame, socialAt + f(1.35), 14)} w={260} style={{ left: 560, top: 520 }} />
+          <Notification icon="✉" text="Commentaires" p={between(frame, socialAt + f(1.8), Infinity)} style={{ position: "absolute", left: SAFE.left + 80, top: 640, width: 340 }} />
+          {[0, 1, 2, 3, 4, 5].map((k) => (
+            <ShareIcon key={k} glyph={["♥", "↗", "✉", "♥", "↗", "♥"][k]} x={700 + (k % 3) * 70 - (k > 2 ? 40 : 0)} y={760} p={interpolate(frame, [socialAt + f(0.5) + k * 9, socialAt + f(0.5) + k * 9 + 40], [0, 1], clamp)} />
+          ))}
+          <ReconstitutionTag style={{ left: SAFE.left, top: 760 }} opacity={appear(frame, socialAt, 14) * 0.9} />
+          <div style={{ position: "absolute", left: SAFE.left, top: 880, width: CONTENT_W }}>
+            <DocumentaryTitle
+              at={titleAt}
+              stagger={8}
+              lines={[
+                { text: "LYCÉE MAMIE ADJOUA", size: 128 },
+                { text: "YAMOUSSOUKRO", size: 44, font: "mono", color: C.dim, weight: 500 },
+              ]}
+            />
+            <div style={{ marginTop: 34, ...wipe(appear(frame, chipAt, 18)) }}>
+              <div style={{ display: "inline-block", background: C.red, color: C.white, fontFamily: F.title, fontWeight: 800, fontSize: 52, padding: "6px 20px" }}>
+                UNE AFFAIRE QUI DÉFRAYE LA CHRONIQUE
+              </div>
+            </div>
+          </div>
+          <Caption style={{ position: "absolute", left: SAFE.left, top: 1290, opacity: appear(frame, titleAt, 14) }}>Photo : portail du lycée (Vivre À Yamoussoukro)</Caption>
+        </AbsoluteFill>
+      ) : null}
+
+      {/* ===== Séquence 2 ===== */}
+      {seq2 > 0 ? (
+        <AbsoluteFill style={{ opacity: seq2 }}>
+          <Backdrop tint="#1B1416" />
+          <div style={{ position: "absolute", left: 230, top: 210, transform: `scale(${zoom})`, transformOrigin: "50% 38%" }}>
+            <NewspaperReveal at={en - 4} width={620} rotate={-2} />
+          </div>
+          {/* Pages / photographies qui défilent */}
+          {[
+            { src: ASSETS.gate1, label: "LE PORTAIL", r: -6 },
+            { src: ASSETS.gate2, label: "LE LYCÉE", r: 4 },
+          ].map((c, k) => {
+            const p = appear(frame, cardsAt + k * f(1.1), 16);
+            const out = 1 - appear(frame, cardsAt + k * f(1.1) + f(1.6), 12);
+            return (
+              <div key={k} style={{ position: "absolute", left: 120 + k * 360, top: 760, width: 420, opacity: Math.min(p, Math.max(out, k === 1 ? 1 : 0)), transform: `translateX(${(1 - p) * (k ? 200 : -200)}px) rotate(${c.r}deg)` }}>
+                <div style={{ background: C.white, padding: 12, boxShadow: "0 30px 70px rgba(0,0,0,0.6)" }}>
+                  <Img src={staticFile(c.src)} style={{ width: "100%", height: 250, objectFit: "cover", display: "block", filter: "saturate(0.75) contrast(1.08)" }} />
+                  <div style={{ fontFamily: F.mono, fontSize: 20, color: C.black, marginTop: 8, letterSpacing: 2 }}>{c.label}</div>
+                </div>
+              </div>
+            );
+          })}
+          <div style={{ position: "absolute", left: SAFE.left, top: 1090, width: CONTENT_W, background: "rgba(11,13,16,0.82)", padding: "18px 24px", borderLeft: `8px solid ${C.red}` }}>
+            <DocumentaryTitle
+              at={en + 6}
+              stagger={7}
+              lines={[
+                { text: "L'ÉLÉPHANT DÉCHAÎNÉ", size: 84 },
+                { text: "INVESTIGATION · 23 NOVEMBRE 2026", size: 30, font: "mono", color: C.red, weight: 600 },
+              ]}
+            />
+          </div>
+        </AbsoluteFill>
+      ) : null}
+
+      {/* ===== Séquence 3 ===== */}
+      {seq3 > 0 ? (
+        <AbsoluteFill style={{ opacity: seq3 }}>
+          <Backdrop />
+          <div style={{ position: "absolute", left: SAFE.left, top: SAFE.top, width: CONTENT_W }}>
+            <DocumentaryTitle at={rs} lines={[{ text: "CE QUE RÉVÈLE", size: 96 }, { text: "L'INVESTIGATION", size: 96, color: C.amber }]} />
+          </div>
+          <div style={{ position: "absolute", left: SAFE.left, top: 470, width: CONTENT_W, height: 700 }}>
+            <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", opacity: slot(0), transform: `scale(${1.08 - 0.08 * slot(0)})` }}>
+              <AnimatedClock from="07:30" at={montage[0]} size={240} color={C.red} />
+            </div>
+            <div style={{ position: "absolute", inset: 0, opacity: slot(1) }}>
+              <Photo src={ASSETS.gate2} frame={frame - montage[1]} dur={beat} from={{ s: 1.05, x: 0, y: 0 }} to={{ s: 1.15, x: 0, y: 0 }} style={{ left: 0, top: 80, width: CONTENT_W, height: 540 }} />
+            </div>
+            <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", opacity: slot(2) }}>
+              {ASSETS.busPhoto ? (
+                <Photo src={ASSETS.busPhoto} frame={frame - montage[2]} dur={beat} style={{ left: 0, top: 80, width: CONTENT_W, height: 540 }} />
+              ) : (
+                <>
+                  <BusGraphic width={680} />
+                  <div style={{ fontFamily: F.mono, fontSize: 28, color: C.white, marginTop: 20, letterSpacing: 3 }}>BUS SOTRA</div>
+                </>
+              )}
+            </div>
+            <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", opacity: slot(3) }}>
+              <div style={{ fontFamily: F.mono, fontWeight: 600, fontSize: 190, color: C.white, letterSpacing: -4 }}>27&#8239;000</div>
+              <div style={{ fontFamily: F.title, fontWeight: 800, fontSize: 70, color: C.red }}>FCFA</div>
+              <div style={{ fontFamily: F.title, fontWeight: 800, fontSize: 120, color: C.amber, marginTop: 10, opacity: appear(frame, montage[3] + 14, 10) }}>?</div>
+            </div>
+          </div>
+          {!ASSETS.busPhoto ? <ReconstitutionTag style={{ left: SAFE.left, top: 1210 }} opacity={slot(2)} /> : null}
+        </AbsoluteFill>
+      ) : null}
     </AbsoluteFill>
   );
 };
 
-// ------------------------------------------------------------------ S02
-export const S02Context: React.FC<P> = ({ sc }) => {
+// ------------------------------------------------------------------ S02 — Carton d'ouverture
+export const S02TitleCard: React.FC<P> = ({ sc }) => {
   const frame = useCurrentFrame();
-  const lycee = segFrame(sc, "lycee");
-  const video = segFrame(sc, "video");
-  const draw = appear(frame, 0, 40, EASE.inOut);
-  const zoomP = interpolate(frame, [30, lycee + 20], [0, 1], { ...clamp, easing: EASE.inOut });
-  const [yx, yy] = map.cities.yamoussoukro;
-  const zoom = { s: 1 + zoomP * 1.6, cx: 450 + (yx - 450) * zoomP, cy: 450 + (yy - 450) * zoomP };
-  const mapOut = interpolate(frame, [lycee + 30, lycee + 50], [1, 0.25], clamp);
-  const photoP = appear(frame, lycee + 30, 24);
-  const tags = ["SA NOUVELLE PROVISEURE", "UNE ÉLÈVE DE 16 ANS", "UN PROJET DE TRANSPORT SCOLAIRE"];
-  const tagAt = [lycee + f(4.6), lycee + f(6.4), lycee + f(7.6)];
-  const phoneP = appear(frame, video - 6, 22);
-  const sceneA = 1 - appear(frame, video - 10, 16);
+  const D = f(sc.duration);
+  const line = appear(frame, 6, 24);
   return (
-    <Backdrop>
-      <div style={{ position: "absolute", left: 90, top: 260, opacity: mapOut }}>
-        <MapCI draw={draw} zoom={zoom} markers={[{ key: "yamoussoukro", label: "YAMOUSSOUKRO", p: appear(frame, 40, 16) }]} />
-      </div>
-      <div style={{ position: "absolute", left: SAFE.left, top: SAFE.top, opacity: appear(frame, 6, 20) * sceneA }}>
-        <Caption>CÔTE D'IVOIRE · {"6°49′N 5°17′O"}</Caption>
-      </div>
-      {/* Photo du lycée + éléments clés */}
-      <div style={{ opacity: sceneA }}>
-        <Photo
-          src={ASSETS.gate1}
-          frame={frame - lycee}
-          dur={sc.duration * 30}
-          style={{ left: SAFE.left, top: 240, width: CONTENT_W, height: 560, opacity: photoP, ...wipe(photoP) }}
-        />
-        <Caption style={{ position: "absolute", left: SAFE.left, top: 812, opacity: photoP }}>Photo : Vivre À Yamoussoukro (fournie)</Caption>
-        <div style={{ position: "absolute", left: SAFE.left, top: 860, width: CONTENT_W, ...rise(appear(frame, lycee + 40, 20)) }}>
-          <div style={{ fontFamily: F.mono, fontSize: 26, color: C.red, letterSpacing: 4 }}>LYCÉE D'EXCELLENCE</div>
-          <div style={{ fontFamily: F.title, fontWeight: 800, fontSize: 104, color: C.white, lineHeight: 1 }}>MAMIE ADJOUA</div>
-        </div>
-        <div style={{ position: "absolute", left: SAFE.left, top: 1010, display: "flex", flexDirection: "column", gap: 14 }}>
-          {tags.map((t, i) => (
-            <div key={t} style={{ ...rise(appear(frame, tagAt[i], 16), 20) }}>
-              <Chip color={i === 2 ? C.amber : C.white} style={{ fontSize: 32 }}>
-                {t}
-              </Chip>
-            </div>
-          ))}
+    <AbsoluteFill style={{ background: C.black }}>
+      <Photo src={ASSETS.gate1} frame={frame} dur={D} grade="cold" from={{ s: 1.25, x: 0, y: 30 }} to={{ s: 1.15, x: 0, y: 0 }} style={{ left: 0, top: 0, width: SAFE.W, height: SAFE.H, opacity: 0.5 }} />
+      {ASSETS.busPhoto ? (
+        <Photo src={ASSETS.busPhoto} frame={frame} dur={D} grade="cold" style={{ left: 0, top: 1150, width: SAFE.W, height: 770, opacity: 0.35 }} />
+      ) : null}
+      <AbsoluteFill style={{ background: "radial-gradient(90% 60% at 50% 45%, rgba(11,13,16,0.35), rgba(11,13,16,0.92))" }} />
+      {ASSETS.arosoftLogo ? <Img src={staticFile(ASSETS.arosoftLogo)} style={{ position: "absolute", right: SAFE.right, top: SAFE.top - 60, width: 84 }} /> : null}
+      <div style={{ position: "absolute", left: SAFE.left, top: 640, width: CONTENT_W, textAlign: "center" }}>
+        <div style={{ height: 4, width: 220 * line, background: C.red, margin: "0 auto 40px" }} />
+        <DocumentaryTitle align="center" at={4} stagger={8} lines={[{ text: "LES MYSTÈRES", size: 124 }, { text: "DU PORTAIL FERMÉ", size: 124 }]} />
+        <div style={{ fontFamily: F.text, fontWeight: 500, fontSize: 40, color: C.white, marginTop: 36, ...rise(appear(frame, 22, 18), 20) }}>Lycée Mamie Adjoua de Yamoussoukro</div>
+        <div style={{ fontFamily: F.mono, fontSize: 24, color: C.dim, marginTop: 40, lineHeight: 1.5, ...rise(appear(frame, 32, 18), 16) }}>
+          D'après l'investigation de L'Éléphant Déchaîné
+          <br />
+          du 23 novembre 2026
         </div>
       </div>
-      {/* Smartphone + notifications */}
-      <div style={{ position: "absolute", left: 310, top: 250, opacity: phoneP, transform: `translateY(${(1 - phoneP) * 80}px)` }}>
-        <Phone width={460}>
-          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(#1B2027, #0E1115)" }} />
-          <div style={{ position: "absolute", left: 50, top: 260 }}>
-            <Silhouette size={340} />
-          </div>
-          <div style={{ position: "absolute", left: 30, right: 30, bottom: 60, fontFamily: F.text, color: C.white, fontSize: 22 }}>
-            <div style={{ height: 14, width: "70%", background: "#2E343D", borderRadius: 7, marginBottom: 12 }} />
-            <div style={{ height: 14, width: "45%", background: "#2E343D", borderRadius: 7 }} />
-          </div>
-        </Phone>
-      </div>
-      {[
-        ["▶", "Nouvelle vidéo publiée"],
-        ["♥", "Réactions en hausse"],
-        ["↗", "Vidéo partagée"],
-        ["✉", "Nouveaux commentaires"],
-      ].map(([ic, tx], i) => (
-        <Notification
-          key={tx}
-          icon={ic}
-          text={tx}
-          p={between(frame, video + f(0.6) + i * f(0.45), Infinity)}
-          style={{ position: "absolute", left: i % 2 === 0 ? 120 : 420, top: 300 + i * 120, width: 460 }}
-        />
-      ))}
-      <div style={{ position: "absolute", left: SAFE.left, top: 1150, ...rise(appear(frame, video + 6, 18)) }}>
-        <Chip mono color={C.red}>LUNDI 16 NOVEMBRE 2026</Chip>
-      </div>
-      <ReconstitutionTag style={{ left: SAFE.left, top: 1225 }} opacity={phoneP} />
-      <SourceReference pages={sc.pages} at={10} />
-    </Backdrop>
+    </AbsoluteFill>
   );
 };
 
 // ------------------------------------------------------------------ S03
 export const S03Video: React.FC<P> = ({ sc }) => {
   const frame = useCurrentFrame();
+  const vid = segFrame(sc, "video");
   const den = segFrame(sc, "denonce");
   const loin = segFrame(sc, "plusloin");
   const sou = segFrame(sc, "soupcon");
@@ -157,7 +235,7 @@ export const S03Video: React.FC<P> = ({ sc }) => {
           </Phone>
         </div>
         <div style={{ position: "absolute", left: 480, top: 270, width: 460, ...rise(appear(frame, 10, 20)) }}>
-          <div style={{ fontFamily: F.mono, fontSize: 24, color: C.red, letterSpacing: 3 }}>UNE ÉLÈVE</div>
+          <div style={{ fontFamily: F.mono, fontSize: 24, color: C.red, letterSpacing: 3 }}>UNE ÉLÈVE DE 16 ANS</div>
           <div style={{ fontFamily: F.title, fontWeight: 800, fontSize: 84, color: C.white, lineHeight: 1 }}>TERMINALE D</div>
           <div style={{ fontFamily: F.text, fontSize: 30, color: C.dim, marginTop: 14, lineHeight: 1.3 }}>dénonce une mesure de l'administration du lycée</div>
         </div>
@@ -167,6 +245,9 @@ export const S03Video: React.FC<P> = ({ sc }) => {
         </div>
         <div style={{ position: "absolute", left: 480, top: 760, opacity: appear(frame, gateAt - 6, 8) }}>
           <GateGraphic p={gateP} width={300} height={220} />
+        </div>
+        <div style={{ position: "absolute", left: SAFE.left, top: SAFE.top - 10, ...rise(appear(frame, vid + f(1.8), 16), 20) }}>
+          <Chip mono color={C.red}>VIDÉO PUBLIÉE LE LUNDI 16 NOVEMBRE 2026</Chip>
         </div>
         {/* Semaine : une journée disparaît */}
         <div style={{ position: "absolute", left: SAFE.left, top: 1040, display: "flex", gap: 14, opacity: appear(frame, calAt, 16) }}>
@@ -241,7 +322,6 @@ export const S04Investigation: React.FC<P> = ({ sc }) => {
   const vir = segFrame(sc, "virale");
   const rea = segFrame(sc, "reactions");
   const q = segFrame(sc, "question");
-  const jour = segFrame(sc, "journal");
   const voici = segFrame(sc, "voici");
   // réseau de propagation
   const nodes = Array.from({ length: 26 }).map((_, i) => {
@@ -251,8 +331,7 @@ export const S04Investigation: React.FC<P> = ({ sc }) => {
   });
   const netOut = 1 - appear(frame, q - 4, 14);
   const dates = ["16 NOV", "17 NOV", "18 NOV"];
-  const qP = between(frame, q, jour - 2, 10);
-  const jP = appear(frame, jour, 10);
+  const qP = between(frame, q, voici - 2, 10);
   return (
     <Backdrop>
       <div style={{ opacity: netOut }}>
@@ -288,30 +367,11 @@ export const S04Investigation: React.FC<P> = ({ sc }) => {
       <div style={{ position: "absolute", left: SAFE.left, top: 560, width: CONTENT_W, opacity: qP }}>
         <DocumentaryTitle at={q} lines={[{ text: "MAIS QUE S'EST-IL", size: 120 }, { text: "RÉELLEMENT PASSÉ ?", size: 120, color: C.amber }]} />
       </div>
-      {/* Le journal */}
-      <div style={{ opacity: jP }}>
-        <div style={{ position: "absolute", left: 420, top: 250 }}>
-          <NewspaperReveal at={jour} width={500} rotate={4} />
-        </div>
-        <div style={{ position: "absolute", left: SAFE.left, top: 300, width: 400 }}>
-          <DocumentaryTitle
-            at={jour + 8}
-            stagger={8}
-            lines={[
-              { text: "L'ÉLÉPHANT", size: 84 },
-              { text: "DÉCHAÎNÉ", size: 84, color: C.red },
-              { text: "INVESTIGATION", size: 30, font: "mono", color: C.white, weight: 500 },
-              { text: "23 NOV. 2026", size: 30, font: "mono", color: C.dim, weight: 500 },
-            ]}
-          />
-        </div>
-        <div style={{ position: "absolute", left: SAFE.left, top: 1040, width: CONTENT_W, ...rise(appear(frame, jour + f(3.6), 20)) }}>
-          <div style={{ fontFamily: F.mono, fontSize: 22, color: C.dim, letterSpacing: 3 }}>ÉDITION SPÉCIALE · YAMOUSSOUKRO & ABIDJAN</div>
-          <div style={{ fontFamily: F.title, fontWeight: 800, fontSize: 70, color: C.white, lineHeight: 1.05, marginTop: 8 }}>« LES MYSTÈRES DU PORTAIL FERMÉ »</div>
-        </div>
-      </div>
       {/* 7 révélations */}
-      <div style={{ position: "absolute", left: SAFE.left, top: 1235, display: "flex", gap: 10 }}>
+      <div style={{ position: "absolute", left: SAFE.left, top: 560, width: CONTENT_W, opacity: appear(frame, voici, 10) }}>
+        <DocumentaryTitle at={voici} lines={[{ text: "7 RÉVÉLATIONS", size: 150 }, { text: "SELON L'ÉLÉPHANT DÉCHAÎNÉ", size: 52, color: C.dim, weight: 700 }]} />
+      </div>
+      <div style={{ position: "absolute", left: SAFE.left, top: 900, display: "flex", gap: 10 }}>
         {Array.from({ length: 7 }).map((_, i) => (
           <div
             key={i}
@@ -333,7 +393,6 @@ export const S04Investigation: React.FC<P> = ({ sc }) => {
           </div>
         ))}
       </div>
-      <SourceReference pages="p. 1" at={jour} />
     </Backdrop>
   );
 };

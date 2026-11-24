@@ -2,9 +2,9 @@
   "title": "Lycée Mamie Adjoua — Les mystères du portail fermé",
   "fps": 30,
   "resolution": "1080x1920",
-  "total_seconds": 552.933,
+  "total_seconds": 537.633,
   "timing_source": "estimation (voix-off absente)",
-  "narration_words": 1075,
+  "narration_words": 1044,
   "scenes": [
     {
       "id": "s00",
@@ -17,68 +17,62 @@
     },
     {
       "id": "s01",
-      "name": "L'accroche",
+      "name": "Hook — l'affaire et l'investigation",
       "start": "00:00:01.600",
-      "end": "00:00:14.933",
-      "duration_s": 13.333,
+      "end": "00:00:20.967",
+      "duration_s": 19.367,
       "source_pages": [],
       "narration": [
-        "Depuis plusieurs jours, une affaire secoue le monde éducatif ivoirien et suscite de vives réactions sur les réseaux sociaux."
+        "Depuis plusieurs jours, une affaire impliquant le lycée d'excellence Mamie Adjoua de Yamoussoukro défraye la chronique.",
+        "Le journal L'Éléphant Déchaîné a mené l'enquête, et ses révélations soulèvent de nombreuses interrogations.",
+        "Reste connecté, je te résume les résultats de cette investigation en vidéo."
       ]
     },
     {
       "id": "s02",
-      "name": "Le contexte national",
-      "start": "00:00:14.933",
-      "end": "00:00:33.766",
-      "duration_s": 18.833,
-      "source_pages": [
-        2,
-        3
-      ],
-      "narration": [
-        "Au cœur de cette polémique : le lycée d'excellence Mamie Adjoua de Yamoussoukro, sa nouvelle proviseure, une élève de seize ans et un mystérieux projet de transport scolaire.",
-        "Tout est parti d'une vidéo publiée le lundi 16 novembre 2026."
-      ]
+      "name": "Carton d'ouverture",
+      "start": "00:00:20.967",
+      "end": "00:00:24.567",
+      "duration_s": 3.6,
+      "source_pages": [],
+      "narration": []
     },
     {
       "id": "s03",
       "name": "La vidéo qui déclenche la polémique",
-      "start": "00:00:33.767",
-      "end": "00:01:04.034",
-      "duration_s": 30.267,
+      "start": "00:00:24.567",
+      "end": "00:01:02.800",
+      "duration_s": 38.233,
       "source_pages": [
         2,
         3
       ],
       "narration": [
-        "Dans cette vidéo, une élève de Terminale D dénonce une mesure de l'administration du lycée qui consiste à interdire l'accès à l'établissement aux élèves arrivant après 7 heures 30, les privant ainsi de toute une journée de cours.",
-        "Mais la jeune fille va plus loin.",
+        "Tout est parti d'une vidéo publiée le lundi 16 novembre 2026 par une élève de Terminale D, âgée de seize ans.",
+        "Dans cette vidéo, elle dénonce une mesure de l'administration du lycée qui consiste à interdire l'accès à l'établissement aux élèves arrivant après 7 heures 30, les privant ainsi de toute une journée de cours.",
+        "Mais la jeune fille va plus loin…",
         "Elle soupçonne un lien entre cette mesure disciplinaire et la mise en place d'un service de transport scolaire payant avec la SOTRA."
       ]
     },
     {
       "id": "s04",
       "name": "L'investigation journalistique",
-      "start": "00:01:04.033",
-      "end": "00:01:39.000",
-      "duration_s": 34.967,
-      "source_pages": [
-        1
-      ],
+      "start": "00:01:02.800",
+      "end": "00:01:23.700",
+      "duration_s": 20.9,
+      "source_pages": [],
       "narration": [
         "En quelques heures, la vidéo devient virale.",
         "Les réactions se multiplient. L'administration du lycée et la Direction régionale de l'Éducation nationale montent au créneau pour apporter leur version des faits.",
         "Mais que s'est-il réellement passé ?",
-        "Dans son édition spéciale du lundi 23 novembre 2026, intitulée « Les mystères du portail fermé », le journal d'investigation L'Éléphant Déchaîné publie les résultats d'une enquête menée à Yamoussoukro et à Abidjan.",
         "Voici ce que révèle cette investigation."
       ]
     },
     {
       "id": "s05",
       "name": "Révélation 1",
-      "start": "00:01:39.000",
-      "end": "00:02:26.200",
+      "start": "00:01:23.700",
+      "end": "00:02:10.900",
       "duration_s": 47.2,
       "source_pages": [
         3,
@@ -97,8 +91,8 @@
     {
       "id": "s06",
       "name": "Révélation 2",
-      "start": "00:02:26.200",
-      "end": "00:03:14.967",
+      "start": "00:02:10.900",
+      "end": "00:02:59.667",
       "duration_s": 48.767,
       "source_pages": [
         4,
@@ -117,8 +111,8 @@
     {
       "id": "s07",
       "name": "Révélation 3",
-      "start": "00:03:14.967",
-      "end": "00:04:04.834",
+      "start": "00:02:59.667",
+      "end": "00:03:49.534",
       "duration_s": 49.867,
       "source_pages": [
         2,
@@ -140,8 +134,8 @@
     {
       "id": "s08",
       "name": "Révélation 4",
-      "start": "00:04:04.833",
-      "end": "00:04:44.500",
+      "start": "00:03:49.533",
+      "end": "00:04:29.200",
       "duration_s": 39.667,
       "source_pages": [
         6
@@ -157,8 +151,8 @@
     {
       "id": "s09",
       "name": "Révélation 5",
-      "start": "00:04:44.500",
-      "end": "00:05:53.467",
+      "start": "00:04:29.200",
+      "end": "00:05:38.167",
       "duration_s": 68.967,
       "source_pages": [
         8
@@ -182,8 +176,8 @@
     {
       "id": "s10",
       "name": "Révélation 6",
-      "start": "00:05:53.467",
-      "end": "00:06:21.034",
+      "start": "00:05:38.167",
+      "end": "00:06:05.734",
       "duration_s": 27.567,
       "source_pages": [
         7
@@ -198,8 +192,8 @@
     {
       "id": "s11",
       "name": "Révélation 7",
-      "start": "00:06:21.033",
-      "end": "00:07:02.233",
+      "start": "00:06:05.733",
+      "end": "00:06:46.933",
       "duration_s": 41.2,
       "source_pages": [
         8
@@ -216,8 +210,8 @@
     {
       "id": "s12",
       "name": "Chronologie",
-      "start": "00:07:02.233",
-      "end": "00:07:23.233",
+      "start": "00:06:46.933",
+      "end": "00:07:07.933",
       "duration_s": 21.0,
       "source_pages": [],
       "narration": []
@@ -225,8 +219,8 @@
     {
       "id": "s13",
       "name": "Les questions sans réponse",
-      "start": "00:07:23.233",
-      "end": "00:08:06.166",
+      "start": "00:07:07.933",
+      "end": "00:07:50.866",
       "duration_s": 42.933,
       "source_pages": [],
       "narration": [
@@ -243,8 +237,8 @@
     {
       "id": "s14",
       "name": "Conclusion journalistique",
-      "start": "00:08:06.167",
-      "end": "00:08:44.934",
+      "start": "00:07:50.867",
+      "end": "00:08:29.634",
       "duration_s": 38.767,
       "source_pages": [],
       "narration": [
@@ -258,8 +252,8 @@
     {
       "id": "s15",
       "name": "Signature finale",
-      "start": "00:08:44.933",
-      "end": "00:08:53.900",
+      "start": "00:08:29.633",
+      "end": "00:08:38.600",
       "duration_s": 8.967,
       "source_pages": [],
       "narration": [
@@ -270,8 +264,8 @@
     {
       "id": "s17",
       "name": "Appel à l'abonnement",
-      "start": "00:08:53.900",
-      "end": "00:09:02.933",
+      "start": "00:08:38.600",
+      "end": "00:08:47.633",
       "duration_s": 9.033,
       "source_pages": [],
       "narration": [
@@ -282,8 +276,8 @@
     {
       "id": "s16",
       "name": "Sources et crédits",
-      "start": "00:09:02.933",
-      "end": "00:09:12.933",
+      "start": "00:08:47.633",
+      "end": "00:08:57.633",
       "duration_s": 10.0,
       "source_pages": [
         1,

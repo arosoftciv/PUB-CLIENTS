@@ -1,26 +1,26 @@
 {
   "master": {
-    "input_i": "-25.97",
-    "input_tp": "-3.10",
-    "input_lra": "11.80",
-    "input_thresh": "-36.12",
-    "output_i": "-14.39",
+    "input_i": "-25.86",
+    "input_tp": "-4.33",
+    "input_lra": "11.60",
+    "input_thresh": "-35.96",
+    "output_i": "-14.46",
     "output_tp": "-1.00",
-    "output_lra": "8.70",
-    "output_thresh": "-24.47",
-    "normalization_type": "dynamic",
-    "target_offset": "0.39"
-  },
-  "teaser": {
-    "input_i": "-16.92",
-    "input_tp": "-3.10",
-    "input_lra": "13.70",
-    "input_thresh": "-27.68",
-    "output_i": "-13.98",
-    "output_tp": "-1.00",
-    "output_lra": "6.40",
+    "output_lra": "8.80",
     "output_thresh": "-24.50",
     "normalization_type": "dynamic",
-    "target_offset": "-0.02"
+    "target_offset": "0.46"
+  },
+  "teaser": {
+    "input_i": "-16.54",
+    "input_tp": "-3.10",
+    "input_lra": "10.60",
+    "input_thresh": "-27.23",
+    "output_i": "-14.00",
+    "output_tp": "-1.00",
+    "output_lra": "2.30",
+    "output_thresh": "-24.48",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.00"
   }
 }

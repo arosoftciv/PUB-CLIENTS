@@ -6,13 +6,13 @@ Date : 24 novembre 2026 · Version : maquette finale v1, **sans voix-off**
 
 | Point | Résultat |
 |---|---|
-| Durée | 9 min 13 s (timing **estimé** : 1 075 mots à 147 mots/min, plus les pauses, la chronologie et le générique) |
+| Durée | 8 min 58 s (timing **estimé** : 1 044 mots à 147 mots/min, plus les pauses, la chronologie et le générique) |
 | Format | 1080 × 1920, 30 i/s, H.264 + AAC 48 kHz. Version 4K 2160 × 3840 rendue nativement (`--scale=2`) |
 | Loudness | -14,4 LUFS intégré. Crête vraie -0,9 dBTP après encodage AAC (-1,0 dBTP sur le master WAV) |
 | Captures de contrôle | 102 images (3 à 13 par scène) dans `output/qc/`, toutes vérifiées visuellement |
 
 **Écart par rapport au brief :** la durée cible de 5 à 6 minutes ne peut pas être tenue avec le script fourni
-(1 075 mots). Le brief interdit d'accélérer la narration ; il faut donc raccourcir le texte (voir § 6).
+(1 044 mots). Le brief interdit d'accélérer la narration ; il faut donc raccourcir le texte (voir § 6).
 
 ## 2. Fidélité et déontologie
 
@@ -41,6 +41,24 @@ Date : 24 novembre 2026 · Version : maquette finale v1, **sans voix-off**
   Pour retirer toutes les captures de personnes : `USE_PEOPLE_CAPTURES = false` dans `src/data/assets.ts`.
 
 Les jours de la semaine ont été vérifiés au calendrier : jeudi 22/10, lundi 16/11, vendredi 20/11 et lundi 23/11/2026 sont exacts.
+
+## 2 ter. Nouvelle accroche (révision client)
+
+- Le hook S01 (19,4 s, estimé) suit exactement le texte fourni, en 3 séquences synchronisées sur la voix-off :
+  1. Photo du portail, mouvement de caméra lent, notifications, bulles et icônes génériques (sans texte ni chiffre
+     inventés, étiquetées « Reconstitution »). Textes : LYCÉE MAMIE ADJOUA / YAMOUSSOUKRO / UNE AFFAIRE QUI DÉFRAYE LA CHRONIQUE.
+  2. Sur « Le journal L'Éléphant Déchaîné… » : visuel du journal avec zoom progressif, cartes photo qui défilent,
+     bruits de papier. Texte : L'ÉLÉPHANT DÉCHAÎNÉ / INVESTIGATION · 23 NOVEMBRE 2026.
+  3. Sur « Reste connecté… » : montage rapide 07:30 → portail → bus → 27 000 FCFA ?, sous le titre CE QUE RÉVÈLE L'INVESTIGATION.
+- Le carton d'ouverture S02 (3,6 s) remplace l'ancien contexte avec carte. Le logo AroSoft n'est pas affiché :
+  il est toujours absent du projet.
+- S03 commence par « Tout est parti d'une vidéo… par une élève de Terminale D, âgée de seize ans. »
+- Redondances supprimées : l'ancienne scène de contexte (carte et présentation du lycée) et la deuxième présentation du journal en S04.
+  S04 se termine désormais sur « 7 RÉVÉLATIONS ».
+- **Ressources du PDF toujours absentes** (une réelle, pages, photos des bus et de la cérémonie). Elles sont remplacées par :
+  le visuel n° 1 fourni, les photos du portail et un schéma de bus étiqueté. Les emplacements `busPhoto` et
+  `newspaperFrontPage` les intégreront automatiquement.
+- Sous-titres : dates, heures et noms propres ne sont plus coupés entre deux cartons.
 
 ## 2 bis. Appel à l'abonnement (ajout client)
 

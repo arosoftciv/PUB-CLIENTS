@@ -1,6 +1,6 @@
 {
  "fps": 30,
- "total": 552.933,
+ "total": 537.633,
  "estimated": true,
  "voiceScenes": [],
  "scenes": [
@@ -16,53 +16,56 @@
   },
   {
    "id": "s01",
-   "name": "L'accroche",
+   "name": "Hook — l'affaire et l'investigation",
    "start": 1.6,
-   "duration": 13.333,
-   "voStart": 4.2,
+   "duration": 19.367,
+   "voStart": 0.4,
    "voFile": null,
    "pages": [],
    "segments": [
     {
-     "id": "hook",
-     "start": 4.2,
-     "end": 11.955,
-     "text": "Depuis plusieurs jours, une affaire secoue le monde éducatif ivoirien et suscite de vives réactions sur les réseaux sociaux."
+     "id": "chronique",
+     "start": 0.4,
+     "end": 6.931,
+     "text": "Depuis plusieurs jours, une affaire impliquant le lycée d'excellence Mamie Adjoua de Yamoussoukro défraye la chronique."
+    },
+    {
+     "id": "enquete",
+     "start": 7.431,
+     "end": 13.145,
+     "text": "Le journal L'Éléphant Déchaîné a mené l'enquête, et ses révélations soulèvent de nombreuses interrogations."
+    },
+    {
+     "id": "resume",
+     "start": 13.645,
+     "end": 18.543,
+     "text": "Reste connecté, je te résume les résultats de cette investigation en vidéo."
     }
    ]
   },
   {
    "id": "s02",
-   "name": "Le contexte national",
-   "start": 14.933,
-   "duration": 18.833,
-   "voStart": 0.8,
+   "name": "Carton d'ouverture",
+   "start": 20.967,
+   "duration": 3.6,
+   "voStart": 0,
    "voFile": null,
-   "pages": [
-    2,
-    3
-   ],
+   "pages": [],
    "segments": [
     {
-     "id": "lycee",
-     "start": 0.8,
-     "end": 11.82,
-     "text": "Au cœur de cette polémique : le lycée d'excellence Mamie Adjoua de Yamoussoukro, sa nouvelle proviseure, une élève de seize ans et un mystérieux projet de transport scolaire."
-    },
-    {
-     "id": "video",
-     "start": 12.32,
-     "end": 17.627,
-     "text": "Tout est parti d'une vidéo publiée le lundi 16 novembre 2026."
+     "id": "carton",
+     "start": 0,
+     "end": 3.6,
+     "text": null
     }
    ]
   },
   {
    "id": "s03",
    "name": "La vidéo qui déclenche la polémique",
-   "start": 33.767,
-   "duration": 30.267,
-   "voStart": 0.6,
+   "start": 24.567,
+   "duration": 38.233,
+   "voStart": 0.3,
    "voFile": null,
    "pages": [
     2,
@@ -70,21 +73,27 @@
    ],
    "segments": [
     {
+     "id": "video",
+     "start": 0.3,
+     "end": 9.688,
+     "text": "Tout est parti d'une vidéo publiée le lundi 16 novembre 2026 par une élève de Terminale D, âgée de seize ans."
+    },
+    {
      "id": "denonce",
-     "start": 0.6,
-     "end": 16.11,
-     "text": "Dans cette vidéo, une élève de Terminale D dénonce une mesure de l'administration du lycée qui consiste à interdire l'accès à l'établissement aux élèves arrivant après 7 heures 30, les privant ainsi de toute une journée de cours."
+     "start": 10.188,
+     "end": 24.065,
+     "text": "Dans cette vidéo, elle dénonce une mesure de l'administration du lycée qui consiste à interdire l'accès à l'établissement aux élèves arrivant après 7 heures 30, les privant ainsi de toute une journée de cours."
     },
     {
      "id": "plusloin",
-     "start": 16.71,
-     "end": 19.567,
-     "text": "Mais la jeune fille va plus loin."
+     "start": 24.665,
+     "end": 27.522,
+     "text": "Mais la jeune fille va plus loin…"
     },
     {
      "id": "soupcon",
-     "start": 20.067,
-     "end": 29.047,
+     "start": 28.022,
+     "end": 37.002,
      "text": "Elle soupçonne un lien entre cette mesure disciplinaire et la mise en place d'un service de transport scolaire payant avec la SOTRA."
     }
    ]
@@ -92,13 +101,11 @@
   {
    "id": "s04",
    "name": "L'investigation journalistique",
-   "start": 64.033,
-   "duration": 34.967,
+   "start": 62.8,
+   "duration": 20.9,
    "voStart": 0.6,
    "voFile": null,
-   "pages": [
-    1
-   ],
+   "pages": [],
    "segments": [
     {
      "id": "virale",
@@ -119,15 +126,9 @@
      "text": "Mais que s'est-il réellement passé ?"
     },
     {
-     "id": "journal",
-     "start": 16.636,
-     "end": 30.105,
-     "text": "Dans son édition spéciale du lundi 23 novembre 2026, intitulée « Les mystères du portail fermé », le journal d'investigation L'Éléphant Déchaîné publie les résultats d'une enquête menée à Yamoussoukro et à Abidjan."
-    },
-    {
      "id": "voici",
-     "start": 30.705,
-     "end": 33.154,
+     "start": 16.636,
+     "end": 19.085,
      "text": "Voici ce que révèle cette investigation."
     }
    ]
@@ -135,7 +136,7 @@
   {
    "id": "s05",
    "name": "Révélation 1",
-   "start": 99.0,
+   "start": 83.7,
    "duration": 47.2,
    "voStart": 1.4,
    "voFile": null,
@@ -191,7 +192,7 @@
   {
    "id": "s06",
    "name": "Révélation 2",
-   "start": 146.2,
+   "start": 130.9,
    "duration": 48.767,
    "voStart": 1.4,
    "voFile": null,
@@ -247,7 +248,7 @@
   {
    "id": "s07",
    "name": "Révélation 3",
-   "start": 194.967,
+   "start": 179.667,
    "duration": 49.867,
    "voStart": 1.4,
    "voFile": null,
@@ -311,7 +312,7 @@
   {
    "id": "s08",
    "name": "Révélation 4",
-   "start": 244.833,
+   "start": 229.533,
    "duration": 39.667,
    "voStart": 1.4,
    "voFile": null,
@@ -354,7 +355,7 @@
   {
    "id": "s09",
    "name": "Révélation 5",
-   "start": 284.5,
+   "start": 269.2,
    "duration": 68.967,
    "voStart": 1.4,
    "voFile": null,
@@ -445,7 +446,7 @@
   {
    "id": "s10",
    "name": "Révélation 6",
-   "start": 353.467,
+   "start": 338.167,
    "duration": 27.567,
    "voStart": 1.4,
    "voFile": null,
@@ -482,7 +483,7 @@
   {
    "id": "s11",
    "name": "Révélation 7",
-   "start": 381.033,
+   "start": 365.733,
    "duration": 41.2,
    "voStart": 1.4,
    "voFile": null,
@@ -531,7 +532,7 @@
   {
    "id": "s12",
    "name": "Chronologie",
-   "start": 422.233,
+   "start": 406.933,
    "duration": 21.0,
    "voStart": 0,
    "voFile": null,
@@ -590,7 +591,7 @@
   {
    "id": "s13",
    "name": "Les questions sans réponse",
-   "start": 443.233,
+   "start": 427.933,
    "duration": 42.933,
    "voStart": 0.8,
    "voFile": null,
@@ -649,7 +650,7 @@
   {
    "id": "s14",
    "name": "Conclusion journalistique",
-   "start": 486.167,
+   "start": 470.867,
    "duration": 38.767,
    "voStart": 0.6,
    "voFile": null,
@@ -690,7 +691,7 @@
   {
    "id": "s15",
    "name": "Signature finale",
-   "start": 524.933,
+   "start": 509.633,
    "duration": 8.967,
    "voStart": 1.2,
    "voFile": null,
@@ -713,7 +714,7 @@
   {
    "id": "s17",
    "name": "Appel à l'abonnement",
-   "start": 533.9,
+   "start": 518.6,
    "duration": 9.033,
    "voStart": 0.5,
    "voFile": null,
@@ -736,7 +737,7 @@
   {
    "id": "s16",
    "name": "Sources et crédits",
-   "start": 542.933,
+   "start": 527.633,
    "duration": 10.0,
    "voStart": 0,
    "voFile": null,
@@ -765,62 +766,62 @@
   "clips": [
    {
     "scene": "s01",
-    "seg": "hook",
-    "srcStart": 5.55,
+    "seg": "chronique",
+    "srcStart": 1.75,
     "start": 0.0,
-    "duration": 8.455,
-    "text": "Depuis plusieurs jours, une affaire secoue le monde éducatif ivoirien et suscite de vives réactions sur les réseaux sociaux."
+    "duration": 7.231,
+    "text": "Depuis plusieurs jours, une affaire impliquant le lycée d'excellence Mamie Adjoua de Yamoussoukro défraye la chronique."
+   },
+   {
+    "scene": "s01",
+    "seg": "enquete",
+    "srcStart": 8.781,
+    "start": 7.231,
+    "duration": 6.414,
+    "text": "Le journal L'Éléphant Déchaîné a mené l'enquête, et ses révélations soulèvent de nombreuses interrogations."
    },
    {
     "scene": "s03",
     "seg": "soupcon",
-    "srcStart": 53.584,
-    "start": 8.455,
+    "srcStart": 52.339,
+    "start": 13.645,
     "duration": 9.68,
     "text": "Elle soupçonne un lien entre cette mesure disciplinaire et la mise en place d'un service de transport scolaire payant avec la SOTRA."
    },
    {
     "scene": "s06",
-    "seg": "tarif",
-    "srcStart": 161.361,
-    "start": 18.135,
-    "duration": 5.598,
-    "text": "Le tarif mensuel est fixé à vingt-sept mille francs CFA par élève."
-   },
-   {
-    "scene": "s06",
     "seg": "drena",
-    "srcStart": 179.138,
-    "start": 23.733,
+    "srcStart": 163.838,
+    "start": 23.325,
     "duration": 10.904,
     "text": "Mais lorsque la polémique éclate, le directeur régional de l'Éducation nationale affirme qu'aucune convention n'a été signée et que le projet n'a jamais véritablement démarré."
    },
    {
     "scene": "s07",
     "seg": "constat",
-    "srcStart": 218.983,
-    "start": 34.637,
+    "srcStart": 203.683,
+    "start": 34.229,
     "duration": 8.864,
     "text": "Le vendredi 20 novembre, à 6 heures 54, les journalistes constatent la présence de deux bus spéciaux devant le lycée."
    },
    {
     "scene": "s07",
     "seg": "resume",
-    "srcStart": 234.627,
-    "start": 43.501,
+    "srcStart": 219.327,
+    "start": 43.093,
     "duration": 6.823,
     "text": "Un service présenté comme n'ayant jamais démarré, mais dont les bus transportent effectivement des élèves."
    },
    {
     "scene": "s07",
     "seg": "contradiction",
-    "srcStart": 241.35,
-    "start": 50.324,
+    "srcStart": 226.05,
+    "start": 49.916,
     "duration": 1.924,
     "text": "Une contradiction majeure."
    }
   ],
   "outro": 6.5,
-  "total": 61.248
+  "total": 60.84
  }
 }

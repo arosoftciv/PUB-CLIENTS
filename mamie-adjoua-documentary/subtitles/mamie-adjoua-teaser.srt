@@ -1,69 +1,70 @@
 1
-00:00:02,750 --> 00:00:04,212
-Depuis plusieurs jours,
+00:00:02,750 --> 00:00:06,514
+Depuis plusieurs jours, une affaire
+impliquant le lycée d'excellence
 
 2
-00:00:04,212 --> 00:00:07,772
-une affaire secoue le monde
-éducatif ivoirien et suscite
+00:00:06,514 --> 00:00:09,281
+Mamie Adjoua de Yamoussoukro
+défraye la chronique.
 
 3
-00:00:07,772 --> 00:00:10,505
-de vives réactions sur
-les réseaux sociaux.
+00:00:09,981 --> 00:00:12,568
+Le journal L'Éléphant Déchaîné
+a mené l'enquête,
 
 4
-00:00:11,205 --> 00:00:15,935
+00:00:12,568 --> 00:00:15,695
+et ses révélations soulèvent
+de nombreuses interrogations.
+
+5
+00:00:16,395 --> 00:00:21,125
 Elle soupçonne un lien entre cette
 mesure disciplinaire et la mise en
 
-5
-00:00:15,935 --> 00:00:20,185
+6
+00:00:21,125 --> 00:00:25,375
 place d'un service de transport
 scolaire payant avec la SOTRA.
 
-6
-00:00:20,885 --> 00:00:25,783
-Le tarif mensuel est fixé à
-vingt-sept mille francs CFA par élève.
-
 7
-00:00:26,483 --> 00:00:28,429
+00:00:26,075 --> 00:00:28,021
 Mais lorsque la polémique éclate,
 
 8
-00:00:28,429 --> 00:00:32,853
+00:00:28,021 --> 00:00:32,445
 le directeur régional de l'Éducation
 nationale affirme qu'aucune convention
 
 9
-00:00:32,853 --> 00:00:36,687
+00:00:32,445 --> 00:00:36,279
 n'a été signée et que le projet
 n'a jamais véritablement démarré.
 
 10
-00:00:37,387 --> 00:00:40,156
+00:00:36,979 --> 00:00:39,748
 Le vendredi 20 novembre, à 6 heures 54,
 
 11
-00:00:40,156 --> 00:00:43,137
+00:00:39,748 --> 00:00:42,729
 les journalistes
 constatent la présence de
 
 12
-00:00:43,137 --> 00:00:45,551
+00:00:42,729 --> 00:00:45,143
 deux bus spéciaux devant le lycée.
 
 13
-00:00:46,251 --> 00:00:49,108
+00:00:45,843 --> 00:00:48,700
 Un service présenté comme
 n'ayant jamais démarré,
 
 14
-00:00:49,108 --> 00:00:52,374
+00:00:48,700 --> 00:00:51,966
 mais dont les bus transportent
 effectivement des élèves.
 
 15
-00:00:53,074 --> 00:00:54,298
+00:00:52,666 --> 00:00:53,890
 Une contradiction majeure.

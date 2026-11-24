@@ -142,7 +142,7 @@ def build_timeline() -> dict:
 
 # ---------------------------------------------------------------- sous-titres
 def _balance(text: str, max_line: int) -> str:
-    ws = text.split()
+    ws = text.split(" ")
     if len(text) <= max_line or len(ws) < 2:
         return text
     best, best_i = 10**9, 1
@@ -157,13 +157,20 @@ def _balance(text: str, max_line: int) -> str:
 def chunk_sentence(text: str, max_line: int = 40) -> list[str]:
     """Découpe en cues de 2 lignes max, en privilégiant la ponctuation."""
     max_cue = max_line * 2 - 4
+    # dates et heures insécables (« 16 novembre 2026 », « 7 heures 30 »)
+    text = re.sub(r"(\d+) (janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)( \d{4})?",
+                  lambda m: m.group(0).replace(" ", "\u00a0"), text)
+    text = re.sub(r"(\d+) heures (\d+)", lambda m: m.group(0).replace(" ", "\u00a0"), text)
+    text = re.sub(r"(lundi|mardi|mercredi|jeudi|vendredi) (\d)", lambda m: m.group(0).replace(" ", "\u00a0"), text)
+    for name in ("Mamie Adjoua", "L'Éléphant Déchaîné", "Terminale D", "Boulevard du Gabon"):
+        text = text.replace(name, name.replace(" ", "\u00a0"))
     clauses = [c.strip() for c in re.split(r"(?<=[,:;])\s+", text) if c.strip()]
     pieces = []
     for c in clauses:
         if len(c) <= max_cue:
             pieces.append(c)
             continue
-        ws, cur = c.split(), ""
+        ws, cur = c.split(" "), ""
         n_parts = math.ceil(len(c) / max_cue)
         target = len(c) / n_parts
         for w in ws:
@@ -184,7 +191,7 @@ def chunk_sentence(text: str, max_line: int = 40) -> list[str]:
             cur = pc
     if cur:
         cues.append(cur)
-    return [_balance(c, max_line) for c in cues]
+    return [_balance(c, max_line).replace("\u00a0", " ") for c in cues]
 
 
 def build_cues(tl: dict, offset_scene: str | None = None) -> list[dict]:
@@ -223,9 +230,9 @@ def write_subs(cues: list[dict], name: str) -> None:
 
 # ---------------------------------------------------------------- teaser
 TEASER = [  # (scene, segment ids) — contexte + contradictions principales
-    ("s01", ["hook"]),
+    ("s01", ["chronique", "enquete"]),
     ("s03", ["soupcon"]),
-    ("s06", ["tarif", "drena"]),
+    ("s06", ["drena"]),
     ("s07", ["constat", "resume", "contradiction"]),
 ]
 
@@ -346,7 +353,7 @@ SFX = {
 
 # intensité musicale par scène (0..1), pulsation on/off
 MOOD = {
-    "s00": (0.2, 0), "s01": (0.0, 0), "s02": (0.45, 0), "s03": (0.5, 1), "s04": (0.6, 1),
+    "s00": (0.2, 0), "s01": (0.55, 1), "s02": (0.7, 0), "s03": (0.5, 1), "s04": (0.6, 1),
     "s05": (0.55, 1), "s06": (0.6, 1), "s07": (0.75, 1), "s08": (0.6, 1), "s09": (0.6, 1),
     "s10": (0.55, 1), "s11": (0.6, 1), "s12": (0.7, 1), "s13": (0.85, 1), "s14": (0.45, 0),
     "s15": (0.3, 0), "s17": (0.35, 0), "s16": (0.2, 0),
@@ -361,18 +368,19 @@ def cue_list(tl: dict) -> list[tuple[float, str, float]]:
         seg = {s["id"]: S + s["start"] for s in sc["segments"]}
         sid = sc["id"]
         if sid == "s01":
-            for k, x in enumerate(np.arange(0.4, 2.0, 0.5)):
-                cues.append((S + x, "tick" if k % 2 == 0 else "tock", 0.9))
-            cues += [(S + 2.0, "tick", 1.2), (S + 2.45, "gate", 1.0), (S + 3.6, "impact_soft", 0.8)]
+            ch, en, rs = seg["chronique"], seg["enquete"], seg["resume"]
+            cues += [(S + 0.05, "impact_soft", 0.7), (S + 0.3, "whoosh", 0.5)]
+            cues += [(ch + 2.6 + k * 0.45, "notif", 0.45 - k * 0.04) for k in range(5)]
+            cues += [(en - 0.1, "paper", 1.0), (en + 2.2, "paper", 0.6), (en + 3.4, "paper", 0.5)]
+            cues += [(rs + 0.15 + k * 0.85, "tick" if k == 0 else "blip", 0.7) for k in range(4)]
         elif sid == "s02":
-            cues += [(S + 0.1, "whoosh", 0.8), (seg["video"] + 0.6, "notif", 0.6), (seg["video"] + 1.3, "notif", 0.5),
-                     (seg["video"] + 1.8, "notif", 0.45), (seg["video"] + 2.2, "notif", 0.4)]
+            cues += [(S + 0.05, "impact", 0.9)]
         elif sid == "s03":
-            cues += [(seg["denonce"] + 3.4, "tick", 0.8), (seg["denonce"] + 5.4, "gate", 0.55),
+            cues += [(seg["video"] + 0.4, "notif", 0.5), (seg["denonce"] + 3.4, "tick", 0.8), (seg["denonce"] + 5.4, "gate", 0.55),
                      (seg["soupcon"] + 2.0, "whoosh", 0.7)]
         elif sid == "s04":
             cues += [(seg["virale"] + k * 0.35, "notif", 0.4) for k in range(5)]
-            cues += [(seg["journal"], "paper", 1.0), (seg["journal"] + 0.5, "impact_soft", 0.6), (seg["voici"], "whoosh", 0.6)]
+            cues += [(seg["voici"], "whoosh", 0.6)]
         elif sid in {"s05", "s06", "s07", "s08", "s09", "s10", "s11"}:
             cues += [(S + 0.15, "impact", 0.9), (S + 0.9, "whoosh", 0.4)]
             if sid == "s05":

@@ -7,7 +7,7 @@ import { TL, CUES, TEASER_CUES, f, SceneTiming } from "./data/timeline";
 import { FilmFinish } from "./components/base";
 import { SubtitleOverlay, DocumentaryTitle } from "./components/editorial";
 import { Cover } from "./scenes/Cover";
-import { S01Hook, S02Context, S03Video, S04Investigation } from "./scenes/intro";
+import { S01Hook, S02TitleCard, S03Video, S04Investigation } from "./scenes/intro";
 import { S05Revelation1, S06Revelation2, S07Revelation3, S08Revelation4, S09Revelation5, S10Revelation6, S11Revelation7 } from "./scenes/revelations";
 import { S12Chronology, S13Questions, S14Conclusion, S15Signature, S16Credits, S17CallToAction } from "./scenes/outro";
 import { appear } from "./animations/anim";
@@ -15,7 +15,7 @@ import { appear } from "./animations/anim";
 const SCENES: Record<string, React.FC<{ sc: SceneTiming }>> = {
   s00: () => <Cover grain={false} />,
   s01: S01Hook,
-  s02: S02Context,
+  s02: S02TitleCard,
   s03: S03Video,
   s04: S04Investigation,
   s05: S05Revelation1,

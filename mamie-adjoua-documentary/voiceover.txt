@@ -5,23 +5,21 @@ Prononciations : Yamoussoukro « Ya-mou-sou-kro » · Mamie Adjoua « Ma-mi A-dj
 SOTRA « So-tra » · COGES « Co-jesse » · Kpoussoussou : à vérifier localement.
 Les repères [Sxx] ne sont pas à lire. Un fichier audio par scène : public/audio/voiceover/sXX.wav
 
-[S01 — L'accroche]
-Depuis plusieurs jours, une affaire secoue le monde éducatif ivoirien et suscite de vives réactions sur les réseaux sociaux.
-
-[S02 — Le contexte national]
-Au cœur de cette polémique : le lycée d'excellence Mamie Adjoua de Yamoussoukro, sa nouvelle proviseure, une élève de seize ans et un mystérieux projet de transport scolaire.
-Tout est parti d'une vidéo publiée le lundi 16 novembre 2026.
+[S01 — Hook — l'affaire et l'investigation]
+Depuis plusieurs jours, une affaire impliquant le lycée d'excellence Mamie Adjoua de Yamoussoukro défraye la chronique.
+Le journal L'Éléphant Déchaîné a mené l'enquête, et ses révélations soulèvent de nombreuses interrogations.
+Reste connecté, je te résume les résultats de cette investigation en vidéo.
 
 [S03 — La vidéo qui déclenche la polémique]
-Dans cette vidéo, une élève de Terminale D dénonce une mesure de l'administration du lycée qui consiste à interdire l'accès à l'établissement aux élèves arrivant après 7 heures 30, les privant ainsi de toute une journée de cours.
-Mais la jeune fille va plus loin.
+Tout est parti d'une vidéo publiée le lundi 16 novembre 2026 par une élève de Terminale D, âgée de seize ans.
+Dans cette vidéo, elle dénonce une mesure de l'administration du lycée qui consiste à interdire l'accès à l'établissement aux élèves arrivant après 7 heures 30, les privant ainsi de toute une journée de cours.
+Mais la jeune fille va plus loin…
 Elle soupçonne un lien entre cette mesure disciplinaire et la mise en place d'un service de transport scolaire payant avec la SOTRA.
 
 [S04 — L'investigation journalistique]
 En quelques heures, la vidéo devient virale.
 Les réactions se multiplient. L'administration du lycée et la Direction régionale de l'Éducation nationale montent au créneau pour apporter leur version des faits.
 Mais que s'est-il réellement passé ?
-Dans son édition spéciale du lundi 23 novembre 2026, intitulée « Les mystères du portail fermé », le journal d'investigation L'Éléphant Déchaîné publie les résultats d'une enquête menée à Yamoussoukro et à Abidjan.
 Voici ce que révèle cette investigation.
 
 [S05 — Révélation 1]
