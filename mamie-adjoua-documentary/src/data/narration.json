@@ -431,41 +431,49 @@
     {
       "id": "s12",
       "name": "Chronologie",
-      "lead": 0,
-      "tail": 0,
+      "lead": 0.4,
+      "tail": 1.2,
       "pages": [],
       "segments": [
         {
           "id": "title",
-          "silent": 2.0
+          "t": "Reprenons la chronologie des faits.",
+          "pause": 0.5
         },
         {
           "id": "e1",
-          "silent": 2.6
+          "t": "Le 22 octobre, la mesure d'exclusion des retardataires est instaurée.",
+          "pause": 0.4
         },
         {
           "id": "e2",
-          "silent": 2.6
+          "t": "Le 2 novembre, le lycée annonce le démarrage du transport scolaire.",
+          "pause": 0.4
         },
         {
           "id": "e3",
-          "silent": 2.6
+          "t": "Le 3 novembre, des bus spéciaux sont mobilisés.",
+          "pause": 0.4
         },
         {
           "id": "e4",
-          "silent": 2.6
+          "t": "Le 16 novembre, l'élève publie sa vidéo.",
+          "pause": 0.4
         },
         {
           "id": "e5",
-          "silent": 2.6
+          "t": "Les 17 et 18 novembre, les autorités réagissent.",
+          "pause": 0.4
         },
         {
           "id": "e6",
-          "silent": 2.6
+          "t": "Le 20 novembre, les journalistes constatent un assouplissement de la mesure.",
+          "pause": 0.4
         },
         {
           "id": "e7",
-          "silent": 3.4
+          "t": "Et le 23 novembre, L'Éléphant Déchaîné publie son investigation.",
+          "pause": 0.6
         }
       ]
     },
@@ -592,8 +600,8 @@
     {
       "id": "s16",
       "name": "Sources et crédits",
-      "lead": 0,
-      "tail": 0,
+      "lead": 0.6,
+      "tail": 4.5,
       "pages": [
         1,
         2,
@@ -607,7 +615,8 @@
       "segments": [
         {
           "id": "credits",
-          "silent": 9.0
+          "t": "Cette vidéo est une adaptation de l'investigation publiée par L'Éléphant Déchaîné, dans son édition spéciale du 23 novembre 2026.",
+          "pause": 0.3
         }
       ]
     }

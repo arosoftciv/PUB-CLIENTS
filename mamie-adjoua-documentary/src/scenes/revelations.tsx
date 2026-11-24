@@ -4,7 +4,7 @@ import { interpolate, useCurrentFrame } from "remotion";
 import { C, F, SAFE, CONTENT_W, clamp, EASE } from "../styles/theme";
 import { appear, between, rise } from "../animations/anim";
 import { SceneTiming, segFrame, f } from "../data/timeline";
-import { Backdrop, Photo, SourceReference, ReconstitutionTag, Chip, Caption, Attribution } from "../components/base";
+import { Backdrop, Photo, PhotoCard, SourceReference, ReconstitutionTag, Chip, Caption, Attribution } from "../components/base";
 import {
   AnimatedClock,
   AnimatedCounter,
@@ -98,7 +98,9 @@ export const S05Revelation1: React.FC<P> = ({ sc }) => {
         <div style={{ position: "absolute", left: SAFE.left + 480, top: TOP + 360, opacity: appear(frame, gateClose - 10, 8) }}>
           <GateGraphic p={gP} width={360} height={240} />
         </div>
-        <Caption style={{ position: "absolute", left: SAFE.left, top: TOP + 632 }}>Photo : portail du lycée (fournie)</Caption>
+        <PhotoCard src={ASSETS.principalEvent} at={g("portail") + f(0.8)} label="La proviseure" pos="50% 22%"
+          style={{ right: SAFE.right, top: TOP + 24, width: 250, height: 330 }} />
+        <Caption style={{ position: "absolute", left: SAFE.left, top: TOP + 632 }}>Photos : portail du lycée, proviseure (fournies)</Caption>
         <div style={{ position: "absolute", left: SAFE.left, top: TOP + 690, width: CONTENT_W }}>
           <div style={{ fontFamily: F.title, fontWeight: 700, fontSize: 52, color: C.white, lineHeight: 1.1, ...rise(appear(frame, g("portail") + 20, 18)) }}>
             LA PROVISEURE SUPERVISE LA FERMETURE DU PORTAIL
@@ -258,15 +260,17 @@ export const S07Revelation3: React.FC<P> = ({ sc }) => {
     <Backdrop>
       <InvestigationChapter n={3} title="Les bus circulent bel et bien" settleAt={g("videoprov") - 14} />
       <Stage a={g("videoprov") - 4} b={g("pastout")}>
-        <div style={{ position: "absolute", left: SAFE.left, top: TOP + 20, width: CONTENT_W }}>
+        <PhotoCard src={ASSETS.principalEvent} at={g("videoprov")} label="La proviseure du lycée" credit="Photo fournie · prise de parole publique" contain
+          style={{ left: SAFE.left, top: TOP + 10, width: CONTENT_W, height: 420 }} />
+        <div style={{ position: "absolute", left: SAFE.left, top: TOP + 450, width: CONTENT_W }}>
           <EvidenceCard
-            at={g("videoprov")}
+            at={g("videoprov") + 10}
             kicker="Retrouvé par les journalistes"
             body="Une vidéo : la proviseure annonce publiquement la signature du partenariat avec la SOTRA."
             source={ASSETS.ceremonyPhoto ? undefined : "Image de la cérémonie : voir L'Éléphant Déchaîné, p. 4"}
           />
         </div>
-        <div style={{ position: "absolute", left: SAFE.left, top: TOP + 470, width: CONTENT_W, ...rise(appear(frame, g("publication"), 18)) }}>
+        <div style={{ position: "absolute", left: SAFE.left, top: TOP + 800, width: CONTENT_W, ...rise(appear(frame, g("publication"), 18)) }}>
           <div style={{ display: "flex", alignItems: "center", gap: 24 }}>
             <Chip mono color={C.red} style={{ fontSize: 40 }}>
               2 NOV.
@@ -365,8 +369,8 @@ export const S08Revelation4: React.FC<P> = ({ sc }) => {
       <Stage a={g("verse") - 4} b={g("educatrices")}>
         <FinancialFlow at={g("verse") + 6} questionAt={g("verse") + f(4)} top={TOP + 10} />
       </Stage>
-      <Stage a={g("educatrices")} b={g("circuit")}>
-        <div style={{ position: "absolute", left: SAFE.left, top: TOP + 40 }}>
+      <Stage a={g("educatrices")} b={g("admin")}>
+        <div style={{ position: "absolute", left: SAFE.left, top: TOP + 200 }}>
           <EvidenceCard
             at={g("educatrices")}
             accent={C.amber}
@@ -374,6 +378,10 @@ export const S08Revelation4: React.FC<P> = ({ sc }) => {
             body="Des éducatrices auraient multiplié les sollicitations auprès des élèves pour convaincre leurs parents de souscrire."
           />
         </div>
+      </Stage>
+      <Stage a={g("admin")} b={g("circuit")}>
+        <PhotoCard src={ASSETS.principalNCI} at={g("admin")} label="L'administration du lycée" credit="La proviseure · capture NCI" pos="40% 30%" accent={C.grey}
+          style={{ left: SAFE.left, top: TOP + 20, width: CONTENT_W, height: 470 }} />
         <div style={{ position: "absolute", left: SAFE.left, top: TOP + 520 }}>
           <EvidenceCard
             at={g("admin")}
@@ -417,10 +425,8 @@ export const S09Revelation5: React.FC<P> = ({ sc }) => {
         <div style={{ position: "absolute", left: SAFE.left, top: TOP, width: CONTENT_W, ...rise(appear(frame, g("antecedents"), 18)) }}>
           <div style={{ fontFamily: F.mono, fontSize: 24, color: C.grey, letterSpacing: 3 }}>DÉCLARATIONS DU DIRECTEUR RÉGIONAL · INTERVENTION TÉLÉVISÉE</div>
           <div style={{ display: "flex", gap: 24, marginTop: 26, alignItems: "center" }}>
-            <div style={{ width: 200, height: 250, background: "#C9B88F", borderRadius: "6px 30px 6px 6px", position: "relative", boxShadow: "0 20px 50px rgba(0,0,0,0.5)" }}>
-              <div style={{ position: "absolute", left: 20, top: 30, right: 20, fontFamily: F.mono, fontSize: 18, color: C.black }}>DOSSIER SCOLAIRE</div>
-              <div style={{ position: "absolute", left: 20, top: 70, width: 150, height: 24, background: C.black }} />
-              <div style={{ position: "absolute", left: 20, bottom: 20, fontFamily: F.mono, fontSize: 14, color: C.black }}>IDENTITÉ PROTÉGÉE</div>
+            <div style={{ width: 230, height: 290, position: "relative", flexShrink: 0 }}>
+              <PhotoCard src={ASSETS.studentPortrait} at={g("antecedents")} label="L'élève" pos="50% 25%" style={{ left: 0, top: 0, width: 230, height: 290 }} />
             </div>
             <div style={{ fontFamily: F.title, fontWeight: 700, fontSize: 52, color: C.white, lineHeight: 1.05, flex: 1 }}>« ANTÉCÉDENTS DISCIPLINAIRES » ALLÉGUÉS</div>
           </div>
@@ -522,6 +528,8 @@ export const S10Revelation6: React.FC<P> = ({ sc }) => {
             ]}
           />
         </div>
+        <PhotoCard src={ASSETS.principalEvent} at={a + f(3.5)} label="La proviseure" credit="y exerçait précédemment" pos="50% 22%"
+          style={{ left: SAFE.left, top: TOP + 470, width: 250, height: 340 }} />
         <div style={{ position: "absolute", left: SAFE.left, top: TOP + 860, width: CONTENT_W, ...rise(appear(frame, a + f(3.5), 18)) }}>
           <div style={{ fontFamily: F.mono, fontSize: 22, color: C.red, letterSpacing: 3 }}>ANCIEN ÉTABLISSEMENT DE LA PROVISEURE</div>
           <div style={{ fontFamily: F.title, fontWeight: 800, fontSize: 64, color: C.white, lineHeight: 1 }}>COLLÈGE BOULEVARD DU GABON</div>
@@ -631,7 +639,9 @@ export const S11Revelation7: React.FC<P> = ({ sc }) => {
             source="Propos rapportés par L'Éléphant Déchaîné, p. 8"
           />
         </div>
-        <div style={{ position: "absolute", left: SAFE.left, top: TOP + 560, ...rise(appear(frame, g("proviseure"), 16)) }}>
+        <PhotoCard src={ASSETS.principalNCI} at={g("proviseure") - 4} credit="La proviseure · capture NCI" pos="40% 30%" accent={C.amber}
+          style={{ left: SAFE.left, top: TOP + 440, width: CONTENT_W, height: 330 }} />
+        <div style={{ position: "absolute", left: SAFE.left, top: TOP + 800, ...rise(appear(frame, g("proviseure") + 6, 16)) }}>
           <Chip color={C.amber} style={{ fontSize: 34 }}>
             MÊMES INSTRUCTIONS POUR LA PROVISEURE
           </Chip>

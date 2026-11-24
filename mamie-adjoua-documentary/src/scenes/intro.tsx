@@ -4,7 +4,7 @@ import { AbsoluteFill, Img, Loop, OffthreadVideo, interpolate, staticFile, useCu
 import { C, F, SAFE, CONTENT_W, clamp, EASE } from "../styles/theme";
 import { appear, between, rise, wipe } from "../animations/anim";
 import { SceneTiming, segFrame, f } from "../data/timeline";
-import { Backdrop, Photo, SourceReference, ReconstitutionTag, Chip, Caption, Attribution } from "../components/base";
+import { Backdrop, Photo, PhotoCard, SourceReference, ReconstitutionTag, Chip, Caption, Attribution } from "../components/base";
 import { AnimatedClock, DocumentaryTitle } from "../components/editorial";
 import { GateGraphic, Phone, Notification, Silhouette, BusGraphic, NewspaperReveal } from "../components/illustrations";
 import { ASSETS, STUDENT_VIDEO_BLUR } from "../data/assets";
@@ -69,9 +69,12 @@ export const S01Hook: React.FC<P> = ({ sc }) => {
   const cardsAt = en + f(2.4);
   // --- Séquence 3 : la promesse (montage rapide)
   const seq3 = appear(frame, rs - 6, 8);
-  const beat = f(0.85);
-  const montage = [0, 1, 2, 3].map((k) => rs + f(0.15) + k * beat);
-  const slot = (k: number) => Math.min(appear(frame, montage[k], 5), k < 3 ? 1 - appear(frame, montage[k + 1], 5) : 1);
+  const rsLen = segFrame(sc, "resume", "end") - rs;
+  const beat = Math.max(f(0.6), Math.min(f(0.85), Math.floor((rsLen - f(0.6)) / 6)));
+  // ordre : 07:30 → élève → portail → proviseure → bus → 27 000 FCFA
+  const montage = [0, 1, 2, 3, 4, 5].map((k) => rs + f(0.15) + k * beat);
+  const slot = (k: number) => Math.min(appear(frame, montage[k], 5), k < 5 ? 1 - appear(frame, montage[k + 1], 5) : 1);
+  const order = { clock: 0, student: 1, gate: 2, principal: 3, bus: 4, money: 5 };
   return (
     <AbsoluteFill style={{ background: C.black }}>
       {/* ===== Séquence 1 ===== */}
@@ -152,15 +155,21 @@ export const S01Hook: React.FC<P> = ({ sc }) => {
             <DocumentaryTitle at={rs} lines={[{ text: "CE QUE RÉVÈLE", size: 96 }, { text: "L'INVESTIGATION", size: 96, color: C.amber }]} />
           </div>
           <div style={{ position: "absolute", left: SAFE.left, top: 470, width: CONTENT_W, height: 700 }}>
-            <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", opacity: slot(0), transform: `scale(${1.08 - 0.08 * slot(0)})` }}>
+            <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", opacity: slot(order.clock), transform: `scale(${1.08 - 0.08 * slot(order.clock)})` }}>
               <AnimatedClock from="07:30" at={montage[0]} size={240} color={C.red} />
             </div>
-            <div style={{ position: "absolute", inset: 0, opacity: slot(1) }}>
-              <Photo src={ASSETS.gate2} frame={frame - montage[1]} dur={beat} from={{ s: 1.05, x: 0, y: 0 }} to={{ s: 1.15, x: 0, y: 0 }} style={{ left: 0, top: 80, width: CONTENT_W, height: 540 }} />
+            <div style={{ position: "absolute", inset: 0, opacity: slot(order.student) }}>
+              <PhotoCard src={ASSETS.studentPortrait} at={montage[order.student]} dur={beat} contain label="L'élève" style={{ left: 0, top: 40, width: CONTENT_W, height: 620 }} />
             </div>
-            <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", opacity: slot(2) }}>
+            <div style={{ position: "absolute", inset: 0, opacity: slot(order.principal) }}>
+              <PhotoCard src={ASSETS.principalEvent} at={montage[order.principal]} dur={beat} contain label="La proviseure" style={{ left: 0, top: 40, width: CONTENT_W, height: 620 }} />
+            </div>
+            <div style={{ position: "absolute", inset: 0, opacity: slot(order.gate) }}>
+              <Photo src={ASSETS.gate2} frame={frame - montage[order.gate]} dur={beat} from={{ s: 1.05, x: 0, y: 0 }} to={{ s: 1.15, x: 0, y: 0 }} style={{ left: 0, top: 80, width: CONTENT_W, height: 540 }} />
+            </div>
+            <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", opacity: slot(order.bus) }}>
               {ASSETS.busPhoto ? (
-                <Photo src={ASSETS.busPhoto} frame={frame - montage[2]} dur={beat} style={{ left: 0, top: 80, width: CONTENT_W, height: 540 }} />
+                <Photo src={ASSETS.busPhoto} frame={frame - montage[order.bus]} dur={beat} style={{ left: 0, top: 80, width: CONTENT_W, height: 540 }} />
               ) : (
                 <>
                   <BusGraphic width={680} />
@@ -168,13 +177,13 @@ export const S01Hook: React.FC<P> = ({ sc }) => {
                 </>
               )}
             </div>
-            <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", opacity: slot(3) }}>
+            <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", opacity: slot(order.money) }}>
               <div style={{ fontFamily: F.mono, fontWeight: 600, fontSize: 190, color: C.white, letterSpacing: -4 }}>27&#8239;000</div>
               <div style={{ fontFamily: F.title, fontWeight: 800, fontSize: 70, color: C.red }}>FCFA</div>
-              <div style={{ fontFamily: F.title, fontWeight: 800, fontSize: 120, color: C.amber, marginTop: 10, opacity: appear(frame, montage[3] + 14, 10) }}>?</div>
+              <div style={{ fontFamily: F.title, fontWeight: 800, fontSize: 120, color: C.amber, marginTop: 10, opacity: appear(frame, montage[order.money] + 14, 10) }}>?</div>
             </div>
           </div>
-          {!ASSETS.busPhoto ? <ReconstitutionTag style={{ left: SAFE.left, top: 1210 }} opacity={slot(2)} /> : null}
+          {!ASSETS.busPhoto ? <ReconstitutionTag style={{ left: SAFE.left, top: 1210 }} opacity={slot(order.bus)} /> : null}
         </AbsoluteFill>
       ) : null}
     </AbsoluteFill>
@@ -392,13 +401,14 @@ export const S04Investigation: React.FC<P> = ({ sc }) => {
             </div>
           ))}
         </div>
-        <div style={{ position: "absolute", left: SAFE.left, top: 1000, width: CONTENT_W, display: "flex", flexDirection: "column", gap: 16 }}>
-          {["ADMINISTRATION DU LYCÉE", "DIRECTION RÉGIONALE DE L'ÉDUCATION NATIONALE"].map((t, i) => (
-            <div key={t} style={{ ...rise(appear(frame, rea + f(2.2) + i * 12, 18)), background: C.panel, borderLeft: `6px solid ${C.grey}`, padding: "16px 22px" }}>
-              <div style={{ fontFamily: F.mono, fontSize: 20, color: C.dim, letterSpacing: 2 }}>RÉACTION OFFICIELLE · 17-18 NOV</div>
-              <div style={{ fontFamily: F.title, fontWeight: 700, fontSize: 40, color: C.white }}>{t}</div>
-            </div>
-          ))}
+        {/* Réactions officielles : la proviseure (capture NCI) et le directeur régional */}
+        <AbsoluteFill style={{ background: "rgba(11,13,16,0.6)", opacity: appear(frame, rea + f(1.8), 14) }} />
+        <PhotoCard src={ASSETS.principalNCI} at={rea + f(2.2)} label="Administration du lycée" credit="La proviseure · capture NCI" pos="40% 30%" accent={C.grey}
+          style={{ left: SAFE.left, top: 330, width: CONTENT_W, height: 440 }} />
+        <PhotoCard src={ASSETS.directorCapture} at={rea + f(4.2)} label="Direction régionale de l'Éducation nationale" credit="Le directeur régional · capture TV" pos="50% 30%" accent={C.grey}
+          style={{ left: SAFE.left, top: 800, width: CONTENT_W, height: 400 }} />
+        <div style={{ position: "absolute", right: SAFE.right, top: 270, opacity: appear(frame, rea + f(2.2), 14) }}>
+          <Chip mono color={C.white} style={{ fontSize: 22 }}>RÉACTIONS OFFICIELLES · 17-18 NOV</Chip>
         </div>
       </div>
       <div style={{ position: "absolute", left: SAFE.left, top: 560, width: CONTENT_W, opacity: qP }}>

@@ -46,7 +46,8 @@ export const Photo: React.FC<{
   style?: React.CSSProperties;
   grade?: "doc" | "cold" | "mono";
   fit?: "cover" | "contain";
-}> = ({ src, frame, dur, from = { s: 1.04, x: 0, y: 0 }, to = { s: 1.14, x: 0, y: -20 }, style, grade = "doc", fit = "cover" }) => {
+  pos?: string;
+}> = ({ src, frame, dur, from = { s: 1.04, x: 0, y: 0 }, to = { s: 1.14, x: 0, y: -20 }, style, grade = "doc", fit = "cover", pos = "50% 50%" }) => {
   const p = interpolate(frame, [0, Math.max(dur, 1)], [0, 1], clamp);
   const s = from.s + (to.s - from.s) * p;
   const x = from.x + (to.x - from.x) * p;
@@ -65,6 +66,7 @@ export const Photo: React.FC<{
           width: "100%",
           height: "100%",
           objectFit: fit,
+          objectPosition: pos,
           transform: `translate(${x}px, ${y}px) scale(${s})`,
           filter,
         }}
@@ -184,3 +186,47 @@ export const BrandBug: React.FC<{ src: string | null }> = ({ src }) =>
       style={{ position: "absolute", right: 44, top: 104, height: 64, width: "auto", maxWidth: 190, objectFit: "contain", opacity: 0.92, filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.55))" }}
     />
   ) : null;
+
+/** Carte photo (personne, lieu) : entrée animée, Ken Burns lent, légende en bas. */
+export const PhotoCard: React.FC<{
+  src: string;
+  at: number;
+  label?: string;
+  credit?: string;
+  style: React.CSSProperties;
+  pos?: string;
+  accent?: string;
+  dur?: number;
+  contain?: boolean;
+}> = ({ src, at, label, credit, style, pos = "50% 30%", accent = C.red, dur = 240, contain = false }) => {
+  const frame = useCurrentFrame();
+  const p = appear(frame, at, 20);
+  return (
+    <div
+      style={{
+        position: "absolute",
+        overflow: "hidden",
+        borderTop: `6px solid ${accent}`,
+        boxShadow: "0 30px 80px rgba(0,0,0,0.55)",
+        opacity: p,
+        transform: `translateY(${(1 - p) * 40}px) scale(${0.96 + p * 0.04})`,
+        ...style,
+      }}
+    >
+      {contain ? (
+        <>
+          <Img src={staticFile(src)} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", filter: "blur(26px) brightness(0.45) saturate(0.7)", transform: "scale(1.2)" }} />
+          <Photo src={src} frame={frame - at} dur={dur} fit="contain" from={{ s: 1.0, x: 0, y: 0 }} to={{ s: 1.06, x: 0, y: -6 }} style={{ left: 0, top: 0, width: "100%", height: "100%" }} />
+        </>
+      ) : (
+        <Photo src={src} frame={frame - at} dur={dur} pos={pos} from={{ s: 1.04, x: 0, y: 0 }} to={{ s: 1.14, x: 0, y: -12 }} style={{ left: 0, top: 0, width: "100%", height: "100%" }} />
+      )}
+      {label || credit ? (
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, padding: "40px 16px 12px", background: "linear-gradient(transparent, rgba(0,0,0,0.88))" }}>
+          {label ? <div style={{ fontFamily: F.title, fontWeight: 700, fontSize: 30, color: C.white, textTransform: "uppercase", lineHeight: 1.05 }}>{label}</div> : null}
+          {credit ? <div style={{ fontFamily: F.mono, fontSize: 16, color: C.dim, marginTop: 4 }}>{credit}</div> : null}
+        </div>
+      ) : null}
+    </div>
+  );
+};

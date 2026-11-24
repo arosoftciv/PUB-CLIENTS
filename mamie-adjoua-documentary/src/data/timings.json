@@ -1,6 +1,6 @@
 {
  "fps": 30,
- "total": 496.033,
+ "total": 513.1,
  "estimated": false,
  "voiceScenes": [
   "s01",
@@ -13,10 +13,12 @@
   "s09",
   "s10",
   "s11",
+  "s12",
   "s13",
   "s14",
   "s15",
-  "s17"
+  "s17",
+  "s16"
  ],
  "scenes": [
   {
@@ -548,65 +550,65 @@
    "id": "s12",
    "name": "Chronologie",
    "start": 377.233,
-   "duration": 21.0,
-   "voStart": 0,
-   "voFile": null,
+   "duration": 32.9,
+   "voStart": 0.4,
+   "voFile": "audio/voiceover/s12.wav",
    "pages": [],
    "segments": [
     {
      "id": "title",
-     "start": 0,
-     "end": 2.0,
-     "text": null
+     "start": 0.4,
+     "end": 2.09,
+     "text": "Reprenons la chronologie des faits."
     },
     {
      "id": "e1",
-     "start": 2.0,
-     "end": 4.6,
-     "text": null
+     "start": 2.59,
+     "end": 6.77,
+     "text": "Le 22 octobre, la mesure d'exclusion des retardataires est instaurée."
     },
     {
      "id": "e2",
-     "start": 4.6,
-     "end": 7.2,
-     "text": null
+     "start": 7.17,
+     "end": 11.044,
+     "text": "Le 2 novembre, le lycée annonce le démarrage du transport scolaire."
     },
     {
      "id": "e3",
-     "start": 7.2,
-     "end": 9.8,
-     "text": null
+     "start": 11.444,
+     "end": 14.548,
+     "text": "Le 3 novembre, des bus spéciaux sont mobilisés."
     },
     {
      "id": "e4",
-     "start": 9.8,
-     "end": 12.4,
-     "text": null
+     "start": 14.948,
+     "end": 17.901,
+     "text": "Le 16 novembre, l'élève publie sa vidéo."
     },
     {
      "id": "e5",
-     "start": 12.4,
-     "end": 15.0,
-     "text": null
+     "start": 18.301,
+     "end": 21.909,
+     "text": "Les 17 et 18 novembre, les autorités réagissent."
     },
     {
      "id": "e6",
-     "start": 15.0,
-     "end": 17.6,
-     "text": null
+     "start": 22.309,
+     "end": 26.79,
+     "text": "Le 20 novembre, les journalistes constatent un assouplissement de la mesure."
     },
     {
      "id": "e7",
-     "start": 17.6,
-     "end": 21.0,
-     "text": null
+     "start": 27.19,
+     "end": 31.37,
+     "text": "Et le 23 novembre, L'Éléphant Déchaîné publie son investigation."
     }
    ]
   },
   {
    "id": "s13",
    "name": "Les questions sans réponse",
-   "start": 398.233,
+   "start": 410.133,
    "duration": 36.633,
    "voStart": 0.8,
    "voFile": "audio/voiceover/s13.wav",
@@ -665,7 +667,7 @@
   {
    "id": "s14",
    "name": "Conclusion journalistique",
-   "start": 434.867,
+   "start": 446.767,
    "duration": 36.3,
    "voStart": 0.6,
    "voFile": "audio/voiceover/s14.wav",
@@ -706,7 +708,7 @@
   {
    "id": "s15",
    "name": "Signature finale",
-   "start": 471.167,
+   "start": 483.067,
    "duration": 8.067,
    "voStart": 1.2,
    "voFile": "audio/voiceover/s15.wav",
@@ -729,7 +731,7 @@
   {
    "id": "s17",
    "name": "Appel à l'abonnement",
-   "start": 479.233,
+   "start": 491.133,
    "duration": 7.8,
    "voStart": 0.5,
    "voFile": "audio/voiceover/s17.wav",
@@ -752,10 +754,10 @@
   {
    "id": "s16",
    "name": "Sources et crédits",
-   "start": 487.033,
-   "duration": 9.0,
-   "voStart": 0,
-   "voFile": null,
+   "start": 498.933,
+   "duration": 14.167,
+   "voStart": 0.6,
+   "voFile": "audio/voiceover/s16.wav",
    "pages": [
     1,
     2,
@@ -769,9 +771,9 @@
    "segments": [
     {
      "id": "credits",
-     "start": 0,
-     "end": 9.0,
-     "text": null
+     "start": 0.6,
+     "end": 9.516,
+     "text": "Cette vidéo est une adaptation de l'investigation publiée par L'Éléphant Déchaîné, dans son édition spéciale du 23 novembre 2026."
     }
    ]
   }

@@ -592,124 +592,181 @@ La proviseure aurait reçu
 les mêmes instructions.
 
 124
-00:06:39,033 --> 00:06:41,208
+00:06:17,633 --> 00:06:19,323
+Reprenons la chronologie des faits.
+
+125
+00:06:19,823 --> 00:06:20,684
+Le 22 octobre,
+
+126
+00:06:20,684 --> 00:06:24,003
+la mesure d'exclusion des
+retardataires est instaurée.
+
+127
+00:06:24,403 --> 00:06:28,277
+Le 2 novembre, le lycée annonce le
+démarrage du transport scolaire.
+
+128
+00:06:28,677 --> 00:06:31,781
+Le 3 novembre, des bus
+spéciaux sont mobilisés.
+
+129
+00:06:32,181 --> 00:06:35,134
+Le 16 novembre,
+l'élève publie sa vidéo.
+
+130
+00:06:35,534 --> 00:06:39,142
+Les 17 et 18 novembre,
+les autorités réagissent.
+
+131
+00:06:39,542 --> 00:06:40,438
+Le 20 novembre,
+
+132
+00:06:40,438 --> 00:06:44,023
+les journalistes constatent un
+assouplissement de la mesure.
+
+133
+00:06:44,423 --> 00:06:48,603
+Et le 23 novembre, L'Éléphant Déchaîné
+publie son investigation.
+
+134
+00:06:50,933 --> 00:06:53,108
 Alors, que retenir de
 cette investigation ?
 
-125
-00:06:41,708 --> 00:06:44,011
+135
+00:06:53,608 --> 00:06:55,911
 Plusieurs questions
 restent sans réponse.
 
-126
-00:06:44,811 --> 00:06:48,244
+136
+00:06:56,711 --> 00:07:00,144
 Existe-t-il une convention formelle
 entre le lycée et la SOTRA ?
 
-127
-00:06:49,644 --> 00:06:51,311
+137
+00:07:01,544 --> 00:07:03,211
 Qui a autorisé ce partenariat ?
 
-128
-00:06:52,711 --> 00:06:56,138
+138
+00:07:04,611 --> 00:07:08,038
 Comment le tarif de vingt-sept
 mille francs a-t-il été déterminé ?
 
-129
-00:06:57,538 --> 00:07:00,466
+139
+00:07:09,438 --> 00:07:12,366
 Qui encaisse les paiements et
 comment ces fonds sont-ils gérés ?
 
-130
-00:07:01,866 --> 00:07:04,139
+140
+00:07:13,766 --> 00:07:16,039
 Pourquoi les parents et
 le COGES n'auraient-ils
 
-131
-00:07:04,139 --> 00:07:05,832
+141
+00:07:16,039 --> 00:07:17,732
 pas été associés aux négociations ?
 
-132
-00:07:07,232 --> 00:07:10,928
+142
+00:07:19,132 --> 00:07:22,828
 Et surtout, existe-t-il un lien
 entre la fermeture du portail et la
 
-133
-00:07:10,928 --> 00:07:13,356
+143
+00:07:22,828 --> 00:07:25,256
 mise en place du transport
 scolaire payant ?
 
-134
-00:07:15,467 --> 00:07:18,921
+144
+00:07:27,367 --> 00:07:30,821
 Sur ce dernier point,
 L'Éléphant Déchaîné reste prudent.
 
-135
-00:07:19,421 --> 00:07:22,471
+145
+00:07:31,321 --> 00:07:34,371
 Les éléments recueillis ne
 permettent pas d'établir avec
 
-136
-00:07:22,471 --> 00:07:25,520
+146
+00:07:34,371 --> 00:07:37,420
 certitude un lien de causalité
 entre les deux décisions,
 
-137
-00:07:25,520 --> 00:07:28,352
+147
+00:07:37,420 --> 00:07:40,252
 encore moins de conclure à
 l'existence d'une fraude.
 
-138
-00:07:28,952 --> 00:07:31,678
+148
+00:07:40,852 --> 00:07:43,578
 Mais les contradictions
 relevées soulèvent de
 
-139
-00:07:31,678 --> 00:07:34,343
+149
+00:07:43,578 --> 00:07:46,243
 sérieuses interrogations
 sur la gouvernance,
 
-140
-00:07:34,343 --> 00:07:37,856
+150
+00:07:46,243 --> 00:07:49,756
 la transparence et la gestion
 de cet établissement public.
 
-141
-00:07:38,656 --> 00:07:40,355
+151
+00:07:50,556 --> 00:07:52,255
 Une affaire qui, au départ,
 
-142
-00:07:40,355 --> 00:07:44,257
+152
+00:07:52,255 --> 00:07:56,157
 semblait n'être qu'un simple
 problème de ponctualité scolaire.
 
-143
-00:07:44,607 --> 00:07:47,618
+153
+00:07:56,507 --> 00:07:59,518
 Et qui, grâce à la vidéo
 d'une élève de seize ans,
 
-144
-00:07:47,618 --> 00:07:49,967
+154
+00:07:59,518 --> 00:08:01,867
 est devenue un sujet
 de débat national.
 
-145
-00:07:52,367 --> 00:07:53,669
+155
+00:08:04,267 --> 00:08:05,569
 Le portail s'est rouvert.
 
-146
-00:07:54,569 --> 00:07:55,816
+156
+00:08:06,469 --> 00:08:07,716
 Mais les questions demeurent.
 
-147
-00:07:59,733 --> 00:08:00,570
+157
+00:08:11,633 --> 00:08:12,470
 Vous avez aimé ?
 
-148
-00:08:00,970 --> 00:08:03,421
+158
+00:08:12,870 --> 00:08:15,321
 Abonnez-vous et activez
 la cloche de notification
 
-149
-00:08:03,421 --> 00:08:05,221
+159
+00:08:15,321 --> 00:08:17,121
 pour rester informés de l'actualité.
+
+160
+00:08:19,533 --> 00:08:23,782
+Cette vidéo est une adaptation
+de l'investigation publiée par
+
+161
+00:08:23,782 --> 00:08:28,449
+L'Éléphant Déchaîné, dans son
+édition spéciale du 23 novembre 2026.

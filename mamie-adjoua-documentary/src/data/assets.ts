@@ -9,6 +9,10 @@ export const ASSETS = {
   gate2: "images/school/portail-2.jpg", // fourni (capture recadrée, élève exclue)
   directorCapture: "images/people/directeur-regional-capture.jpg", // capture TV fournie — identité à confirmer par le client
   principalCapture: "images/people/proviseure-capture.jpg", // capture fournie — identité à confirmer par le client
+  principalEvent: "images/people/proviseure-evenement.jpg", // photo fournie (prise de parole, micro)
+  principalNCI: "images/people/proviseure-nci.jpg", // capture NCI fournie (bandeau « LQI »)
+  studentPortrait: "images/people/eleve-portrait.jpg", // photo fournie — élève (décision éditoriale du client)
+  studentPortrait2: "images/people/eleve-portrait-2.jpg", // photo fournie — élève
 
   // --- Manquants : photos du PDF ---
   busPhoto: null as string | null, // p. 2, 5, 6 : bus spéciaux SOTRA

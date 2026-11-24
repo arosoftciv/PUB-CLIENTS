@@ -2,9 +2,9 @@
   "title": "Lycée Mamie Adjoua — Les mystères du portail fermé",
   "fps": 30,
   "resolution": "1080x1920",
-  "total_seconds": 496.033,
+  "total_seconds": 513.1,
   "timing_source": "voix-off réelle",
-  "narration_words": 1044,
+  "narration_words": 1134,
   "scenes": [
     {
       "id": "s00",
@@ -211,16 +211,25 @@
       "id": "s12",
       "name": "Chronologie",
       "start": "00:06:17.233",
-      "end": "00:06:38.233",
-      "duration_s": 21.0,
+      "end": "00:06:50.133",
+      "duration_s": 32.9,
       "source_pages": [],
-      "narration": []
+      "narration": [
+        "Reprenons la chronologie des faits.",
+        "Le 22 octobre, la mesure d'exclusion des retardataires est instaurée.",
+        "Le 2 novembre, le lycée annonce le démarrage du transport scolaire.",
+        "Le 3 novembre, des bus spéciaux sont mobilisés.",
+        "Le 16 novembre, l'élève publie sa vidéo.",
+        "Les 17 et 18 novembre, les autorités réagissent.",
+        "Le 20 novembre, les journalistes constatent un assouplissement de la mesure.",
+        "Et le 23 novembre, L'Éléphant Déchaîné publie son investigation."
+      ]
     },
     {
       "id": "s13",
       "name": "Les questions sans réponse",
-      "start": "00:06:38.233",
-      "end": "00:07:14.866",
+      "start": "00:06:50.133",
+      "end": "00:07:26.766",
       "duration_s": 36.633,
       "source_pages": [],
       "narration": [
@@ -237,8 +246,8 @@
     {
       "id": "s14",
       "name": "Conclusion journalistique",
-      "start": "00:07:14.867",
-      "end": "00:07:51.167",
+      "start": "00:07:26.767",
+      "end": "00:08:03.067",
       "duration_s": 36.3,
       "source_pages": [],
       "narration": [
@@ -252,8 +261,8 @@
     {
       "id": "s15",
       "name": "Signature finale",
-      "start": "00:07:51.167",
-      "end": "00:07:59.234",
+      "start": "00:08:03.067",
+      "end": "00:08:11.134",
       "duration_s": 8.067,
       "source_pages": [],
       "narration": [
@@ -264,8 +273,8 @@
     {
       "id": "s17",
       "name": "Appel à l'abonnement",
-      "start": "00:07:59.233",
-      "end": "00:08:07.033",
+      "start": "00:08:11.133",
+      "end": "00:08:18.933",
       "duration_s": 7.8,
       "source_pages": [],
       "narration": [
@@ -276,9 +285,9 @@
     {
       "id": "s16",
       "name": "Sources et crédits",
-      "start": "00:08:07.033",
-      "end": "00:08:16.033",
-      "duration_s": 9.0,
+      "start": "00:08:18.933",
+      "end": "00:08:33.100",
+      "duration_s": 14.167,
       "source_pages": [
         1,
         2,
@@ -289,7 +298,9 @@
         7,
         8
       ],
-      "narration": []
+      "narration": [
+        "Cette vidéo est une adaptation de l'investigation publiée par L'Éléphant Déchaîné, dans son édition spéciale du 23 novembre 2026."
+      ]
     }
   ]
 }

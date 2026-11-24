@@ -6,7 +6,7 @@ Date : 24 novembre 2026 · Version : v3, **avec voix-off** (ElevenLabs, voix « 
 
 | Point | Résultat |
 |---|---|
-| Durée | 8 min 18 s, calée sur la voix-off réelle · teaser 56 s · hook 19 s |
+| Durée | 8 min 33 s, calée sur la voix-off réelle, sans passage muet (chronologie et générique désormais narrés) · teaser 56 s · hook 19 s |
 | Format | 1080 × 1920, 30 i/s, H.264 + AAC 48 kHz. Version 4K 2160 × 3840 rendue nativement (`--scale=2`) |
 | Loudness | -14,4 LUFS intégré. Crête vraie -0,9 dBTP après encodage AAC (-1,0 dBTP sur le master WAV) |
 | Captures de contrôle | 102 images (3 à 13 par scène) dans `output/qc/`, toutes vérifiées visuellement |
@@ -41,6 +41,17 @@ Date : 24 novembre 2026 · Version : v3, **avec voix-off** (ElevenLabs, voix « 
   Pour retirer toutes les captures de personnes : `USE_PEOPLE_CAPTURES = false` dans `src/data/assets.ts`.
 
 Les jours de la semaine ont été vérifiés au calendrier : jeudi 22/10, lundi 16/11, vendredi 20/11 et lundi 23/11/2026 sont exacts.
+
+## 2 quinquies. Enrichissement visuel et narration (retour client)
+
+- La chronologie (S12, auparavant 21 s sans voix) et le générique (S16) sont maintenant narrés (voix Brian, environ 650 crédits).
+- Nouvelles photos fournies par le client, intégrées avec cadrage, Ken Burns et légendes :
+  - proviseure (prise de parole au micro) : hook, S05 « supervise la fermeture », S07 « annonce le partenariat », S10 Marcory ;
+  - proviseure (capture NCI, bandeau TV retiré, crédit « capture NCI ») : S04 réactions officielles, S08 position de l'administration, S11 consignes ;
+  - élève (portrait) : hook, S09 accusations, S14 « débat national ».
+  - S13 : fond photographique qui change à chaque question.
+- Les photos verticales sont cadrées en entier sur fond flouté, sans zoom excessif.
+- Décision éditoriale du client : l'élève est montrée à visage découvert. Cela s'écarte de la consigne initiale de protection de la mineure.
 
 ## 2 quater. Vidéo de l'élève (décision éditoriale du client)
 

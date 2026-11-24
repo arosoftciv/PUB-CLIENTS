@@ -54,6 +54,15 @@ def main() -> None:
     cap4 = Image.open(SRC / "04-capture-directeur-regional.jpg")
     save(upscale(cap4.crop((0, 0, 335, 310)), 3), "people/directeur-regional-capture.jpg")
 
+    # Photos fournies (2e envoi) : proviseure et élève — décision éditoriale du client de les montrer
+    duo = Image.open(SRC / "06-proviseure-et-eleve.jpg")
+    w, h = duo.size
+    save(upscale(duo.crop((0, 0, w // 2 - 2, h)), 3), "people/proviseure-evenement.jpg")
+    save(upscale(duo.crop((w // 2 + 2, 0, w, h)), 3), "people/eleve-portrait-2.jpg")
+    save(upscale(Image.open(SRC / "07-eleve-portrait.jpg"), 1.5), "people/eleve-portrait.jpg")
+    nci = Image.open(SRC / "08-proviseure-nci.jpg")
+    save(upscale(nci.crop((0, 0, nci.size[0], int(nci.size[1] * 0.74))), 2.5), "people/proviseure-nci.jpg")  # bandeau TV retiré, crédit NCI ajouté à l'écran
+
     # Vidéo publiée par l'élève (optionnelle) : source/video-eleve.(mp4|mov|webm)
     # → réencodée en H.264, PISTE AUDIO SUPPRIMÉE (aucune voix), durée enregistrée pour Remotion.
     import json, subprocess

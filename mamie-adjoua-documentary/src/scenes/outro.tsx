@@ -54,16 +54,16 @@ export const S13Questions: React.FC<P> = ({ sc }) => {
   const introOut = vanish(frame, g("q1") - 12, 12);
   return (
     <AbsoluteFill style={{ background: C.black }}>
-      <Photo
-        src={ASSETS.gate2}
-        frame={frame}
-        dur={D}
-        grade="mono"
-        from={{ s: 1.1, x: -20, y: 0 }}
-        to={{ s: 1.3, x: 20, y: -30 }}
-        style={{ left: 0, top: 0, width: SAFE.W, height: SAFE.H, opacity: 0.14 + 0.06 * (frame / D) }}
-        fit="cover"
-      />
+      {[ASSETS.gate2, ASSETS.principalNCI, ASSETS.gate1, ASSETS.principalEvent, ASSETS.gate2, ASSETS.studentPortrait].map((src, k) => {
+        const a = k === 0 ? 0 : g(`q${k + 1}`) - 10;
+        const b = k < 5 ? g(`q${k + 2}`) : D;
+        const o = Math.min(appear(frame, a, 14), 1 - appear(frame, b - 6, 14));
+        if (o <= 0) return null;
+        return (
+          <Photo key={k} src={src} frame={frame - a} dur={b - a + 20} grade="mono" pos="50% 30%" from={{ s: 1.12, x: -10, y: 0 }} to={{ s: 1.22, x: 10, y: -20 }}
+            style={{ left: 0, top: 0, width: SAFE.W, height: SAFE.H, opacity: 0.2 * o }} />
+        );
+      })}
       <div style={{ position: "absolute", left: SAFE.left, top: 520, width: CONTENT_W, opacity: introOut }}>
         <DocumentaryTitle
           at={g("retenir")}
@@ -128,7 +128,9 @@ export const S14Conclusion: React.FC<P> = ({ sc }) => {
         ))}
       </div>
       <div style={{ opacity: partC }}>
-        <Photo src={ASSETS.gate1} frame={frame - g("simple")} dur={f(12)} style={{ left: 0, top: 0, width: SAFE.W, height: SAFE.H, opacity: 0.55 }} to={{ s: 1.18, x: 0, y: -40 }} />
+        <Photo src={ASSETS.gate1} frame={frame - g("simple")} dur={f(12)} style={{ left: 0, top: 0, width: SAFE.W, height: SAFE.H, opacity: 0.55 * (1 - appear(frame, g("debat"), 18)) }} to={{ s: 1.18, x: 0, y: -40 }} />
+        <Photo src={ASSETS.studentPortrait} frame={frame - g("debat")} dur={f(10)} pos="50% 25%" from={{ s: 1.05, x: 0, y: 0 }} to={{ s: 1.18, x: 0, y: -20 }}
+          style={{ left: 0, top: 0, width: SAFE.W, height: SAFE.H, opacity: 0.6 * appear(frame, g("debat"), 18) }} />
         <AbsoluteFill style={{ background: "linear-gradient(rgba(11,13,16,0.4), rgba(11,13,16,0.85))" }} />
         <div style={{ position: "absolute", left: SAFE.left, top: 560, width: CONTENT_W }}>
           <div style={{ fontFamily: F.text, fontSize: 40, color: C.white, lineHeight: 1.35, ...rise(appear(frame, g("simple") + 10, 18)) }}>Un simple problème de ponctualité scolaire…</div>
