@@ -9,3 +9,4 @@ source/uploads/02-*
 source/video-eleve*
 public/video/
 public/audio/voiceover/*.wav
+__pycache__/
