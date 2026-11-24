@@ -256,7 +256,7 @@ export const S03Video: React.FC<P> = ({ sc }) => {
               </Phone>
             </div>
             <Caption style={{ position: "absolute", left: SAFE.left, width: CONTENT_W, textAlign: "center", top: 1275, opacity: p0 * (1 - shrink) }}>
-              Vidéo publiée par l'élève · 16/11/2026 · son coupé
+              Vidéo de l'élève (16/11/2026) · relayée par Zooma Média · son coupé
             </Caption>
           </>
         ) : (

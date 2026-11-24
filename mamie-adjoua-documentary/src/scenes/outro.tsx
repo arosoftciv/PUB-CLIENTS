@@ -191,9 +191,10 @@ export const S16Credits: React.FC<P> = () => {
         <Line at={42} style={{ fontFamily: F.mono, fontSize: 20, color: C.dim, marginTop: 40, lineHeight: 1.6 }}>
           Photos du portail : visuels fournis (dont « Vivre À Yamoussoukro »).
           <br />
+          Vidéo de l'élève : extrait muet, publication relayée par Zooma Média (TikTok).
+          <br />
           Fond de carte : Natural Earth. Musique et effets sonores originaux.
           <br />
-          Identité de l'élève mineure protégée.
         </Line>
         {ASSETS.arosoftLogo ? (
           <Line at={50} style={{ marginTop: 50, display: "flex", alignItems: "center", gap: 20 }}>

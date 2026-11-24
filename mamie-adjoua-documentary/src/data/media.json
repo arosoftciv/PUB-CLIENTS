@@ -1,1 +1,8 @@
-{"studentVideo": null}
+{
+ "studentVideo": {
+  "src": "video/video-eleve.mp4",
+  "duration": 30.0,
+  "width": 576,
+  "height": 1024
+ }
+}

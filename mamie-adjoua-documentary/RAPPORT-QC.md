@@ -50,8 +50,9 @@ Les jours de la semaine ont été vérifiés au calendrier : jeudi 22/10, lundi 
   Légende : « Vidéo publiée par l'élève · 16/11/2026 · son coupé ».
 - Cette décision s'écarte de la consigne initiale de protection de l'identité de la mineure.
   Un floutage reste disponible : `STUDENT_VIDEO_BLUR = true` dans `src/data/assets.ts`.
-- **Fichier non encore fourni.** À déposer sous `source/video-eleve.mp4`, puis lancer `python3 scripts/extract-assets.py`
-  et refaire le rendu. D'ici là, la silhouette anonyme reste affichée. L'intégration a été testée avec une mire.
+- Fichier fourni : republication TikTok de « Zooma Média » (576 × 1024, 3 min 26 s), qui porte leur filigrane et le bandeau « La vidéo intégrale ».
+  Extrait utilisé : de 4 à 34 s, sans piste audio (vérifié avec ffprobe). Le crédit « relayée par Zooma Média » figure à l'écran et au générique.
+  Le fichier source n'est pas versionné dans Git.
 
 ## 2 ter. Nouvelle accroche (révision client)
 
