@@ -62,9 +62,12 @@ def main() -> None:
     if vid:
         dst = ROOT / "public" / "video" / "video-eleve.mp4"
         dst.parent.mkdir(parents=True, exist_ok=True)
-        # extrait utilisé : de 4 s à 34 s de la vidéo source (passage où l'élève s'exprime face caméra)
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", "4", "-t", "30", "-i", str(vid), "-an", "-vf", "scale='min(1080,iw)':-2,fps=30",
-                        "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", str(dst)], check=True)
+        if dst.exists() and dst.stat().st_mtime > vid.stat().st_mtime:
+            print("= vidéo élève déjà à jour (pas de réencodage)")
+        else:
+          # extrait utilisé : de 4 s à 34 s de la vidéo source (passage où l'élève s'exprime face caméra)
+          subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", "4", "-t", "30", "-i", str(vid), "-an", "-vf", "scale='min(1080,iw)':-2,fps=30",
+                          "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", str(dst)], check=True)
         info = json.loads(subprocess.run(["ffprobe", "-v", "error", "-print_format", "json", "-show_streams", "-show_format", str(dst)],
                                          capture_output=True, text=True, check=True).stdout)
         v = next(x for x in info["streams"] if x["codec_type"] == "video")
