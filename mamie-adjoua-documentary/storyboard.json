@@ -2,7 +2,7 @@
   "title": "Lycée Mamie Adjoua — Les mystères du portail fermé",
   "fps": 30,
   "resolution": "1080x1920",
-  "total_seconds": 496.567,
+  "total_seconds": 496.033,
   "timing_source": "voix-off réelle",
   "narration_words": 1044,
   "scenes": [
@@ -177,8 +177,8 @@
       "id": "s10",
       "name": "Révélation 6",
       "start": "00:05:13.433",
-      "end": "00:05:40.966",
-      "duration_s": 27.533,
+      "end": "00:05:40.433",
+      "duration_s": 27.0,
       "source_pages": [
         7
       ],
@@ -192,8 +192,8 @@
     {
       "id": "s11",
       "name": "Révélation 7",
-      "start": "00:05:40.967",
-      "end": "00:06:17.767",
+      "start": "00:05:40.433",
+      "end": "00:06:17.233",
       "duration_s": 36.8,
       "source_pages": [
         8
@@ -210,8 +210,8 @@
     {
       "id": "s12",
       "name": "Chronologie",
-      "start": "00:06:17.767",
-      "end": "00:06:38.767",
+      "start": "00:06:17.233",
+      "end": "00:06:38.233",
       "duration_s": 21.0,
       "source_pages": [],
       "narration": []
@@ -219,8 +219,8 @@
     {
       "id": "s13",
       "name": "Les questions sans réponse",
-      "start": "00:06:38.767",
-      "end": "00:07:15.400",
+      "start": "00:06:38.233",
+      "end": "00:07:14.866",
       "duration_s": 36.633,
       "source_pages": [],
       "narration": [
@@ -237,8 +237,8 @@
     {
       "id": "s14",
       "name": "Conclusion journalistique",
-      "start": "00:07:15.400",
-      "end": "00:07:51.700",
+      "start": "00:07:14.867",
+      "end": "00:07:51.167",
       "duration_s": 36.3,
       "source_pages": [],
       "narration": [
@@ -252,8 +252,8 @@
     {
       "id": "s15",
       "name": "Signature finale",
-      "start": "00:07:51.700",
-      "end": "00:07:59.767",
+      "start": "00:07:51.167",
+      "end": "00:07:59.234",
       "duration_s": 8.067,
       "source_pages": [],
       "narration": [
@@ -264,8 +264,8 @@
     {
       "id": "s17",
       "name": "Appel à l'abonnement",
-      "start": "00:07:59.767",
-      "end": "00:08:07.567",
+      "start": "00:07:59.233",
+      "end": "00:08:07.033",
       "duration_s": 7.8,
       "source_pages": [],
       "narration": [
@@ -276,8 +276,8 @@
     {
       "id": "s16",
       "name": "Sources et crédits",
-      "start": "00:08:07.567",
-      "end": "00:08:16.567",
+      "start": "00:08:07.033",
+      "end": "00:08:16.033",
       "duration_s": 9.0,
       "source_pages": [
         1,
