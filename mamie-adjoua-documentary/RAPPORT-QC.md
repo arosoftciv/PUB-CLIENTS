@@ -107,7 +107,7 @@ Les jours de la semaine ont été vérifiés au calendrier : jeudi 22/10, lundi 
   Le calage se fait phrase par phrase (`scripts/align-voiceover.py`) : détection des pauses, puis découpage et
   réassemblage avec les pauses du script. Diction ni accélérée ni modifiée. Animations, sous-titres et ducking
   suivent les timestamps réels.
-- Mixage : -14,0 LUFS intégré. Passages parlés vers -13,5 LUFS, musique seule vers -16/-17 LUFS, musique abaissée de 10 dB sous la voix.
+- Mixage (révisé à la demande du client) : musique environ 23 dB sous la voix pendant la narration (13 dB auparavant), passe-haut à 100 Hz sur la musique sous la voix, bruitages atténués d'environ 8 dB sous la voix. Total -14 LUFS, passages musicaux seuls vers -18,5 LUFS.
 
 ## 5. Ressources manquantes (solutions temporaires signalées)
 

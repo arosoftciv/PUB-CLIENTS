@@ -471,6 +471,9 @@ def synth_bed(tl: dict) -> np.ndarray:
     return bed
 
 
+DUCK = 0.22  # musique ≈ 23 dB sous la voix pendant la narration (mesuré)
+
+
 def duck_env(tl: dict, n: int) -> np.ndarray:
     g = np.ones(n)
     for sc in tl["scenes"]:
@@ -478,7 +481,7 @@ def duck_env(tl: dict, n: int) -> np.ndarray:
             if s["text"]:
                 a = int((sc["start"] + s["start"] - 0.15) * SR)
                 b = int((sc["start"] + s["end"] + 0.25) * SR)
-                g[max(a, 0):min(b, n)] = 0.32  # ≈ -10 dB sous la voix
+                g[max(a, 0):min(b, n)] = DUCK  # musique très en retrait sous la voix
     # lissage attaque/relâche
     return lp(g, 3.0, 1)
 
@@ -539,7 +542,12 @@ def build_audio(tl: dict, teaser: dict) -> dict:
             v = load_audio(ROOT / "public" / sc["voFile"])
             place(voice, v, sc["start"] + sc["voStart"], 1.0)
     duck = duck_env(tl, n)
-    mix = music * duck * 0.55 + sfx + voice * 1.0
+    # musique sous la voix : on retire aussi les basses (drone, pulsations) qui masquent la parole sur téléphone
+    music_hp = hp(music, 100, 2)
+    voiced = np.clip((1 - duck) / (1 - DUCK), 0, 1)
+    music_mix = music * (1 - voiced) + music_hp * voiced
+    sfx_gain = 1 - 0.6 * voiced  # bruitages atténués de ~8 dB pendant la narration
+    mix = music_mix * duck * 0.45 + sfx * sfx_gain + voice * 1.0
     raw = ROOT / "output/_mix_raw.wav"
     write_wav(raw, to_stereo(mix))
     report = loudnorm(raw, ROOT / "public/audio/mix/master.wav")
