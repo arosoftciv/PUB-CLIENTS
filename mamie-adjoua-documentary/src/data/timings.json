@@ -1,0 +1,803 @@
+{
+ "fps": 30,
+ "total": 543.9,
+ "estimated": true,
+ "voiceScenes": [],
+ "scenes": [
+  {
+   "id": "s00",
+   "name": "Couverture",
+   "start": 0.0,
+   "duration": 1.6,
+   "voStart": 1.6,
+   "voFile": null,
+   "pages": [],
+   "segments": []
+  },
+  {
+   "id": "s01",
+   "name": "L'accroche",
+   "start": 1.6,
+   "duration": 13.333,
+   "voStart": 4.2,
+   "voFile": null,
+   "pages": [],
+   "segments": [
+    {
+     "id": "hook",
+     "start": 4.2,
+     "end": 11.955,
+     "text": "Depuis plusieurs jours, une affaire secoue le monde éducatif ivoirien et suscite de vives réactions sur les réseaux sociaux."
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "name": "Le contexte national",
+   "start": 14.933,
+   "duration": 18.833,
+   "voStart": 0.8,
+   "voFile": null,
+   "pages": [
+    2,
+    3
+   ],
+   "segments": [
+    {
+     "id": "lycee",
+     "start": 0.8,
+     "end": 11.82,
+     "text": "Au cœur de cette polémique : le lycée d'excellence Mamie Adjoua de Yamoussoukro, sa nouvelle proviseure, une élève de seize ans et un mystérieux projet de transport scolaire."
+    },
+    {
+     "id": "video",
+     "start": 12.32,
+     "end": 17.627,
+     "text": "Tout est parti d'une vidéo publiée le lundi 16 novembre 2026."
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "name": "La vidéo qui déclenche la polémique",
+   "start": 33.767,
+   "duration": 30.267,
+   "voStart": 0.6,
+   "voFile": null,
+   "pages": [
+    2,
+    3
+   ],
+   "segments": [
+    {
+     "id": "denonce",
+     "start": 0.6,
+     "end": 16.11,
+     "text": "Dans cette vidéo, une élève de Terminale D dénonce une mesure de l'administration du lycée qui consiste à interdire l'accès à l'établissement aux élèves arrivant après 7 heures 30, les privant ainsi de toute une journée de cours."
+    },
+    {
+     "id": "plusloin",
+     "start": 16.71,
+     "end": 19.567,
+     "text": "Mais la jeune fille va plus loin."
+    },
+    {
+     "id": "soupcon",
+     "start": 20.067,
+     "end": 29.047,
+     "text": "Elle soupçonne un lien entre cette mesure disciplinaire et la mise en place d'un service de transport scolaire payant avec la SOTRA."
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "name": "L'investigation journalistique",
+   "start": 64.033,
+   "duration": 34.967,
+   "voStart": 0.6,
+   "voFile": null,
+   "pages": [
+    1
+   ],
+   "segments": [
+    {
+     "id": "virale",
+     "start": 0.6,
+     "end": 3.457,
+     "text": "En quelques heures, la vidéo devient virale."
+    },
+    {
+     "id": "reactions",
+     "start": 3.807,
+     "end": 13.195,
+     "text": "Les réactions se multiplient. L'administration du lycée et la Direction régionale de l'Éducation nationale montent au créneau pour apporter leur version des faits."
+    },
+    {
+     "id": "question",
+     "start": 13.795,
+     "end": 15.836,
+     "text": "Mais que s'est-il réellement passé ?"
+    },
+    {
+     "id": "journal",
+     "start": 16.636,
+     "end": 30.105,
+     "text": "Dans son édition spéciale du lundi 23 novembre 2026, intitulée « Les mystères du portail fermé », le journal d'investigation L'Éléphant Déchaîné publie les résultats d'une enquête menée à Yamoussoukro et à Abidjan."
+    },
+    {
+     "id": "voici",
+     "start": 30.705,
+     "end": 33.154,
+     "text": "Voici ce que révèle cette investigation."
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "name": "Révélation 1",
+   "start": 99.0,
+   "duration": 47.2,
+   "voStart": 1.4,
+   "voFile": null,
+   "pages": [
+    3,
+    7
+   ],
+   "segments": [
+    {
+     "id": "titre",
+     "start": 1.4,
+     "end": 3.849,
+     "text": "Première révélation : une nouvelle mesure disciplinaire."
+    },
+    {
+     "id": "date",
+     "start": 4.449,
+     "end": 12.612,
+     "text": "Selon L'Éléphant Déchaîné, tout commence le jeudi 22 octobre 2026, à la veille des congés de la Toussaint."
+    },
+    {
+     "id": "portail",
+     "start": 12.962,
+     "end": 19.085,
+     "text": "Ce matin-là, la nouvelle proviseure supervise personnellement la fermeture du portail à 7 heures 30."
+    },
+    {
+     "id": "maison",
+     "start": 19.435,
+     "end": 23.108,
+     "text": "Les élèves retardataires sont invitées à rentrer chez elles."
+    },
+    {
+     "id": "sanscom",
+     "start": 23.458,
+     "end": 28.764,
+     "text": "Une décision qui, selon les témoignages recueillis, aurait été prise sans communication préalable."
+    },
+    {
+     "id": "avant",
+     "start": 29.264,
+     "end": 37.019,
+     "text": "Jusqu'alors, les retardataires perdaient uniquement le premier cours, mais restaient à l'intérieur de l'établissement avant de rejoindre leurs classes."
+    },
+    {
+     "id": "reglement",
+     "start": 37.519,
+     "end": 45.683,
+     "text": "Le journal indique également que le règlement intérieur ne prévoit explicitement aucune fermeture définitive du portail à 7 heures 30."
+    }
+   ]
+  },
+  {
+   "id": "s06",
+   "name": "Révélation 2",
+   "start": 146.2,
+   "duration": 48.767,
+   "voStart": 1.4,
+   "voFile": null,
+   "pages": [
+    4,
+    5
+   ],
+   "segments": [
+    {
+     "id": "titre",
+     "start": 1.4,
+     "end": 5.482,
+     "text": "Deuxième révélation : un partenariat avec la SOTRA aux contours flous."
+    },
+    {
+     "id": "annonce",
+     "start": 6.082,
+     "end": 15.061,
+     "text": "Quelques jours après l'instauration de cette mesure, le lycée annonce la mise en service d'un dispositif de transport scolaire avec la SOTRA."
+    },
+    {
+     "id": "tarif",
+     "start": 15.411,
+     "end": 20.309,
+     "text": "Le tarif mensuel est fixé à vingt-sept mille francs CFA par élève."
+    },
+    {
+     "id": "coges",
+     "start": 20.909,
+     "end": 27.848,
+     "text": "Selon l'enquête, les parents d'élèves et les responsables du COGES n'auraient pas été associés aux négociations initiales."
+    },
+    {
+     "id": "reduction",
+     "start": 28.198,
+     "end": 32.688,
+     "text": "Plusieurs parents auraient demandé une réduction du tarif, sans obtenir satisfaction."
+    },
+    {
+     "id": "drena",
+     "start": 33.188,
+     "end": 43.392,
+     "text": "Mais lorsque la polémique éclate, le directeur régional de l'Éducation nationale affirme qu'aucune convention n'a été signée et que le projet n'a jamais véritablement démarré."
+    },
+    {
+     "id": "verifier",
+     "start": 43.992,
+     "end": 47.257,
+     "text": "L'Éléphant Déchaîné décide alors de vérifier cette affirmation."
+    }
+   ]
+  },
+  {
+   "id": "s07",
+   "name": "Révélation 3",
+   "start": 194.967,
+   "duration": 49.867,
+   "voStart": 1.4,
+   "voFile": null,
+   "pages": [
+    2,
+    4,
+    5,
+    6
+   ],
+   "segments": [
+    {
+     "id": "titre",
+     "start": 1.4,
+     "end": 4.665,
+     "text": "Troisième révélation : les bus circulent bel et bien."
+    },
+    {
+     "id": "videoprov",
+     "start": 5.265,
+     "end": 12.612,
+     "text": "Les journalistes retrouvent une vidéo dans laquelle la proviseure annonce publiquement la signature du partenariat avec la SOTRA."
+    },
+    {
+     "id": "publication",
+     "start": 12.962,
+     "end": 21.126,
+     "text": "Ils retrouvent également une publication du lycée, datée du 2 novembre, annonçant que le service de transport est officiellement opérationnel."
+    },
+    {
+     "id": "pastout",
+     "start": 21.726,
+     "end": 23.766,
+     "text": "Mais ce n'est pas tout."
+    },
+    {
+     "id": "constat",
+     "start": 24.266,
+     "end": 32.43,
+     "text": "Le vendredi 20 novembre, à 6 heures 54, les journalistes constatent la présence de deux bus spéciaux devant le lycée."
+    },
+    {
+     "id": "suivi",
+     "start": 32.78,
+     "end": 39.31,
+     "text": "Dans l'après-midi, ils suivent même l'un de ces véhicules jusqu'aux différents points de dépose des élèves."
+    },
+    {
+     "id": "resume",
+     "start": 39.91,
+     "end": 46.033,
+     "text": "Un service présenté comme n'ayant jamais démarré, mais dont les bus transportent effectivement des élèves."
+    },
+    {
+     "id": "contradiction",
+     "start": 46.633,
+     "end": 47.857,
+     "text": "Une contradiction majeure."
+    }
+   ]
+  },
+  {
+   "id": "s08",
+   "name": "Révélation 4",
+   "start": 244.833,
+   "duration": 39.667,
+   "voStart": 1.4,
+   "voFile": null,
+   "pages": [
+    6
+   ],
+   "segments": [
+    {
+     "id": "titre",
+     "start": 1.4,
+     "end": 4.257,
+     "text": "Quatrième révélation : des interrogations sur les paiements."
+    },
+    {
+     "id": "verse",
+     "start": 4.857,
+     "end": 14.245,
+     "text": "Selon les témoignages recueillis auprès des élèves et des parents, les vingt-sept mille francs CFA seraient versés directement auprès de l'administration du lycée."
+    },
+    {
+     "id": "educatrices",
+     "start": 14.595,
+     "end": 23.166,
+     "text": "Certaines éducatrices auraient également multiplié les sollicitations auprès des élèves pour les encourager à convaincre leurs parents de souscrire au service."
+    },
+    {
+     "id": "admin",
+     "start": 23.666,
+     "end": 31.83,
+     "text": "Pourtant, l'administration affirme que l'adhésion est entièrement volontaire et que le lycée ne tire aucun bénéfice financier de cette opération."
+    },
+    {
+     "id": "circuit",
+     "start": 32.33,
+     "end": 38.044,
+     "text": "L'enquête ne permet cependant pas de déterminer précisément le circuit financier de ces encaissements."
+    }
+   ]
+  },
+  {
+   "id": "s09",
+   "name": "Révélation 5",
+   "start": 284.5,
+   "duration": 68.967,
+   "voStart": 1.4,
+   "voFile": null,
+   "pages": [
+    8
+   ],
+   "segments": [
+    {
+     "id": "titre",
+     "start": 1.4,
+     "end": 3.849,
+     "text": "Cinquième révélation : les accusations contre l'élève."
+    },
+    {
+     "id": "antecedents",
+     "start": 4.449,
+     "end": 12.612,
+     "text": "Lors de son intervention télévisée, le directeur régional présente l'élève à l'origine de la vidéo comme ayant des antécédents disciplinaires."
+    },
+    {
+     "id": "heures",
+     "start": 12.962,
+     "end": 22.758,
+     "text": "Il évoque cinquante-huit heures d'absence durant l'année scolaire précédente, dix-huit heures durant le trimestre en cours et une comparution devant un conseil de discipline."
+    },
+    {
+     "id": "archives",
+     "start": 23.358,
+     "end": 30.297,
+     "text": "L'Éléphant Déchaîné cherche alors à vérifier ces déclarations en consultant les archives scolaires de la jeune fille."
+    },
+    {
+     "id": "notes",
+     "start": 30.647,
+     "end": 33.912,
+     "text": "Le journal découvre les notes de conduite suivantes."
+    },
+    {
+     "id": "t1",
+     "start": 34.312,
+     "end": 36.761,
+     "text": "Seize sur vingt au premier trimestre."
+    },
+    {
+     "id": "t2",
+     "start": 37.061,
+     "end": 39.51,
+     "text": "Quatorze sur vingt au deuxième trimestre."
+    },
+    {
+     "id": "t3",
+     "start": 39.81,
+     "end": 42.259,
+     "text": "Quatorze sur vingt au troisième trimestre."
+    },
+    {
+     "id": "moyenne",
+     "start": 42.659,
+     "end": 46.741,
+     "text": "Soit une moyenne annuelle de quatorze virgule soixante-six sur vingt."
+    },
+    {
+     "id": "bien",
+     "start": 47.241,
+     "end": 49.69,
+     "text": "L'appréciation de sa professeure principale : Bien."
+    },
+    {
+     "id": "aucune",
+     "start": 50.09,
+     "end": 53.763,
+     "text": "Et aucune sanction disciplinaire inscrite dans le dossier consulté."
+    },
+    {
+     "id": "justif",
+     "start": 54.363,
+     "end": 61.71,
+     "text": "Les journalistes indiquent n'avoir obtenu aucun document justificatif permettant de confirmer les accusations formulées par le directeur régional."
+    },
+    {
+     "id": "nuance",
+     "start": 62.06,
+     "end": 67.366,
+     "text": "Ces constats ne démontrent toutefois pas que les absences alléguées n'ont jamais existé."
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "name": "Révélation 6",
+   "start": 353.467,
+   "duration": 27.567,
+   "voStart": 1.4,
+   "voFile": null,
+   "pages": [
+    7
+   ],
+   "segments": [
+    {
+     "id": "titre",
+     "start": 1.4,
+     "end": 3.849,
+     "text": "Sixième révélation : un précédent à Marcory."
+    },
+    {
+     "id": "abidjan",
+     "start": 4.449,
+     "end": 11.388,
+     "text": "L'enquête se poursuit à Abidjan, au Collège Boulevard du Gabon de Marcory, où la proviseure exerçait précédemment."
+    },
+    {
+     "id": "similaire",
+     "start": 11.738,
+     "end": 20.717,
+     "text": "Selon plusieurs témoignages recueillis par le journal, une mesure similaire d'exclusion des retardataires y aurait déjà été instaurée durant l'année scolaire précédente."
+    },
+    {
+     "id": "abandon",
+     "start": 21.067,
+     "end": 25.965,
+     "text": "Face à la contestation des parents, cette mesure aurait finalement été abandonnée."
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "name": "Révélation 7",
+   "start": 381.033,
+   "duration": 41.2,
+   "voStart": 1.4,
+   "voFile": null,
+   "pages": [
+    8
+   ],
+   "segments": [
+    {
+     "id": "titre",
+     "start": 1.4,
+     "end": 4.257,
+     "text": "Septième révélation : un changement après la polémique."
+    },
+    {
+     "id": "vendredi",
+     "start": 4.857,
+     "end": 13.837,
+     "text": "Le vendredi 20 novembre, quatre jours après la publication de la vidéo virale, les journalistes constatent un changement au lycée Mamie Adjoua."
+    },
+    {
+     "id": "entrer",
+     "start": 14.187,
+     "end": 19.901,
+     "text": "Les élèves arrivant après 7 heures 30 sont désormais autorisées à entrer dans l'établissement."
+    },
+    {
+     "id": "nettoyage",
+     "start": 20.251,
+     "end": 26.373,
+     "text": "Elles effectuent des travaux de nettoyage avant de rejoindre leurs classes à la deuxième heure."
+    },
+    {
+     "id": "hierarchie",
+     "start": 26.973,
+     "end": 36.361,
+     "text": "Interrogé par les journalistes, le directeur régional indique avoir reçu des instructions de sa hiérarchie lui demandant de ne plus commenter cette affaire."
+    },
+    {
+     "id": "proviseure",
+     "start": 36.711,
+     "end": 39.568,
+     "text": "La proviseure aurait reçu les mêmes instructions."
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "name": "Chronologie",
+   "start": 422.233,
+   "duration": 21.0,
+   "voStart": 0,
+   "voFile": null,
+   "pages": [],
+   "segments": [
+    {
+     "id": "title",
+     "start": 0,
+     "end": 2.0,
+     "text": null
+    },
+    {
+     "id": "e1",
+     "start": 2.0,
+     "end": 4.6,
+     "text": null
+    },
+    {
+     "id": "e2",
+     "start": 4.6,
+     "end": 7.2,
+     "text": null
+    },
+    {
+     "id": "e3",
+     "start": 7.2,
+     "end": 9.8,
+     "text": null
+    },
+    {
+     "id": "e4",
+     "start": 9.8,
+     "end": 12.4,
+     "text": null
+    },
+    {
+     "id": "e5",
+     "start": 12.4,
+     "end": 15.0,
+     "text": null
+    },
+    {
+     "id": "e6",
+     "start": 15.0,
+     "end": 17.6,
+     "text": null
+    },
+    {
+     "id": "e7",
+     "start": 17.6,
+     "end": 21.0,
+     "text": null
+    }
+   ]
+  },
+  {
+   "id": "s13",
+   "name": "Les questions sans réponse",
+   "start": 443.233,
+   "duration": 42.933,
+   "voStart": 0.8,
+   "voFile": null,
+   "pages": [],
+   "segments": [
+    {
+     "id": "retenir",
+     "start": 0.8,
+     "end": 3.249,
+     "text": "Alors, que retenir de cette investigation ?"
+    },
+    {
+     "id": "plusieurs",
+     "start": 3.749,
+     "end": 5.79,
+     "text": "Plusieurs questions restent sans réponse."
+    },
+    {
+     "id": "q1",
+     "start": 6.59,
+     "end": 10.671,
+     "text": "Existe-t-il une convention formelle entre le lycée et la SOTRA ?"
+    },
+    {
+     "id": "q2",
+     "start": 12.071,
+     "end": 14.112,
+     "text": "Qui a autorisé ce partenariat ?"
+    },
+    {
+     "id": "q3",
+     "start": 15.512,
+     "end": 19.594,
+     "text": "Comment le tarif de vingt-sept mille francs a-t-il été déterminé ?"
+    },
+    {
+     "id": "q4",
+     "start": 20.994,
+     "end": 25.076,
+     "text": "Qui encaisse les paiements et comment ces fonds sont-ils gérés ?"
+    },
+    {
+     "id": "q5",
+     "start": 26.476,
+     "end": 31.373,
+     "text": "Pourquoi les parents et le COGES n'auraient-ils pas été associés aux négociations ?"
+    },
+    {
+     "id": "q6",
+     "start": 32.773,
+     "end": 40.529,
+     "text": "Et surtout, existe-t-il un lien entre la fermeture du portail et la mise en place du transport scolaire payant ?"
+    }
+   ]
+  },
+  {
+   "id": "s14",
+   "name": "Conclusion journalistique",
+   "start": 486.167,
+   "duration": 38.767,
+   "voStart": 0.6,
+   "voFile": null,
+   "pages": [],
+   "segments": [
+    {
+     "id": "prudent",
+     "start": 0.6,
+     "end": 3.865,
+     "text": "Sur ce dernier point, L'Éléphant Déchaîné reste prudent."
+    },
+    {
+     "id": "causalite",
+     "start": 4.365,
+     "end": 14.569,
+     "text": "Les éléments recueillis ne permettent pas d'établir avec certitude un lien de causalité entre les deux décisions, encore moins de conclure à l'existence d'une fraude."
+    },
+    {
+     "id": "gouvernance",
+     "start": 15.169,
+     "end": 23.333,
+     "text": "Mais les contradictions relevées soulèvent de sérieuses interrogations sur la gouvernance, la transparence et la gestion de cet établissement public."
+    },
+    {
+     "id": "simple",
+     "start": 24.133,
+     "end": 29.439,
+     "text": "Une affaire qui, au départ, semblait n'être qu'un simple problème de ponctualité scolaire."
+    },
+    {
+     "id": "debat",
+     "start": 29.789,
+     "end": 37.136,
+     "text": "Et qui, grâce à la vidéo d'une élève de seize ans, est devenue un sujet de débat national."
+    }
+   ]
+  },
+  {
+   "id": "s15",
+   "name": "Signature finale",
+   "start": 524.933,
+   "duration": 8.967,
+   "voStart": 1.2,
+   "voFile": null,
+   "pages": [],
+   "segments": [
+    {
+     "id": "rouvert",
+     "start": 1.2,
+     "end": 2.833,
+     "text": "Le portail s'est rouvert."
+    },
+    {
+     "id": "demeurent",
+     "start": 3.733,
+     "end": 5.365,
+     "text": "Mais les questions demeurent."
+    }
+   ]
+  },
+  {
+   "id": "s16",
+   "name": "Sources et crédits",
+   "start": 533.9,
+   "duration": 10.0,
+   "voStart": 0,
+   "voFile": null,
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "segments": [
+    {
+     "id": "credits",
+     "start": 0,
+     "end": 10.0,
+     "text": null
+    }
+   ]
+  }
+ ],
+ "teaser": {
+  "intro": 2.5,
+  "clips": [
+   {
+    "scene": "s01",
+    "seg": "hook",
+    "srcStart": 5.55,
+    "start": 0.0,
+    "duration": 8.455,
+    "text": "Depuis plusieurs jours, une affaire secoue le monde éducatif ivoirien et suscite de vives réactions sur les réseaux sociaux."
+   },
+   {
+    "scene": "s03",
+    "seg": "soupcon",
+    "srcStart": 53.584,
+    "start": 8.455,
+    "duration": 9.68,
+    "text": "Elle soupçonne un lien entre cette mesure disciplinaire et la mise en place d'un service de transport scolaire payant avec la SOTRA."
+   },
+   {
+    "scene": "s06",
+    "seg": "tarif",
+    "srcStart": 161.361,
+    "start": 18.135,
+    "duration": 5.598,
+    "text": "Le tarif mensuel est fixé à vingt-sept mille francs CFA par élève."
+   },
+   {
+    "scene": "s06",
+    "seg": "drena",
+    "srcStart": 179.138,
+    "start": 23.733,
+    "duration": 10.904,
+    "text": "Mais lorsque la polémique éclate, le directeur régional de l'Éducation nationale affirme qu'aucune convention n'a été signée et que le projet n'a jamais véritablement démarré."
+   },
+   {
+    "scene": "s07",
+    "seg": "constat",
+    "srcStart": 218.983,
+    "start": 34.637,
+    "duration": 8.864,
+    "text": "Le vendredi 20 novembre, à 6 heures 54, les journalistes constatent la présence de deux bus spéciaux devant le lycée."
+   },
+   {
+    "scene": "s07",
+    "seg": "resume",
+    "srcStart": 234.627,
+    "start": 43.501,
+    "duration": 6.823,
+    "text": "Un service présenté comme n'ayant jamais démarré, mais dont les bus transportent effectivement des élèves."
+   },
+   {
+    "scene": "s07",
+    "seg": "contradiction",
+    "srcStart": 241.35,
+    "start": 50.324,
+    "duration": 1.924,
+    "text": "Une contradiction majeure."
+   }
+  ],
+  "outro": 5.0,
+  "total": 59.748
+ }
+}

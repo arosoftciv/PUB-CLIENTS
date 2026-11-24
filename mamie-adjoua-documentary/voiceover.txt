@@ -1,0 +1,110 @@
+SCRIPT DE NARRATION — « Lycée Mamie Adjoua : les mystères du portail fermé »
+Adaptation de l'investigation de L'Éléphant Déchaîné (édition spéciale du 23 novembre 2026).
+Voix : masculine, grave, posée, journalistique. Débit 135-150 mots/min.
+Prononciations : Yamoussoukro « Ya-mou-sou-kro » · Mamie Adjoua « Ma-mi A-djou-a » · Abidjan « A-bi-djan » ·
+SOTRA « So-tra » · COGES « Co-jesse » · Kpoussoussou : à vérifier localement.
+Les repères [Sxx] ne sont pas à lire. Un fichier audio par scène : public/audio/voiceover/sXX.wav
+
+[S01 — L'accroche]
+Depuis plusieurs jours, une affaire secoue le monde éducatif ivoirien et suscite de vives réactions sur les réseaux sociaux.
+
+[S02 — Le contexte national]
+Au cœur de cette polémique : le lycée d'excellence Mamie Adjoua de Yamoussoukro, sa nouvelle proviseure, une élève de seize ans et un mystérieux projet de transport scolaire.
+Tout est parti d'une vidéo publiée le lundi 16 novembre 2026.
+
+[S03 — La vidéo qui déclenche la polémique]
+Dans cette vidéo, une élève de Terminale D dénonce une mesure de l'administration du lycée qui consiste à interdire l'accès à l'établissement aux élèves arrivant après 7 heures 30, les privant ainsi de toute une journée de cours.
+Mais la jeune fille va plus loin.
+Elle soupçonne un lien entre cette mesure disciplinaire et la mise en place d'un service de transport scolaire payant avec la SOTRA.
+
+[S04 — L'investigation journalistique]
+En quelques heures, la vidéo devient virale.
+Les réactions se multiplient. L'administration du lycée et la Direction régionale de l'Éducation nationale montent au créneau pour apporter leur version des faits.
+Mais que s'est-il réellement passé ?
+Dans son édition spéciale du lundi 23 novembre 2026, intitulée « Les mystères du portail fermé », le journal d'investigation L'Éléphant Déchaîné publie les résultats d'une enquête menée à Yamoussoukro et à Abidjan.
+Voici ce que révèle cette investigation.
+
+[S05 — Révélation 1]
+Première révélation : une nouvelle mesure disciplinaire.
+Selon L'Éléphant Déchaîné, tout commence le jeudi 22 octobre 2026, à la veille des congés de la Toussaint.
+Ce matin-là, la nouvelle proviseure supervise personnellement la fermeture du portail à 7 heures 30.
+Les élèves retardataires sont invitées à rentrer chez elles.
+Une décision qui, selon les témoignages recueillis, aurait été prise sans communication préalable.
+Jusqu'alors, les retardataires perdaient uniquement le premier cours, mais restaient à l'intérieur de l'établissement avant de rejoindre leurs classes.
+Le journal indique également que le règlement intérieur ne prévoit explicitement aucune fermeture définitive du portail à 7 heures 30.
+
+[S06 — Révélation 2]
+Deuxième révélation : un partenariat avec la SOTRA aux contours flous.
+Quelques jours après l'instauration de cette mesure, le lycée annonce la mise en service d'un dispositif de transport scolaire avec la SOTRA.
+Le tarif mensuel est fixé à vingt-sept mille francs CFA par élève.
+Selon l'enquête, les parents d'élèves et les responsables du COGES n'auraient pas été associés aux négociations initiales.
+Plusieurs parents auraient demandé une réduction du tarif, sans obtenir satisfaction.
+Mais lorsque la polémique éclate, le directeur régional de l'Éducation nationale affirme qu'aucune convention n'a été signée et que le projet n'a jamais véritablement démarré.
+L'Éléphant Déchaîné décide alors de vérifier cette affirmation.
+
+[S07 — Révélation 3]
+Troisième révélation : les bus circulent bel et bien.
+Les journalistes retrouvent une vidéo dans laquelle la proviseure annonce publiquement la signature du partenariat avec la SOTRA.
+Ils retrouvent également une publication du lycée, datée du 2 novembre, annonçant que le service de transport est officiellement opérationnel.
+Mais ce n'est pas tout.
+Le vendredi 20 novembre, à 6 heures 54, les journalistes constatent la présence de deux bus spéciaux devant le lycée.
+Dans l'après-midi, ils suivent même l'un de ces véhicules jusqu'aux différents points de dépose des élèves.
+Un service présenté comme n'ayant jamais démarré, mais dont les bus transportent effectivement des élèves.
+Une contradiction majeure.
+
+[S08 — Révélation 4]
+Quatrième révélation : des interrogations sur les paiements.
+Selon les témoignages recueillis auprès des élèves et des parents, les vingt-sept mille francs CFA seraient versés directement auprès de l'administration du lycée.
+Certaines éducatrices auraient également multiplié les sollicitations auprès des élèves pour les encourager à convaincre leurs parents de souscrire au service.
+Pourtant, l'administration affirme que l'adhésion est entièrement volontaire et que le lycée ne tire aucun bénéfice financier de cette opération.
+L'enquête ne permet cependant pas de déterminer précisément le circuit financier de ces encaissements.
+
+[S09 — Révélation 5]
+Cinquième révélation : les accusations contre l'élève.
+Lors de son intervention télévisée, le directeur régional présente l'élève à l'origine de la vidéo comme ayant des antécédents disciplinaires.
+Il évoque cinquante-huit heures d'absence durant l'année scolaire précédente, dix-huit heures durant le trimestre en cours et une comparution devant un conseil de discipline.
+L'Éléphant Déchaîné cherche alors à vérifier ces déclarations en consultant les archives scolaires de la jeune fille.
+Le journal découvre les notes de conduite suivantes.
+Seize sur vingt au premier trimestre.
+Quatorze sur vingt au deuxième trimestre.
+Quatorze sur vingt au troisième trimestre.
+Soit une moyenne annuelle de quatorze virgule soixante-six sur vingt.
+L'appréciation de sa professeure principale : Bien.
+Et aucune sanction disciplinaire inscrite dans le dossier consulté.
+Les journalistes indiquent n'avoir obtenu aucun document justificatif permettant de confirmer les accusations formulées par le directeur régional.
+Ces constats ne démontrent toutefois pas que les absences alléguées n'ont jamais existé.
+
+[S10 — Révélation 6]
+Sixième révélation : un précédent à Marcory.
+L'enquête se poursuit à Abidjan, au Collège Boulevard du Gabon de Marcory, où la proviseure exerçait précédemment.
+Selon plusieurs témoignages recueillis par le journal, une mesure similaire d'exclusion des retardataires y aurait déjà été instaurée durant l'année scolaire précédente.
+Face à la contestation des parents, cette mesure aurait finalement été abandonnée.
+
+[S11 — Révélation 7]
+Septième révélation : un changement après la polémique.
+Le vendredi 20 novembre, quatre jours après la publication de la vidéo virale, les journalistes constatent un changement au lycée Mamie Adjoua.
+Les élèves arrivant après 7 heures 30 sont désormais autorisées à entrer dans l'établissement.
+Elles effectuent des travaux de nettoyage avant de rejoindre leurs classes à la deuxième heure.
+Interrogé par les journalistes, le directeur régional indique avoir reçu des instructions de sa hiérarchie lui demandant de ne plus commenter cette affaire.
+La proviseure aurait reçu les mêmes instructions.
+
+[S13 — Les questions sans réponse]
+Alors, que retenir de cette investigation ?
+Plusieurs questions restent sans réponse.
+Existe-t-il une convention formelle entre le lycée et la SOTRA ?
+Qui a autorisé ce partenariat ?
+Comment le tarif de vingt-sept mille francs a-t-il été déterminé ?
+Qui encaisse les paiements et comment ces fonds sont-ils gérés ?
+Pourquoi les parents et le COGES n'auraient-ils pas été associés aux négociations ?
+Et surtout, existe-t-il un lien entre la fermeture du portail et la mise en place du transport scolaire payant ?
+
+[S14 — Conclusion journalistique]
+Sur ce dernier point, L'Éléphant Déchaîné reste prudent.
+Les éléments recueillis ne permettent pas d'établir avec certitude un lien de causalité entre les deux décisions, encore moins de conclure à l'existence d'une fraude.
+Mais les contradictions relevées soulèvent de sérieuses interrogations sur la gouvernance, la transparence et la gestion de cet établissement public.
+Une affaire qui, au départ, semblait n'être qu'un simple problème de ponctualité scolaire.
+Et qui, grâce à la vidéo d'une élève de seize ans, est devenue un sujet de débat national.
+
+[S15 — Signature finale]
+Le portail s'est rouvert.
+Mais les questions demeurent.

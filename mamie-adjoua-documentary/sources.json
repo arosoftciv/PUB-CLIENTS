@@ -1,0 +1,44 @@
+{
+  "source_principale": {
+    "titre": "Les mystères du portail fermé",
+    "publication": "L'Éléphant Déchaîné",
+    "edition": "Édition spéciale du lundi 23 novembre 2026",
+    "fichier_attendu": "source/ELEPHANT AFFAIRE MAMIE ADJOUA.pdf",
+    "statut": "NON FOURNI — narration reprise telle quelle du prompt client, non revérifiée contre le PDF"
+  },
+  "repartition_pages": {
+    "s02-s03 Contexte": [2, 3],
+    "s04 Investigation": [1],
+    "s05 Mesure d'exclusion": [3, 7],
+    "s06 Partenariat SOTRA": [4, 5],
+    "s07 Circulation des bus": [2, 4, 5, 6],
+    "s08 Paiements et sollicitations": [6],
+    "s09 Dossier scolaire": [8],
+    "s10 Précédent à Marcory": [7],
+    "s11 Instructions de la hiérarchie": [8]
+  },
+  "visuels_utilises": [
+    {"fichier": "public/images/newspaper/couverture-affaire.jpg", "origine": "Image 01 fournie par le client (visuel « Affaire Lycée Mamie Adjoua » siglé L'Éléphant Déchaîné)", "usage": "vignette / couverture, scènes 00, 04, 14"},
+    {"fichier": "public/images/school/portail-1.jpg", "origine": "Image 03 fournie (filigrane « Vivre À Yamoussoukro »)", "usage": "scènes 02, 05, 14, 15"},
+    {"fichier": "public/images/school/portail-2.jpg", "origine": "Image 05 fournie, recadrée (élève exclue)", "usage": "scènes 11, 13"},
+    {"fichier": "public/images/people/directeur-regional-capture.jpg", "origine": "Image 04 fournie, recadrée (élève exclue)", "usage": "scènes 06, 07", "a_confirmer": "identité présumée : directeur régional de l'Éducation nationale"},
+    {"fichier": "public/images/people/proviseure-capture.jpg", "origine": "Image 05 fournie, recadrée", "usage": "non utilisée à l'écran pour l'instant", "a_confirmer": "identité présumée : proviseure"}
+  ],
+  "visuels_exclus": [
+    {"fichier": "source/uploads/02-publication-reseaux-NE-PAS-UTILISER-mineure.jpg", "raison": "visage de l'élève mineure — protection de l'identité"}
+  ],
+  "ressources_manquantes": [
+    "Photos des bus spéciaux SOTRA (p. 2, 5, 6) → remplacées par un schéma étiqueté « Illustration - Reconstitution visuelle »",
+    "Photo de la cérémonie / annonce du partenariat (p. 4) → carte typographique",
+    "Photo du Collège Boulevard du Gabon (p. 7) → carte typographique",
+    "Extraits d'articles p. 4, 7, 8 → cartes de synthèse (jamais présentées comme des fac-similés)",
+    "Véritable une du journal (p. 1)",
+    "Logo AroSoft (fond transparent) → mention et logo absents",
+    "Fichier audio de voix-off → timing estimé à 147 mots/min"
+  ],
+  "autres": {
+    "carte": "Natural Earth (domaine public) via le paquet npm world-atlas",
+    "musique_sfx": "Synthétisés par scripts/prepare-audio.py — œuvre originale, aucun droit tiers",
+    "polices": "Barlow Condensed, Inter, IBM Plex Mono — SIL Open Font License (Fontsource)"
+  }
+}

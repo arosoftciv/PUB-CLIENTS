@@ -1,0 +1,8 @@
+node_modules/
+output/*.mp4
+output/qc/
+output/render-*.log
+public/audio/mix/
+.DS_Store
+public/audio/music/bed.wav
+source/uploads/02-*
