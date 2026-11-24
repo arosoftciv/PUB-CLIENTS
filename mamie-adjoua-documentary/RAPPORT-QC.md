@@ -42,6 +42,12 @@ Date : 24 novembre 2026 · Version : v3, **avec voix-off** (ElevenLabs, voix « 
 
 Les jours de la semaine ont été vérifiés au calendrier : jeudi 22/10, lundi 16/11, vendredi 20/11 et lundi 23/11/2026 sont exacts.
 
+## 2 septies. Logo AroSoft
+
+- Logo fourni sur fond bleu marine : le fond est retiré automatiquement (détourage par couleur de fond, avec nettoyage des bords).
+- Miniature en haut à droite sur toute la vidéo, sur une pastille sombre translucide pour rester lisible sur les photos claires.
+  Également sur la couverture et au générique (« Production audiovisuelle : AroSoft »). L'investigation reste attribuée à L'Éléphant Déchaîné.
+
 ## 2 sexies. Mur d'écrans et photos du journal (retour client)
 
 - Arrière-plan : un mur de 16 captures de publications sur les réseaux sociaux défile lentement, en 4 colonnes inclinées,
@@ -141,7 +147,7 @@ Les jours de la semaine ont été vérifiés au calendrier : jeudi 22/10, lundi 
 | Cérémonie / annonce (p. 4) | Carte de constat typographique |
 | Collège Boulevard du Gabon (p. 7) | Carte typographique |
 | Véritable une du journal | Visuel n° 1 fourni |
-| Logo AroSoft | Absent (emplacements prêts) |
+| Logo AroSoft | Fourni et intégré : miniature en haut à droite sur toute la vidéo, couverture, générique |
 | Voix-off | Timing estimé, `voiceover.txt` et `voiceover-tts.txt` prêts |
 
 ## 6. Recommandations avant publication

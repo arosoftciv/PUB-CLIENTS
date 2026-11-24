@@ -226,7 +226,7 @@ export const BrandBug: React.FC<{ src: string | null }> = ({ src }) =>
   src ? (
     <Img
       src={staticFile(src)}
-      style={{ position: "absolute", right: 44, top: 104, height: 64, width: "auto", maxWidth: 190, objectFit: "contain", opacity: 0.92, filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.55))" }}
+      style={{ position: "absolute", right: 36, top: 92, height: 88, width: "auto", maxWidth: 200, objectFit: "contain", opacity: 0.95, background: "rgba(11,13,16,0.55)", padding: "6px 10px", borderRadius: 14 }}
     />
   ) : null;
 

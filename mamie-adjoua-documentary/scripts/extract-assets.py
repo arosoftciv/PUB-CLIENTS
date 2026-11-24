@@ -118,10 +118,16 @@ def main() -> None:
     if logo:
         im = Image.open(logo).convert("RGBA")
         px = np.asarray(im).astype(np.float32)
-        if px[..., 3].min() > 250:  # pas de transparence : retirer le fond blanc
-            whiteness = px[..., :3].min(axis=2)
-            alpha = np.clip((255 - whiteness) / (255 - 225) * 255, 0, 255)
+        if px[..., 3].min() > 250:  # pas de transparence : retirer le fond uni (couleur des coins)
+            corners = np.array([px[2, 2, :3], px[2, -3, :3], px[-3, 2, :3], px[-3, -3, :3]])
+            bg = np.median(corners, axis=0)
+            dist = np.sqrt(((px[..., :3] - bg) ** 2).sum(axis=2))
+            alpha = np.clip((dist - 8) / (30 - 8) * 255, 0, 255)
             px[..., 3] = np.minimum(px[..., 3], alpha)
+            # décontamination : retire la teinte du fond sur les bords semi-transparents
+            a = (alpha / 255.0)[..., None]
+            safe = np.where(a > 0.01, a, 1)
+            px[..., :3] = np.clip((px[..., :3] - bg * (1 - a)) / safe, 0, 255)
         im = Image.fromarray(px.astype(np.uint8), "RGBA")
         bbox = im.getbbox()
         if bbox:
