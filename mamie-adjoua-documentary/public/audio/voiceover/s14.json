@@ -2,26 +2,26 @@
  {
   "id": "prudent",
   "start": 0.0,
-  "end": 3.524
+  "end": 3.454
  },
  {
   "id": "causalite",
-  "start": 4.024,
-  "end": 17.138
+  "start": 3.954,
+  "end": 12.885
  },
  {
   "id": "gouvernance",
-  "start": 17.738,
-  "end": 28.346
+  "start": 13.485,
+  "end": 22.389
  },
  {
   "id": "simple",
-  "start": 29.146,
-  "end": 34.365
+  "start": 23.189,
+  "end": 28.79
  },
  {
   "id": "debat",
-  "start": 34.715,
-  "end": 41.637
+  "start": 29.14,
+  "end": 34.5
  }
 ]

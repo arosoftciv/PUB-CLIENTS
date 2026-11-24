@@ -2,16 +2,16 @@
  {
   "id": "chronique",
   "start": 0.0,
-  "end": 8.103
+  "end": 6.533
  },
  {
   "id": "enquete",
-  "start": 8.603,
-  "end": 16.474
+  "start": 7.033,
+  "end": 12.748
  },
  {
   "id": "resume",
-  "start": 16.974,
-  "end": 23.026
+  "start": 13.248,
+  "end": 18.354
  }
 ]

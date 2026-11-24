@@ -2,26 +2,26 @@
  {
   "id": "titre",
   "start": 0.0,
-  "end": 4.037
+  "end": 3.361
  },
  {
   "id": "verse",
-  "start": 4.637,
-  "end": 15.624
+  "start": 3.961,
+  "end": 12.939
  },
  {
   "id": "educatrices",
-  "start": 15.974,
-  "end": 26.899
+  "start": 13.289,
+  "end": 22.21
  },
  {
   "id": "admin",
-  "start": 27.399,
-  "end": 36.519
+  "start": 22.71,
+  "end": 30.697
  },
  {
   "id": "circuit",
-  "start": 37.019,
-  "end": 43.993
+  "start": 31.197,
+  "end": 36.511
  }
 ]

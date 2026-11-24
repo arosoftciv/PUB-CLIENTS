@@ -2,36 +2,36 @@
  {
   "id": "titre",
   "start": 0.0,
-  "end": 4.12
+  "end": 3.325
  },
  {
   "id": "date",
-  "start": 4.72,
-  "end": 13.4
+  "start": 3.925,
+  "end": 9.197
  },
  {
   "id": "portail",
-  "start": 13.75,
-  "end": 18.768
+  "start": 9.547,
+  "end": 16.932
  },
  {
   "id": "maison",
-  "start": 19.118,
-  "end": 25.941
+  "start": 17.282,
+  "end": 20.303
  },
  {
   "id": "sanscom",
-  "start": 26.291,
-  "end": 33.845
+  "start": 20.653,
+  "end": 26.204
  },
  {
   "id": "avant",
-  "start": 34.345,
-  "end": 44.499
+  "start": 26.704,
+  "end": 34.55
  },
  {
   "id": "reglement",
-  "start": 44.999,
-  "end": 55.166
+  "start": 35.05,
+  "end": 42.73
  }
 ]

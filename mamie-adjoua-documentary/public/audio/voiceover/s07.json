@@ -2,41 +2,41 @@
  {
   "id": "titre",
   "start": 0.0,
-  "end": 4.024
+  "end": 3.684
  },
  {
   "id": "videoprov",
-  "start": 4.624,
-  "end": 14.042
+  "start": 4.284,
+  "end": 10.681
  },
  {
   "id": "publication",
-  "start": 14.392,
-  "end": 25.268
+  "start": 11.031,
+  "end": 18.659
  },
  {
   "id": "pastout",
-  "start": 25.868,
-  "end": 26.934
+  "start": 19.259,
+  "end": 20.261
  },
  {
   "id": "constat",
-  "start": 27.434,
-  "end": 37.334
+  "start": 20.761,
+  "end": 28.528
  },
  {
   "id": "suivi",
-  "start": 37.684,
-  "end": 44.975
+  "start": 28.878,
+  "end": 34.031
  },
  {
   "id": "resume",
-  "start": 45.575,
-  "end": 54.019
+  "start": 34.631,
+  "end": 39.997
  },
  {
   "id": "contradiction",
-  "start": 54.619,
-  "end": 56.147
+  "start": 40.597,
+  "end": 42.083
  }
 ]

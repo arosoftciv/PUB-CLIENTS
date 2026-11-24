@@ -2,31 +2,31 @@
  {
   "id": "titre",
   "start": 0.0,
-  "end": 4.036
+  "end": 3.136
  },
  {
   "id": "vendredi",
-  "start": 4.636,
-  "end": 15.246
+  "start": 3.736,
+  "end": 11.844
  },
  {
   "id": "entrer",
-  "start": 15.596,
-  "end": 22.127
+  "start": 12.194,
+  "end": 17.16
  },
  {
   "id": "nettoyage",
-  "start": 22.477,
-  "end": 28.641
+  "start": 17.51,
+  "end": 22.374
  },
  {
   "id": "hierarchie",
-  "start": 29.241,
-  "end": 40.288
+  "start": 22.974,
+  "end": 31.388
  },
  {
   "id": "proviseure",
-  "start": 40.638,
-  "end": 43.715
+  "start": 31.738,
+  "end": 34.191
  }
 ]

@@ -2,7 +2,7 @@
   "title": "Lycée Mamie Adjoua — Les mystères du portail fermé",
   "fps": 30,
   "resolution": "1080x1920",
-  "total_seconds": 598.967,
+  "total_seconds": 497.8,
   "timing_source": "voix-off réelle",
   "narration_words": 1044,
   "scenes": [
@@ -19,8 +19,8 @@
       "id": "s01",
       "name": "Hook — l'affaire et l'investigation",
       "start": "00:00:01.600",
-      "end": "00:00:25.700",
-      "duration_s": 24.1,
+      "end": "00:00:21.033",
+      "duration_s": 19.433,
       "source_pages": [],
       "narration": [
         "Depuis plusieurs jours, une affaire impliquant le lycée d'excellence Mamie Adjoua de Yamoussoukro défraye la chronique.",
@@ -31,18 +31,18 @@
     {
       "id": "s02",
       "name": "Carton d'ouverture",
-      "start": "00:00:25.700",
-      "end": "00:00:28.700",
-      "duration_s": 3.0,
+      "start": "00:00:21.033",
+      "end": "00:00:24.633",
+      "duration_s": 3.6,
       "source_pages": [],
       "narration": []
     },
     {
       "id": "s03",
       "name": "La vidéo qui déclenche la polémique",
-      "start": "00:00:28.700",
-      "end": "00:01:08.833",
-      "duration_s": 40.133,
+      "start": "00:00:24.633",
+      "end": "00:00:54.133",
+      "duration_s": 29.5,
       "source_pages": [
         2,
         3
@@ -57,9 +57,9 @@
     {
       "id": "s04",
       "name": "L'investigation journalistique",
-      "start": "00:01:08.833",
-      "end": "00:01:31.100",
-      "duration_s": 22.267,
+      "start": "00:00:54.133",
+      "end": "00:01:12.900",
+      "duration_s": 18.767,
       "source_pages": [],
       "narration": [
         "En quelques heures, la vidéo devient virale.",
@@ -71,9 +71,9 @@
     {
       "id": "s05",
       "name": "Révélation 1",
-      "start": "00:01:31.100",
-      "end": "00:02:28.633",
-      "duration_s": 57.533,
+      "start": "00:01:12.900",
+      "end": "00:01:58.200",
+      "duration_s": 45.3,
       "source_pages": [
         3,
         7
@@ -91,9 +91,9 @@
     {
       "id": "s06",
       "name": "Révélation 2",
-      "start": "00:02:28.633",
-      "end": "00:03:26.133",
-      "duration_s": 57.5,
+      "start": "00:01:58.200",
+      "end": "00:02:44.400",
+      "duration_s": 46.2,
       "source_pages": [
         4,
         5
@@ -111,9 +111,9 @@
     {
       "id": "s07",
       "name": "Révélation 3",
-      "start": "00:03:26.133",
-      "end": "00:04:25.000",
-      "duration_s": 58.867,
+      "start": "00:02:44.400",
+      "end": "00:03:29.400",
+      "duration_s": 45.0,
       "source_pages": [
         2,
         4,
@@ -134,9 +134,9 @@
     {
       "id": "s08",
       "name": "Révélation 4",
-      "start": "00:04:25.000",
-      "end": "00:05:11.400",
-      "duration_s": 46.4,
+      "start": "00:03:29.400",
+      "end": "00:04:08.533",
+      "duration_s": 39.133,
       "source_pages": [
         6
       ],
@@ -151,9 +151,9 @@
     {
       "id": "s09",
       "name": "Révélation 5",
-      "start": "00:05:11.400",
-      "end": "00:06:32.900",
-      "duration_s": 81.5,
+      "start": "00:04:08.533",
+      "end": "00:05:14.666",
+      "duration_s": 66.133,
       "source_pages": [
         8
       ],
@@ -176,9 +176,9 @@
     {
       "id": "s10",
       "name": "Révélation 6",
-      "start": "00:06:32.900",
-      "end": "00:07:05.600",
-      "duration_s": 32.7,
+      "start": "00:05:14.667",
+      "end": "00:05:42.200",
+      "duration_s": 27.533,
       "source_pages": [
         7
       ],
@@ -192,9 +192,9 @@
     {
       "id": "s11",
       "name": "Révélation 7",
-      "start": "00:07:05.600",
-      "end": "00:07:51.733",
-      "duration_s": 46.133,
+      "start": "00:05:42.200",
+      "end": "00:06:19.000",
+      "duration_s": 36.8,
       "source_pages": [
         8
       ],
@@ -210,18 +210,18 @@
     {
       "id": "s12",
       "name": "Chronologie",
-      "start": "00:07:51.733",
-      "end": "00:08:08.133",
-      "duration_s": 16.4,
+      "start": "00:06:19.000",
+      "end": "00:06:40.000",
+      "duration_s": 21.0,
       "source_pages": [],
       "narration": []
     },
     {
       "id": "s13",
       "name": "Les questions sans réponse",
-      "start": "00:08:08.133",
-      "end": "00:08:51.500",
-      "duration_s": 43.367,
+      "start": "00:06:40.000",
+      "end": "00:07:16.633",
+      "duration_s": 36.633,
       "source_pages": [],
       "narration": [
         "Alors, que retenir de cette investigation ?",
@@ -237,9 +237,9 @@
     {
       "id": "s14",
       "name": "Conclusion journalistique",
-      "start": "00:08:51.500",
-      "end": "00:09:34.967",
-      "duration_s": 43.467,
+      "start": "00:07:16.633",
+      "end": "00:07:52.933",
+      "duration_s": 36.3,
       "source_pages": [],
       "narration": [
         "Sur ce dernier point, L'Éléphant Déchaîné reste prudent.",
@@ -252,9 +252,9 @@
     {
       "id": "s15",
       "name": "Signature finale",
-      "start": "00:09:34.967",
-      "end": "00:09:42.934",
-      "duration_s": 7.967,
+      "start": "00:07:52.933",
+      "end": "00:08:01.000",
+      "duration_s": 8.067,
       "source_pages": [],
       "narration": [
         "Le portail s'est rouvert.",
@@ -264,9 +264,9 @@
     {
       "id": "s17",
       "name": "Appel à l'abonnement",
-      "start": "00:09:42.933",
-      "end": "00:09:51.466",
-      "duration_s": 8.533,
+      "start": "00:08:01.000",
+      "end": "00:08:08.800",
+      "duration_s": 7.8,
       "source_pages": [],
       "narration": [
         "Vous avez aimé ?",
@@ -276,9 +276,9 @@
     {
       "id": "s16",
       "name": "Sources et crédits",
-      "start": "00:09:51.467",
-      "end": "00:09:58.967",
-      "duration_s": 7.5,
+      "start": "00:08:08.800",
+      "end": "00:08:17.800",
+      "duration_s": 9.0,
       "source_pages": [
         1,
         2,

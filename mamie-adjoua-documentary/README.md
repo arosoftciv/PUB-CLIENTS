@@ -51,7 +51,7 @@ python3 scripts/validate-render.py             # contrôle codecs / fps / loudne
 
 ## Voix-off actuelle
 
-Voix « Martinez » (ElevenLabs, eleven_multilingual_v2), pistes brutes dans `source/voiceover-raw/sXX.mp3`.
+Voix « Brian » (ElevenLabs, voice_id nPczCjzI2devNBz1zQrb, eleven_multilingual_v2), pistes brutes dans `source/voiceover-raw/sXX.mp3`. L'ancienne version « Martinez » est archivée dans `source/voiceover-raw/martinez/`.
 `python3 scripts/align-voiceover.py` découpe chaque piste phrase par phrase et produit `public/audio/voiceover/sXX.wav` + `sXX.json`.
 Ensuite, `prepare-audio.py` recale toute la timeline.
 

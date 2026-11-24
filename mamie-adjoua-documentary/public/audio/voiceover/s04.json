@@ -2,21 +2,21 @@
  {
   "id": "virale",
   "start": 0.0,
-  "end": 2.621
+  "end": 2.43
  },
  {
   "id": "reactions",
-  "start": 2.971,
-  "end": 14.013
+  "start": 2.78,
+  "end": 11.607
  },
  {
   "id": "question",
-  "start": 14.613,
-  "end": 16.595
+  "start": 12.207,
+  "end": 13.833
  },
  {
   "id": "voici",
-  "start": 17.395,
-  "end": 20.238
+  "start": 14.633,
+  "end": 16.753
  }
 ]

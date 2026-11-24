@@ -1,66 +1,76 @@
 1
-00:00:02,250 --> 00:00:06,920
+00:00:02,250 --> 00:00:06,015
 Depuis plusieurs jours, une affaire
 impliquant le lycée d'excellence
 
 2
-00:00:06,920 --> 00:00:10,353
+00:00:06,015 --> 00:00:08,783
 Mamie Adjoua de Yamoussoukro
 défraye la chronique.
 
 3
-00:00:11,053 --> 00:00:14,617
+00:00:09,483 --> 00:00:12,071
 Le journal L'Éléphant Déchaîné
 a mené l'enquête,
 
 4
-00:00:14,617 --> 00:00:18,924
+00:00:12,071 --> 00:00:15,198
 et ses révélations soulèvent
 de nombreuses interrogations.
 
 5
-00:00:19,624 --> 00:00:24,747
+00:00:15,898 --> 00:00:19,547
 Elle soupçonne un lien entre cette
 mesure disciplinaire et la mise en
 
 6
-00:00:24,747 --> 00:00:29,350
+00:00:19,547 --> 00:00:22,825
 place d'un service de transport
 scolaire payant avec la SOTRA.
 
 7
-00:00:30,050 --> 00:00:32,452
+00:00:23,525 --> 00:00:25,427
 Mais lorsque la polémique éclate,
 
 8
-00:00:32,452 --> 00:00:35,801
+00:00:25,427 --> 00:00:28,079
 le directeur régional
 de l'Éducation nationale
 
 9
-00:00:35,801 --> 00:00:39,660
+00:00:28,079 --> 00:00:31,134
 affirme qu'aucune convention
 n'a été signée et que le
 
 10
-00:00:39,660 --> 00:00:42,572
+00:00:31,134 --> 00:00:33,440
 projet n'a jamais
 véritablement démarré.
 
 11
-00:00:43,272 --> 00:00:46,629
+00:00:34,140 --> 00:00:36,774
 Le vendredi 20 novembre,
 à 6 heures 54,
 
 12
-00:00:46,629 --> 00:00:50,245
+00:00:36,774 --> 00:00:39,611
 les journalistes
 constatent la présence de
 
 13
-00:00:50,245 --> 00:00:53,172
+00:00:39,611 --> 00:00:41,907
 deux bus spéciaux devant le lycée.
 
 14
-00:00:53,872 --> 00:00:55,400
+00:00:42,607 --> 00:00:45,111
+Un service présenté comme
+n'ayant jamais démarré,
+
+15
+00:00:45,111 --> 00:00:47,973
+mais dont les bus transportent
+effectivement des élèves.
+
+16
+00:00:48,673 --> 00:00:50,159
 Une contradiction majeure.

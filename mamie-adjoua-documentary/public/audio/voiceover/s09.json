@@ -2,66 +2,66 @@
  {
   "id": "titre",
   "start": 0.0,
-  "end": 4.07
+  "end": 3.389
  },
  {
   "id": "antecedents",
-  "start": 4.67,
-  "end": 14.779
+  "start": 3.989,
+  "end": 11.911
  },
  {
   "id": "heures",
-  "start": 15.129,
-  "end": 26.85
+  "start": 12.261,
+  "end": 21.312
  },
  {
   "id": "archives",
-  "start": 27.45,
-  "end": 35.828
+  "start": 21.912,
+  "end": 27.791
  },
  {
   "id": "notes",
-  "start": 36.178,
-  "end": 38.956
+  "start": 28.141,
+  "end": 30.541
  },
  {
   "id": "t1",
-  "start": 39.356,
-  "end": 41.825
+  "start": 30.941,
+  "end": 33.119
  },
  {
   "id": "t2",
-  "start": 42.125,
-  "end": 44.895
+  "start": 33.419,
+  "end": 35.588
  },
  {
   "id": "t3",
-  "start": 45.195,
-  "end": 48.119
+  "start": 35.888,
+  "end": 38.111
  },
  {
   "id": "moyenne",
-  "start": 48.519,
-  "end": 52.488
+  "start": 38.511,
+  "end": 42.029
  },
  {
   "id": "bien",
-  "start": 52.988,
-  "end": 56.311
+  "start": 42.529,
+  "end": 45.468
  },
  {
   "id": "aucune",
-  "start": 56.711,
-  "end": 61.432
+  "start": 45.868,
+  "end": 49.086
  },
  {
   "id": "justif",
-  "start": 62.032,
-  "end": 72.375
+  "start": 49.686,
+  "end": 58.099
  },
  {
   "id": "nuance",
-  "start": 72.725,
-  "end": 79.078
+  "start": 58.449,
+  "end": 63.53
  }
 ]

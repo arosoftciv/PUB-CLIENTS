@@ -2,21 +2,21 @@
  {
   "id": "titre",
   "start": 0.0,
-  "end": 3.687
+  "end": 3.211
  },
  {
   "id": "abidjan",
-  "start": 4.287,
-  "end": 12.355
+  "start": 3.811,
+  "end": 10.52
  },
  {
   "id": "similaire",
-  "start": 12.705,
-  "end": 23.788
+  "start": 10.87,
+  "end": 20.03
  },
  {
   "id": "abandon",
-  "start": 24.138,
-  "end": 30.29
+  "start": 20.38,
+  "end": 24.929
  }
 ]

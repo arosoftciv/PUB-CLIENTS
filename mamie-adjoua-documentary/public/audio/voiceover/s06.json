@@ -2,36 +2,36 @@
  {
   "id": "titre",
   "start": 0.0,
-  "end": 5.321
+  "end": 4.387
  },
  {
   "id": "annonce",
-  "start": 5.921,
-  "end": 15.407
+  "start": 4.987,
+  "end": 12.261
  },
  {
   "id": "tarif",
-  "start": 15.757,
-  "end": 20.415
+  "start": 12.611,
+  "end": 16.942
  },
  {
   "id": "coges",
-  "start": 21.015,
-  "end": 31.475
+  "start": 17.542,
+  "end": 24.533
  },
  {
   "id": "reduction",
-  "start": 31.825,
-  "end": 37.334
+  "start": 24.883,
+  "end": 29.521
  },
  {
   "id": "drena",
-  "start": 37.834,
-  "end": 50.356
+  "start": 30.021,
+  "end": 39.936
  },
  {
   "id": "verifier",
-  "start": 50.956,
-  "end": 55.132
+  "start": 40.536,
+  "end": 43.634
  }
 ]

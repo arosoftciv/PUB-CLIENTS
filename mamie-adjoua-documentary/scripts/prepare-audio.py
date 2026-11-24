@@ -233,7 +233,7 @@ TEASER = [  # (scene, segment ids) — contexte + contradictions principales
     ("s01", ["chronique", "enquete"]),
     ("s03", ["soupcon"]),
     ("s06", ["drena"]),
-    ("s07", ["constat", "contradiction"]),
+    ("s07", ["constat", "resume", "contradiction"]),
 ]
 
 
