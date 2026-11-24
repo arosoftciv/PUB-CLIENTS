@@ -4,6 +4,7 @@ import { Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { C, F, clamp, EASE } from "../styles/theme";
 import { appear } from "../animations/anim";
 import map from "../data/map.json";
+import { ASSETS } from "../data/assets";
 
 /** Portail stylisé : deux vantaux de barreaux qui se ferment (p: 0 ouvert → 1 fermé). */
 export const GateGraphic: React.FC<{ p: number; width?: number; height?: number; color?: string }> = ({ p, width = 760, height = 520, color = C.white }) => {
@@ -218,7 +219,7 @@ export const NewspaperReveal: React.FC<{ at: number; width?: number; rotate?: nu
         ...style,
       }}
     >
-      <Img src={staticFile("images/newspaper/couverture-affaire.jpg")} style={{ width: "100%", display: "block" }} />
+      <Img src={staticFile(ASSETS.newspaperFrontPage ?? ASSETS.coverPoster)} style={{ width: "100%", display: "block" }} />
     </div>
   );
 };

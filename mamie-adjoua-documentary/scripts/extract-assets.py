@@ -63,10 +63,35 @@ def main() -> None:
     nci = Image.open(SRC / "08-proviseure-nci.jpg")
     save(upscale(nci.crop((0, 0, nci.size[0], int(nci.size[1] * 0.74))), 2.5), "people/proviseure-nci.jpg")  # bandeau TV retiré, crédit NCI ajouté à l'écran
 
+    # Une de L'Éléphant Déchaîné (capture d'une publication TikTok, carrousel 1/8) : une + photos du journal
+    une = Image.open(SRC / "social" / "04-61ffc569.jpg")
+    save(upscale(une.crop((30, 250, 1050, 1170)), 1.6), "newspaper/une-elephant.jpg")
+    save(upscale(une.crop((41, 990, 497, 1612)), 2.4), "buses/bus-sotra-journal.jpg")
+    save(upscale(une.crop((506, 842, 929, 1612)), 2.4), "school/portail-journal.jpg")
+
+    # Mur d'écrans (réseaux sociaux) en arrière-plan — exclus : contenus générés par IA (01, 08 et le visuel bus de 07),
+    # appel téléphonique privé (07), collage sans rapport (11). Barre d'état du téléphone retirée.
+    social_dir = OUT / "social"
+    social_dir.mkdir(parents=True, exist_ok=True)
+    keep = []
+    for p in sorted((SRC / "social").glob("*.jpg")):
+        idx = int(p.name[:2])
+        if idx in (1, 7, 8, 11):
+            continue
+        im = Image.open(p).convert("RGB")
+        im = im.crop((0, 150, im.width, im.height))
+        im = im.resize((300, int(300 * im.height / im.width)), Image.LANCZOS)
+        im = ImageEnhance.Color(im).enhance(0.55)
+        dst = social_dir / f"ecran-{idx:02d}.jpg"
+        im.save(dst, quality=80)
+        keep.append(f"images/social/{dst.name}")
+    social_keep = keep
+    print("→ mur d'écrans :", len(keep), "captures")
+
     # Vidéo publiée par l'élève (optionnelle) : source/video-eleve.(mp4|mov|webm)
     # → réencodée en H.264, PISTE AUDIO SUPPRIMÉE (aucune voix), durée enregistrée pour Remotion.
     import json, subprocess
-    media = {"studentVideo": None}
+    media = {"studentVideo": None, "socialScreens": social_keep}
     vid = next((p for ext in ("mp4", "mov", "webm", "m4v") for p in (ROOT / "source").glob(f"video-eleve*.{ext}")), None)
     if vid:
         dst = ROOT / "public" / "video" / "video-eleve.mp4"

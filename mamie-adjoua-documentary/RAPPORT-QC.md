@@ -42,6 +42,16 @@ Date : 24 novembre 2026 · Version : v3, **avec voix-off** (ElevenLabs, voix « 
 
 Les jours de la semaine ont été vérifiés au calendrier : jeudi 22/10, lundi 16/11, vendredi 20/11 et lundi 23/11/2026 sont exacts.
 
+## 2 sexies. Mur d'écrans et photos du journal (retour client)
+
+- Arrière-plan : un mur de 16 captures de publications sur les réseaux sociaux défile lentement, en 4 colonnes inclinées,
+  derrière toutes les scènes sur fond sombre. Il illustre l'ampleur de la polémique.
+- Captures écartées : visuels marqués « Contient des médias générés par IA » (bus volant, fausse scène « 13 adultes »),
+  appel téléphonique privé, collage sans rapport. La barre d'état du téléphone du client est retirée.
+- La une de L'Éléphant Déchaîné (capture d'une publication en ligne) a permis d'extraire la vraie une, la photo du bus
+  SOTRA et la photo du portail fermé. Elles remplacent le schéma de bus (hook, révélations 2 et 3) et la photo du portail de la
+  révélation 1, avec le crédit « Photo : L'Éléphant Déchaîné ». Ces images sont en basse définition, car extraites d'une capture d'écran.
+
 ## 2 quinquies. Enrichissement visuel et narration (retour client)
 
 - La chronologie (S12, auparavant 21 s sans voix) et le générique (S16) sont maintenant narrés (voix Brian, environ 650 crédits).

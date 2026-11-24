@@ -15,13 +15,15 @@ export const ASSETS = {
   studentPortrait2: "images/people/eleve-portrait-2.jpg", // photo fournie — élève
 
   // --- Manquants : photos du PDF ---
-  busPhoto: null as string | null, // p. 2, 5, 6 : bus spéciaux SOTRA
+  busPhoto: "images/buses/bus-sotra-journal.jpg" as string | null, // photo de la une (capture d'une publication en ligne)
   ceremonyPhoto: null as string | null, // p. 4 : annonce du partenariat
   marcoryPhoto: null as string | null, // p. 7 : Collège Boulevard du Gabon
   articleReglement: null as string | null, // p. 7 : extrait règlement intérieur
   articlePartenariat: null as string | null, // p. 4 : extrait annonce
   articleHierarchie: null as string | null, // p. 8 : extrait instructions hiérarchie
-  newspaperFrontPage: null as string | null, // p. 1 : véritable une du journal
+  newspaperFrontPage: "images/newspaper/une-elephant.jpg" as string | null, // une du 23/11/2026 (capture d'une publication en ligne)
+  journalGate: "images/school/portail-journal.jpg", // photo du portail publiée en une
+  socialScreens: ((media as { socialScreens?: string[] }).socialScreens ?? []) as string[], // mur d'écrans en arrière-plan
   arosoftLogo: ((media as { arosoftLogo?: string | null }).arosoftLogo ?? null) as string | null, // généré par extract-assets.py (fond transparent)
 };
 

@@ -191,7 +191,9 @@ export const S16Credits: React.FC<P> = () => {
           Les faits, témoignages et déclarations présentés sont issus de cette publication et n'ont pas fait l'objet d'une vérification indépendante dans le cadre de cette adaptation.
         </Line>
         <Line at={42} style={{ fontFamily: F.mono, fontSize: 20, color: C.dim, marginTop: 40, lineHeight: 1.6 }}>
-          Photos du portail : visuels fournis (dont « Vivre À Yamoussoukro »).
+          Photos du portail : visuels fournis (dont « Vivre À Yamoussoukro ») et une de L'Éléphant Déchaîné (capture).
+          <br />
+          Arrière-plans : captures de publications sur les réseaux sociaux.
           <br />
           Vidéo de l'élève : extrait muet, publication relayée par Zooma Média (TikTok).
           <br />

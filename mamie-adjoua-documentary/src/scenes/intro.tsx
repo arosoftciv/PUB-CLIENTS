@@ -120,8 +120,8 @@ export const S01Hook: React.FC<P> = ({ sc }) => {
           </div>
           {/* Pages / photographies qui défilent */}
           {[
-            { src: ASSETS.gate1, label: "LE PORTAIL", r: -6 },
-            { src: ASSETS.gate2, label: "LE LYCÉE", r: 4 },
+            { src: ASSETS.journalGate, label: "LE PORTAIL FERMÉ", r: -6 },
+            { src: ASSETS.busPhoto ?? ASSETS.gate2, label: "LES BUS SOTRA", r: 4 },
           ].map((c, k) => {
             const p = appear(frame, cardsAt + k * f(1.1), 16);
             const out = 1 - appear(frame, cardsAt + k * f(1.1) + f(1.6), 12);
@@ -165,7 +165,7 @@ export const S01Hook: React.FC<P> = ({ sc }) => {
               <PhotoCard src={ASSETS.principalEvent} at={montage[order.principal]} dur={beat} contain label="La proviseure" style={{ left: 0, top: 40, width: CONTENT_W, height: 620 }} />
             </div>
             <div style={{ position: "absolute", inset: 0, opacity: slot(order.gate) }}>
-              <Photo src={ASSETS.gate2} frame={frame - montage[order.gate]} dur={beat} from={{ s: 1.05, x: 0, y: 0 }} to={{ s: 1.15, x: 0, y: 0 }} style={{ left: 0, top: 80, width: CONTENT_W, height: 540 }} />
+              <Photo src={ASSETS.journalGate} pos="50% 55%" frame={frame - montage[order.gate]} dur={beat} from={{ s: 1.05, x: 0, y: 0 }} to={{ s: 1.15, x: 0, y: 0 }} style={{ left: 0, top: 80, width: CONTENT_W, height: 540 }} />
             </div>
             <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", opacity: slot(order.bus) }}>
               {ASSETS.busPhoto ? (

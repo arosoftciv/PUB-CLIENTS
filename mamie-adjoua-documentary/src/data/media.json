@@ -5,5 +5,23 @@
   "width": 576,
   "height": 1024
  },
+ "socialScreens": [
+  "images/social/ecran-02.jpg",
+  "images/social/ecran-03.jpg",
+  "images/social/ecran-04.jpg",
+  "images/social/ecran-05.jpg",
+  "images/social/ecran-06.jpg",
+  "images/social/ecran-09.jpg",
+  "images/social/ecran-10.jpg",
+  "images/social/ecran-12.jpg",
+  "images/social/ecran-13.jpg",
+  "images/social/ecran-14.jpg",
+  "images/social/ecran-15.jpg",
+  "images/social/ecran-16.jpg",
+  "images/social/ecran-17.jpg",
+  "images/social/ecran-18.jpg",
+  "images/social/ecran-19.jpg",
+  "images/social/ecran-20.jpg"
+ ],
  "arosoftLogo": null
 }

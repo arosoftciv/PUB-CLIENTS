@@ -68,7 +68,12 @@ const PersonCapture: React.FC<{ src: string; label: string; frame: number; style
 /** Visuel « bus » : photo du journal si disponible, sinon schéma étiqueté. */
 const BusVisual: React.FC<{ frame: number; style: React.CSSProperties; width?: number }> = ({ frame, style, width = 560 }) =>
   ASSETS.busPhoto ? (
-    <Photo src={ASSETS.busPhoto} frame={frame} dur={300} style={style} />
+    <div style={{ position: "absolute", overflow: "hidden", ...style }}>
+      <Photo src={ASSETS.busPhoto} frame={frame} dur={300} pos="50% 78%" style={{ left: 0, top: 0, width: "100%", height: "100%" }} />
+      <div style={{ position: "absolute", left: 12, bottom: 10, fontFamily: F.mono, fontSize: 16, color: C.white, background: "rgba(11,13,16,0.7)", padding: "4px 8px" }}>
+        Photo : L'Éléphant Déchaîné (une du 23/11/2026)
+      </div>
+    </div>
   ) : (
     <div style={{ position: "absolute", display: "flex", alignItems: "center", justifyContent: "center", background: "linear-gradient(#1A1F26,#101317)", ...style }}>
       <BusGraphic width={width} />
@@ -91,7 +96,7 @@ export const S05Revelation1: React.FC<P> = ({ sc }) => {
         </div>
       </Stage>
       <Stage a={g("portail")} b={g("avant")}>
-        <Photo src={ASSETS.gate1} frame={frame - g("portail")} dur={f(14)} style={{ left: SAFE.left, top: TOP, width: CONTENT_W, height: 620 }} to={{ s: 1.22, x: 0, y: 40 }} />
+        <Photo src={ASSETS.journalGate} frame={frame - g("portail")} dur={f(14)} pos="50% 55%" style={{ left: SAFE.left, top: TOP, width: CONTENT_W, height: 620 }} to={{ s: 1.18, x: 0, y: 20 }} />
         <div style={{ position: "absolute", left: SAFE.left + 24, top: TOP + 24, background: "rgba(11,13,16,0.75)", padding: "6px 18px", opacity: appear(frame, g("portail") + 10, 16) }}>
           <AnimatedClock from="07:30" at={g("portail") + 10} size={96} color={C.red} />
         </div>
@@ -100,7 +105,7 @@ export const S05Revelation1: React.FC<P> = ({ sc }) => {
         </div>
         <PhotoCard src={ASSETS.principalEvent} at={g("portail") + f(0.8)} label="La proviseure" pos="50% 22%"
           style={{ right: SAFE.right, top: TOP + 24, width: 250, height: 330 }} />
-        <Caption style={{ position: "absolute", left: SAFE.left, top: TOP + 632 }}>Photos : portail du lycée, proviseure (fournies)</Caption>
+        <Caption style={{ position: "absolute", left: SAFE.left, top: TOP + 632 }}>Photos : portail fermé (L'Éléphant Déchaîné), proviseure (fournie)</Caption>
         <div style={{ position: "absolute", left: SAFE.left, top: TOP + 690, width: CONTENT_W }}>
           <div style={{ fontFamily: F.title, fontWeight: 700, fontSize: 52, color: C.white, lineHeight: 1.1, ...rise(appear(frame, g("portail") + 20, 18)) }}>
             LA PROVISEURE SUPERVISE LA FERMETURE DU PORTAIL

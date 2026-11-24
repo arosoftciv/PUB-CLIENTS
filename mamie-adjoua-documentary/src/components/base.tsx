@@ -3,13 +3,56 @@ import React from "react";
 import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { C, F, SAFE, clamp } from "../styles/theme";
 import { appear } from "../animations/anim";
+import media from "../data/media.json";
 
-export const Backdrop: React.FC<{ tint?: string; children?: React.ReactNode }> = ({ tint, children }) => (
-  <AbsoluteFill
-    style={{
-      background: `radial-gradient(120% 80% at 50% 35%, ${tint ?? "#161A20"} 0%, ${C.black} 70%)`,
-    }}
-  >
+const SOCIAL_SCREENS = ((media as { socialScreens?: string[] }).socialScreens ?? []) as string[];
+
+/** Mur d'écrans de réseaux sociaux qui défile lentement en arrière-plan (polémique virale). */
+export const SocialWall: React.FC<{ opacity?: number; seed?: number }> = ({ opacity = 0.6, seed = 0 }) => {
+  const frame = useCurrentFrame();
+  const screens = SOCIAL_SCREENS;
+  if (!screens.length) return null;
+  const cardW = 300;
+  const cardH = 614;
+  const gap = 26;
+  const step = cardH + gap;
+  const cols = [-60, 300, 660, 1020];
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", opacity }}>
+      <div style={{ position: "absolute", left: -80, top: -200, width: 1240, height: 2400, rotate: "-7deg" }}>
+        {cols.map((x, c) => {
+          const order = screens.map((_, k) => screens[(k * (c + 2) + c * 3 + seed) % screens.length]);
+          const list = [...order, ...order];
+          const total = order.length * step;
+          const speed = 0.9 + (c % 2) * 0.5;
+          const dir = c % 2 === 0 ? -1 : 1;
+          const off = ((frame * speed + c * 410 + seed * 97) % total + total) % total;
+          const y = dir === -1 ? -off : off - total;
+          return (
+            <div key={c} style={{ position: "absolute", left: x, top: 0, width: cardW, transform: `translateY(${y}px)` }}>
+              {list.map((src, k) => (
+                <Img
+                  key={k}
+                  src={staticFile(src)}
+                  style={{ display: "block", width: cardW, height: cardH, objectFit: "cover", borderRadius: 22, marginBottom: gap, border: "3px solid rgba(245,245,240,0.12)" }}
+                />
+              ))}
+            </div>
+          );
+        })}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+export const Backdrop: React.FC<{ tint?: string; children?: React.ReactNode; wall?: boolean }> = ({ tint, children, wall = true }) => (
+  <AbsoluteFill style={{ background: C.black }}>
+    {wall ? <SocialWall /> : null}
+    <AbsoluteFill
+      style={{
+        background: `radial-gradient(120% 80% at 50% 35%, ${tint ?? "rgba(22,26,32,0.6)"} 0%, rgba(11,13,16,0.8) 75%)`,
+      }}
+    />
     {children}
   </AbsoluteFill>
 );
