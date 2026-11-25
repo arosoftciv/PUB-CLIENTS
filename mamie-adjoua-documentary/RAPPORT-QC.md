@@ -45,13 +45,13 @@ Les jours de la semaine ont été vérifiés au calendrier : jeudi 22/10, lundi 
 ## 2 septies. Logo AroSoft
 
 - Logo fourni sur fond bleu marine : le fond est retiré automatiquement (détourage par couleur de fond, avec nettoyage des bords).
-- Miniature en haut à droite sur toute la vidéo, sur une pastille sombre translucide pour rester lisible sur les photos claires.
+- Miniature en haut à droite sur toute la vidéo, sans fond (demande du client), avec une ombre portée pour rester lisible. Sur la couverture, l'affiche est réduite pour poser le logo sur la bande sombre du haut.
   Également sur la couverture et au générique (« Production audiovisuelle : AroSoft »). L'investigation reste attribuée à L'Éléphant Déchaîné.
 
 ## 2 sexies. Mur d'écrans et photos du journal (retour client)
 
 - Arrière-plan : un mur de 16 captures de publications sur les réseaux sociaux défile lentement, en 4 colonnes inclinées,
-  derrière toutes les scènes sur fond sombre. Il illustre l'ampleur de la polémique. À la demande du client, il est volontairement discret (opacité 30 %, léger flou, voile sombre) pour faire ressortir le contenu.
+  derrière toutes les scènes sur fond sombre. Il illustre l'ampleur de la polémique. Son niveau a été ajusté avec le client : opacité de 45 %, léger flou et voile sombre, présent sans masquer le contenu.
 - Captures écartées : visuels marqués « Contient des médias générés par IA » (bus volant, fausse scène « 13 adultes »),
   appel téléphonique privé, collage sans rapport. La barre d'état du téléphone du client est retirée.
 - La une de L'Éléphant Déchaîné (capture d'une publication en ligne) a permis d'extraire la vraie une, la photo du bus
@@ -130,6 +130,7 @@ Les jours de la semaine ont été vérifiés au calendrier : jeudi 22/10, lundi 
   (premade, choix du client), modèle eleven_multilingual_v2, une piste par scène, environ 7 300 crédits.
   Une première version avec la voix « Martinez » (environ 7 300 crédits) a été remplacée à la demande du client.
   Elle reste archivée dans `source/voiceover-raw/martinez/`.
+- Hook : la phrase « Reste connecté… en vidéo » a été régénérée seule, car la prise d'origine contenait un fragment final inintelligible. La nouvelle prise suit le texte exact.
 - « CFA » est prononcé « céfa » : les 2 phrases concernées (S06 tarif, S08 paiements) ont été régénérées seules (environ 230 crédits) puis insérées (`source/voiceover-raw/overrides/`).
 - « Abidjan » est prononcé « a-bid-jan », sans e final : la phrase de S06 Marcory a été régénérée en 2 variantes phonétiques (A « Abid-jean », B « Abidjâ »). La A est intégrée, la B est disponible dans `source/voiceover-raw/variants/`.
 - Brian est une voix d'origine anglophone. Son français peut garder une légère couleur d'accent : à valider à l'écoute.

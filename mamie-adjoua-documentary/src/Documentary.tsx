@@ -14,7 +14,7 @@ import { S12Chronology, S13Questions, S14Conclusion, S15Signature, S16Credits, S
 import { appear } from "./animations/anim";
 
 const SCENES: Record<string, React.FC<{ sc: SceneTiming }>> = {
-  s00: () => <Cover grain={false} logo={false} />,
+  s00: () => <Cover grain={false} logo />,
   s01: S01Hook,
   s02: S02TitleCard,
   s03: S03Video,
@@ -74,7 +74,9 @@ export const Documentary: React.FC<{ subtitles: boolean }> = ({ subtitles }) => 
   <AbsoluteFill style={{ background: C.black }}>
     <DocumentaryVisuals />
     <FilmFinish />
-    <BrandBug src={ASSETS.arosoftLogo} />
+    <Sequence from={f(TL.scenes[1].start)}>
+      <BrandBug src={ASSETS.arosoftLogo} />
+    </Sequence>
     {subtitles ? <SubtitleOverlay cues={CUES} hide={hideCue as never} /> : null}
     <Audio src={staticFile("audio/mix/master.wav")} />
   </AbsoluteFill>

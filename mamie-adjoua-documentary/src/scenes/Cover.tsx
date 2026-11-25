@@ -14,11 +14,11 @@ export const Cover: React.FC<{ grain?: boolean; logo?: boolean }> = ({ grain = t
         style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(28px) brightness(0.35) saturate(0.7)", transform: "scale(1.15)" }}
       />
     </AbsoluteFill>
-    <div style={{ position: "absolute", left: 40, top: 70, width: 1000, boxShadow: "0 30px 90px rgba(0,0,0,0.8)" }}>
-      <Img src={staticFile(ASSETS.coverPoster)} style={{ width: 1000, height: 1500, objectFit: "cover", display: "block" }} />
+    <div style={{ position: "absolute", left: 70, top: 150, width: 940, boxShadow: "0 30px 90px rgba(0,0,0,0.8)" }}>
+      <Img src={staticFile(ASSETS.coverPoster)} style={{ width: 940, height: 1410, objectFit: "cover", display: "block" }} />
     </div>
     {logo && ASSETS.arosoftLogo ? (
-      <Img src={staticFile(ASSETS.arosoftLogo)} style={{ position: "absolute", right: 56, top: 86, height: 104, width: "auto", maxWidth: 230, objectFit: "contain", background: "rgba(11,13,16,0.85)", padding: "8px 12px", borderRadius: 16 }} />
+      <Img src={staticFile(ASSETS.arosoftLogo)} style={{ position: "absolute", right: 40, top: 22, height: 112, width: "auto", maxWidth: 230, objectFit: "contain", filter: "drop-shadow(0 2px 10px rgba(0,0,0,0.8))" }} />
     ) : null}
     <div style={{ position: "absolute", left: 40, right: 40, top: 1600, textAlign: "center" }}>
       <div style={{ fontFamily: F.title, fontWeight: 800, fontSize: 70, color: C.white, lineHeight: 1, letterSpacing: 1 }}>
