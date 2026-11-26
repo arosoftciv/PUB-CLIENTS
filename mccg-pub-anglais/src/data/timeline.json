@@ -1,0 +1,113 @@
+{
+ "fps": 30,
+ "voOffset": 0.35,
+ "total": 72.66,
+ "scenes": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 6.047
+  },
+  {
+   "id": "opportunites",
+   "start": 6.047,
+   "end": 11.794
+  },
+  {
+   "id": "revelation",
+   "start": 11.794,
+   "end": 18.737
+  },
+  {
+   "id": "apprentissage",
+   "start": 18.737,
+   "end": 23.694
+  },
+  {
+   "id": "niveaux",
+   "start": 23.694,
+   "end": 31.415
+  },
+  {
+   "id": "flexibilite",
+   "start": 31.415,
+   "end": 34.201
+  },
+  {
+   "id": "immersion",
+   "start": 34.201,
+   "end": 40.018
+  },
+  {
+   "id": "tests",
+   "start": 40.018,
+   "end": 47.843
+  },
+  {
+   "id": "services",
+   "start": 47.843,
+   "end": 52.452
+  },
+  {
+   "id": "transformation",
+   "start": 52.452,
+   "end": 56.422
+  },
+  {
+   "id": "cta",
+   "start": 56.422,
+   "end": 72.66
+  }
+ ],
+ "cues": {
+  "hook_q": 0.35,
+  "hook_anglais": 5.145,
+  "hook_end": 5.482,
+  "opp_emploi": 6.167,
+  "opp_promo": 7.688,
+  "opp_etudes": 8.779,
+  "opp_voyage": 11.159,
+  "force_q": 11.914,
+  "force_word": 13.783,
+  "reveal_mccg": 14.398,
+  "reveal_sarl": 17.301,
+  "learn_apprenez": 18.857,
+  "learn_confiance": 20.958,
+  "learn_oral": 21.504,
+  "learn_niveau": 23.152,
+  "lvl_debutant": 23.814,
+  "lvl_avance": 24.847,
+  "prof_etudiant": 25.509,
+  "prof_pro": 26.357,
+  "prof_entrepreneur": 27.367,
+  "prof_formations": 29.073,
+  "prof_objectifs": 30.71,
+  "flex_presentiel": 32.057,
+  "flex_abidjan": 32.754,
+  "flex_ligne": 33.775,
+  "imm_vivez": 34.727,
+  "imm_immersion": 36.562,
+  "imm_accra": 37.978,
+  "imm_ghana": 38.779,
+  "test_toefl": 40.277,
+  "test_ielts": 41.09,
+  "test_toeic": 41.995,
+  "test_duolingo": 43.017,
+  "test_accompagne": 46.035,
+  "test_preparation": 46.976,
+  "srv_traduction": 49.716,
+  "srv_documents": 50.424,
+  "srv_interpretation": 51.388,
+  "tr_attendez": 52.572,
+  "tr_preparez": 54.859,
+  "tr_saisir": 55.765,
+  "cta_contactez": 56.542,
+  "cta_whatsapp": 59.364,
+  "cta_numero": 60.223,
+  "cta_numero_fin": 64.147,
+  "cta_mccg": 64.426,
+  "cta_parlez": 65.68,
+  "cta_ouvrez": 66.69,
+  "vo_end": 68.06
+ }
+}

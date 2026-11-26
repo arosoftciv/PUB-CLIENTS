@@ -1,0 +1,37 @@
+{
+  "name": "mccg-pub-anglais",
+  "version": "1.0.0",
+  "description": "MCCG Sarl - publicité motion design vertical (Remotion)",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": { "node": "^20.19.0 || ^22.13.0 || >=24" },
+  "dependencies": {
+    "@fontsource/dm-serif-display": "^5.2.0",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/montserrat": "^5.2.0",
+    "@remotion/bundler": "4.0.546",
+    "@remotion/cli": "4.0.546",
+    "@remotion/fonts": "4.0.546",
+    "@remotion/renderer": "4.0.546",
+    "d3-geo": "^3.1.2",
+    "@types/d3-geo": "^3.1.1",
+    "topojson-client": "^3.1.0",
+    "@types/topojson-client": "^3.1.5",
+    "world-atlas": "^2.0.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.546"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.546",
+    "@types/react": "19.3.0",
+    "eslint": "10.15.0",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "lint": "tsc",
+    "render": "remotion render MCCGPub output/mccg-pub-1080x1920.mp4 --codec=h264 --crf=18 --audio-codec=aac --audio-bitrate=256k --concurrency=4",
+    "cover": "remotion still Couverture output/mccg-couverture-1080x1920.png"
+  }
+}

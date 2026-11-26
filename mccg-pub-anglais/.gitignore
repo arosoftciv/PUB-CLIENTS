@@ -1,0 +1,6 @@
+node_modules/
+output/qc/
+output/*.log
+__pycache__/
+output/_brut.mp4
+output/render.log
