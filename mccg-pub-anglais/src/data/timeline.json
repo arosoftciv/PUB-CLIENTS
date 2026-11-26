@@ -1,7 +1,7 @@
 {
  "fps": 30,
  "voOffset": 0.35,
- "total": 72.66,
+ "total": 72.14,
  "scenes": [
   {
    "id": "hook",
@@ -26,37 +26,37 @@
   {
    "id": "niveaux",
    "start": 23.694,
-   "end": 31.415
+   "end": 31.355
   },
   {
    "id": "flexibilite",
-   "start": 31.415,
-   "end": 34.201
+   "start": 31.355,
+   "end": 34.292
   },
   {
    "id": "immersion",
-   "start": 34.201,
-   "end": 40.018
+   "start": 34.292,
+   "end": 39.496
   },
   {
    "id": "tests",
-   "start": 40.018,
-   "end": 47.843
+   "start": 39.496,
+   "end": 47.321
   },
   {
    "id": "services",
-   "start": 47.843,
-   "end": 52.452
+   "start": 47.321,
+   "end": 51.93
   },
   {
    "id": "transformation",
-   "start": 52.452,
-   "end": 56.422
+   "start": 51.93,
+   "end": 55.9
   },
   {
    "id": "cta",
-   "start": 56.422,
-   "end": 72.66
+   "start": 55.9,
+   "end": 72.14
   }
  ],
  "cues": {
@@ -82,32 +82,32 @@
   "prof_entrepreneur": 27.367,
   "prof_formations": 29.073,
   "prof_objectifs": 30.71,
-  "flex_presentiel": 32.057,
-  "flex_abidjan": 32.754,
-  "flex_ligne": 33.775,
-  "imm_vivez": 34.727,
-  "imm_immersion": 36.562,
-  "imm_accra": 37.978,
-  "imm_ghana": 38.779,
-  "test_toefl": 40.277,
-  "test_ielts": 41.09,
-  "test_toeic": 41.995,
-  "test_duolingo": 43.017,
-  "test_accompagne": 46.035,
-  "test_preparation": 46.976,
-  "srv_traduction": 49.716,
-  "srv_documents": 50.424,
-  "srv_interpretation": 51.388,
-  "tr_attendez": 52.572,
-  "tr_preparez": 54.859,
-  "tr_saisir": 55.765,
-  "cta_contactez": 56.542,
-  "cta_whatsapp": 59.364,
-  "cta_numero": 60.223,
-  "cta_numero_fin": 64.147,
-  "cta_mccg": 64.426,
-  "cta_parlez": 65.68,
-  "cta_ouvrez": 66.69,
-  "vo_end": 68.06
+  "flex_presentiel": 32.009,
+  "flex_abidjan": 32.787,
+  "flex_ligne": 33.704,
+  "imm_vivez": 34.679,
+  "imm_immersion": 36.235,
+  "imm_accra": 37.698,
+  "imm_ghana": 38.383,
+  "test_toefl": 39.755,
+  "test_ielts": 40.568,
+  "test_toeic": 41.473,
+  "test_duolingo": 42.495,
+  "test_accompagne": 45.513,
+  "test_preparation": 46.454,
+  "srv_traduction": 49.194,
+  "srv_documents": 49.902,
+  "srv_interpretation": 50.866,
+  "tr_attendez": 52.05,
+  "tr_preparez": 54.337,
+  "tr_saisir": 55.243,
+  "cta_contactez": 56.02,
+  "cta_whatsapp": 58.842,
+  "cta_numero": 59.701,
+  "cta_numero_fin": 63.625,
+  "cta_mccg": 63.904,
+  "cta_parlez": 65.158,
+  "cta_ouvrez": 66.168,
+  "vo_end": 67.538
  }
 }

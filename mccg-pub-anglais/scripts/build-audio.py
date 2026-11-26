@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Design sonore + mixage final.
-- Voix off : source/voiceover-raw/voix-off-tony.mp3 (ElevenLabs), décalée de voOffset.
+- Voix off : source/voiceover-raw/voix-off.wav (ElevenLabs, corrigée par splice-voiceover.py), décalée de voOffset.
 - Musique : source/music/music-eleven.mp3 (ElevenLabs Music, instrumentale), ducking automatique sous la voix.
 - Effets : synthétisés ici (numpy), placés sur les repères de src/data/timeline.json.
 Sorties : public/audio/mix.wav (piste unique utilisée par Remotion), public/audio/voix-off.wav, public/audio/musique.wav
@@ -154,7 +154,7 @@ place(pop(1100), C["cta_whatsapp"], 0.5); place(chime(1567.98, 1.0, .4), C["cta_
 place(chime(587.3, 2.6), C["cta_mccg"], 0.6); place(shimmer(2.6), C["cta_mccg"], 0.5)
 
 # ---------- voix, musique, ducking
-vo_raw = load(ROOT / "source/voiceover-raw/voix-off-tony.mp3")
+vo_raw = load(ROOT / "source/voiceover-raw/voix-off.wav")  # voix off corrigée (splice-voiceover.py)
 vo = np.zeros((N, 2)); i0 = int(TL["voOffset"] * SR); vo[i0:i0 + len(vo_raw)] = vo_raw[: N - i0]
 mus_raw = load(ROOT / "source/music/music-eleven.mp3")
 mus = np.zeros((N, 2)); m = min(N, len(mus_raw)); mus[:m] = mus_raw[:m]
@@ -189,5 +189,5 @@ af = (f"loudnorm=I=-14:TP=-1:LRA=11:measured_I={js['input_i']}:measured_TP={js['
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(tmp), "-af", af, "-ar", "48000", "-c:a", "pcm_s16le", str(AUD / "mix.wav")], check=True)
 tmp.unlink()
 # livrables séparés
-subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(ROOT / "source/voiceover-raw/voix-off-tony.mp3"), "-c:a", "pcm_s16le", "-ar", "48000", str(ROOT / "output/mccg-voix-off.wav")], check=True)
+subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(ROOT / "source/voiceover-raw/voix-off.wav"), "-c:a", "pcm_s16le", "-ar", "48000", str(ROOT / "output/mccg-voix-off.wav")], check=True)
 print("mix ok", TL["total"], "s ; mesure entrée", js["input_i"], "LUFS")

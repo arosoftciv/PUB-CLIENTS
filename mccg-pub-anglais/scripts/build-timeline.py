@@ -24,6 +24,10 @@ def at(text, after=0.0, end=False):
             return round((w["end"] if end else w["start"]) + VO_OFFSET, 3)
     raise SystemExit(f"mot introuvable : {text} après {after}")
 
+def raw_at(text, after=0.0):
+    """Temps brut (sans décalage) d'un mot, pour ancrer une recherche sur un autre mot plutôt que sur une valeur fixe."""
+    return at(text, after) - VO_OFFSET
+
 vo_end = WORDS[-1]["end"] + VO_OFFSET
 total = round(vo_end + TAIL, 2)
 raw = lambda x: x - VO_OFFSET  # pour chercher « après » en temps brut
@@ -34,7 +38,7 @@ cues = {
     # S2 opportunités
     "opp_emploi": at("entretien"), "opp_promo": at("promotion"), "opp_etudes": at("etudes"), "opp_voyage": at("voyage"),
     # S3 révélation
-    "force_q": at("et", 11), "force_word": at("force"), "reveal_mccg": at("avec", 13.9), "reveal_sarl": at("sarl"),
+    "force_q": at("et", raw_at("voyage")), "force_word": at("force"), "reveal_mccg": at("avec", raw_at("force")), "reveal_sarl": at("sarl"),
     # S4a apprentissage
     "learn_apprenez": at("apprenez"), "learn_confiance": at("confiance"), "learn_oral": at("l'oral"), "learn_niveau": at("niveau"),
     # S4b niveaux / profils
@@ -52,8 +56,8 @@ cues = {
     # S9 transformation
     "tr_attendez": at("n'attendez"), "tr_preparez": at("preparez-vous"), "tr_saisir": at("saisir"),
     # S10 CTA
-    "cta_contactez": at("contactez"), "cta_whatsapp": at("whatsapp"), "cta_numero": at("zero", 59), "cta_numero_fin": at("un", 63.5, end=True),
-    "cta_mccg": at("mccg", 63.9), "cta_parlez": at("parlez", 65), "cta_ouvrez": at("ouvrez-vous"),
+    "cta_contactez": at("contactez"), "cta_whatsapp": at("whatsapp"), "cta_numero": at("zero", raw_at("whatsapp")), "cta_numero_fin": at("un", raw_at("trente", raw_at("trente", raw_at("trente", raw_at("whatsapp")) + 0.1) + 0.1), end=True),
+    "cta_mccg": at("mccg", raw_at("contactez") + 1.0), "cta_parlez": at("parlez", raw_at("contactez")), "cta_ouvrez": at("ouvrez-vous"),
     "vo_end": round(vo_end, 3),
 }
 
@@ -62,9 +66,9 @@ b = [0.0,
      cues["force_q"] - LEAD,             # S3
      cues["learn_apprenez"] - LEAD,      # S4a
      cues["lvl_debutant"] - LEAD,        # S4b
-     at("apprenez", 31) - LEAD,          # S5
-     at("ou", 33.8) - LEAD,              # S6
-     at("le", 39.5) - LEAD,              # S7 (J-cut : « Vous préparez » commence sur Accra)
+     at("apprenez", raw_at("objectifs")) - LEAD,          # S5
+     at("ou", raw_at("ligne")) - LEAD,              # S6
+     at("le", raw_at("preparez")) - LEAD,              # S7 (J-cut : « Vous préparez » commence sur Accra)
      at("profitez") - LEAD,              # S8
      cues["tr_attendez"] - LEAD,         # S9
      cues["cta_contactez"] - LEAD,       # S10

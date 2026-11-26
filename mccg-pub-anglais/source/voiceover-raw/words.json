@@ -1,1 +1,898 @@
-{"words": [{"text": "Combien", "type": "word", "start": 0.0, "end": 0.36}, {"text": "d'opportunit\u00e9s", "type": "word", "start": 0.395, "end": 1.103}, {"text": "avez-vous", "type": "word", "start": 1.126, "end": 1.533}, {"text": "d\u00e9j\u00e0", "type": "word", "start": 1.591, "end": 1.916}, {"text": "laiss\u00e9es", "type": "word", "start": 1.962, "end": 2.252}, {"text": "passer", "type": "word", "start": 2.299, "end": 2.647}, {"text": "parce", "type": "word", "start": 2.717, "end": 2.949}, {"text": "que", "type": "word", "start": 2.984, "end": 3.077}, {"text": "vous", "type": "word", "start": 3.135, "end": 3.274}, {"text": "ne", "type": "word", "start": 3.309, "end": 3.402}, {"text": "parliez", "type": "word", "start": 3.471, "end": 3.808}, {"text": "pas", "type": "word", "start": 3.878, "end": 4.075}, {"text": "suffisamment", "type": "word", "start": 4.11, "end": 4.76}, {"text": "anglais", "type": "word", "start": 4.795, "end": 5.132}, {"text": "?", "type": "word", "start": 5.201, "end": 5.283}, {"text": "Un", "type": "word", "start": 5.608, "end": 5.759}, {"text": "entretien", "type": "word", "start": 5.817, "end": 6.293}, {"text": "d'embauche,", "type": "word", "start": 6.316, "end": 6.85}, {"text": "une", "type": "word", "start": 7.094, "end": 7.314}, {"text": "promotion,", "type": "word", "start": 7.338, "end": 7.999}, {"text": "des", "type": "word", "start": 8.208, "end": 8.348}, {"text": "\u00e9tudes", "type": "word", "start": 8.429, "end": 8.742}, {"text": "\u00e0", "type": "word", "start": 8.87, "end": 8.94}, {"text": "l'\u00e9tranger", "type": "word", "start": 9.021, "end": 9.648}, {"text": "ou", "type": "word", "start": 9.822, "end": 9.973}, {"text": "encore", "type": "word", "start": 9.996, "end": 10.472}, {"text": "un", "type": "word", "start": 10.588, "end": 10.762}, {"text": "voyage...", "type": "word", "start": 10.809, "end": 11.389}, {"text": "Et", "type": "word", "start": 11.564, "end": 11.714}, {"text": "si", "type": "word", "start": 11.761, "end": 11.877}, {"text": "l'anglais", "type": "word", "start": 11.935, "end": 12.272}, {"text": "devenait", "type": "word", "start": 12.341, "end": 12.713}, {"text": "enfin", "type": "word", "start": 12.794, "end": 13.073}, {"text": "votre", "type": "word", "start": 13.131, "end": 13.375}, {"text": "force", "type": "word", "start": 13.433, "end": 13.781}, {"text": "?", "type": "word", "start": 13.805, "end": 13.839}, {"text": "Avec", "type": "word", "start": 14.048, "end": 14.443}, {"text": "MCCG", "type": "word", "start": 14.617, "end": 16.707}, {"text": "Sarl,", "type": "word", "start": 16.951, "end": 18.182}, {"text": "apprenez", "type": "word", "start": 18.507, "end": 18.971}, {"text": "l'anglais", "type": "word", "start": 19.006, "end": 19.401}, {"text": "et", "type": "word", "start": 19.61, "end": 19.772}, {"text": "d\u00e9veloppez", "type": "word", "start": 19.807, "end": 20.283}, {"text": "votre", "type": "word", "start": 20.318, "end": 20.562}, {"text": "confiance", "type": "word", "start": 20.608, "end": 21.049}, {"text": "\u00e0", "type": "word", "start": 21.084, "end": 21.107}, {"text": "l'oral,", "type": "word", "start": 21.154, "end": 21.641}, {"text": "quel", "type": "word", "start": 21.885, "end": 22.071}, {"text": "que", "type": "word", "start": 22.152, "end": 22.257}, {"text": "soit", "type": "word", "start": 22.303, "end": 22.466}, {"text": "votre", "type": "word", "start": 22.489, "end": 22.756}, {"text": "niveau.", "type": "word", "start": 22.802, "end": 23.186}, {"text": "D\u00e9butant", "type": "word", "start": 23.464, "end": 24.126}, {"text": "ou", "type": "word", "start": 24.277, "end": 24.439}, {"text": "avanc\u00e9,", "type": "word", "start": 24.497, "end": 25.066}, {"text": "\u00e9tudiant,", "type": "word", "start": 25.159, "end": 25.833}, {"text": "professionnel", "type": "word", "start": 26.007, "end": 26.692}, {"text": "ou", "type": "word", "start": 26.843, "end": 26.982}, {"text": "entrepreneur,", "type": "word", "start": 27.017, "end": 27.771}, {"text": "b\u00e9n\u00e9ficiez", "type": "word", "start": 28.015, "end": 28.596}, {"text": "de", "type": "word", "start": 28.619, "end": 28.677}, {"text": "formations", "type": "word", "start": 28.723, "end": 29.234}, {"text": "adapt\u00e9es", "type": "word", "start": 29.281, "end": 29.873}, {"text": "\u00e0", "type": "word", "start": 30.047, "end": 30.117}, {"text": "vos", "type": "word", "start": 30.186, "end": 30.302}, {"text": "objectifs.", "type": "word", "start": 30.36, "end": 31.01}, {"text": "Apprenez", "type": "word", "start": 31.185, "end": 31.591}, {"text": "en", "type": "word", "start": 31.614, "end": 31.661}, {"text": "pr\u00e9sentiel", "type": "word", "start": 31.707, "end": 32.206}, {"text": "\u00e0", "type": "word", "start": 32.299, "end": 32.322}, {"text": "Abidjan,", "type": "word", "start": 32.404, "end": 33.112}, {"text": "en", "type": "word", "start": 33.228, "end": 33.379}, {"text": "ligne,", "type": "word", "start": 33.425, "end": 33.797}, {"text": "ou", "type": "word", "start": 33.971, "end": 34.25}, {"text": "vivez", "type": "word", "start": 34.377, "end": 34.784}, {"text": "une", "type": "word", "start": 34.842, "end": 34.981}, {"text": "v\u00e9ritable", "type": "word", "start": 35.027, "end": 35.608}, {"text": "exp\u00e9rience", "type": "word", "start": 35.666, "end": 36.177}, {"text": "d'immersion", "type": "word", "start": 36.212, "end": 36.711}, {"text": "linguistique", "type": "word", "start": 36.827, "end": 37.396}, {"text": "\u00e0", "type": "word", "start": 37.454, "end": 37.477}, {"text": "Accra,", "type": "word", "start": 37.628, "end": 38.185}, {"text": "au", "type": "word", "start": 38.243, "end": 38.36}, {"text": "Ghana.", "type": "word", "start": 38.429, "end": 38.859}, {"text": "Vous", "type": "word", "start": 39.068, "end": 39.254}, {"text": "pr\u00e9parez", "type": "word", "start": 39.277, "end": 39.741}, {"text": "le", "type": "word", "start": 39.788, "end": 39.869}, {"text": "TOEFL,", "type": "word", "start": 39.927, "end": 40.531}, {"text": "l'IELTS,", "type": "word", "start": 40.74, "end": 41.274}, {"text": "le", "type": "word", "start": 41.448, "end": 41.587}, {"text": "TOEIC", "type": "word", "start": 41.645, "end": 42.063}, {"text": "ou", "type": "word", "start": 42.307, "end": 42.458}, {"text": "le", "type": "word", "start": 42.528, "end": 42.609}, {"text": "Duolingo", "type": "word", "start": 42.667, "end": 43.131}, {"text": "English", "type": "word", "start": 43.213, "end": 43.503}, {"text": "Test", "type": "word", "start": 43.549, "end": 43.781}, {"text": "?", "type": "word", "start": 43.851, "end": 43.909}, {"text": "MCCG", "type": "word", "start": 44.083, "end": 45.186}, {"text": "vous", "type": "word", "start": 45.465, "end": 45.627}, {"text": "accompagne", "type": "word", "start": 45.685, "end": 46.138}, {"text": "dans", "type": "word", "start": 46.161, "end": 46.289}, {"text": "votre", "type": "word", "start": 46.312, "end": 46.591}, {"text": "pr\u00e9paration.", "type": "word", "start": 46.626, "end": 47.334}, {"text": "Profitez", "type": "word", "start": 47.613, "end": 48.077}, {"text": "\u00e9galement", "type": "word", "start": 48.112, "end": 48.541}, {"text": "de", "type": "word", "start": 48.565, "end": 48.634}, {"text": "nos", "type": "word", "start": 48.681, "end": 48.809}, {"text": "services", "type": "word", "start": 48.832, "end": 49.192}, {"text": "de", "type": "word", "start": 49.215, "end": 49.308}, {"text": "traduction", "type": "word", "start": 49.366, "end": 49.9}, {"text": "de", "type": "word", "start": 49.958, "end": 50.016}, {"text": "documents", "type": "word", "start": 50.074, "end": 50.55}, {"text": "et", "type": "word", "start": 50.794, "end": 51.003}, {"text": "d'interpr\u00e9tation.", "type": "word", "start": 51.038, "end": 51.839}, {"text": "N'attendez", "type": "word", "start": 52.222, "end": 52.686}, {"text": "plus", "type": "word", "start": 52.733, "end": 52.918}, {"text": "que", "type": "word", "start": 52.953, "end": 53.058}, {"text": "les", "type": "word", "start": 53.093, "end": 53.22}, {"text": "opportunit\u00e9s", "type": "word", "start": 53.302, "end": 53.952}, {"text": "passent.", "type": "word", "start": 53.987, "end": 54.3}, {"text": "Pr\u00e9parez-vous", "type": "word", "start": 54.509, "end": 55.124}, {"text": "\u00e0", "type": "word", "start": 55.159, "end": 55.182}, {"text": "les", "type": "word", "start": 55.217, "end": 55.345}, {"text": "saisir", "type": "word", "start": 55.415, "end": 55.844}, {"text": "!", "type": "word", "start": 55.925, "end": 55.949}, {"text": "Contactez", "type": "word", "start": 56.192, "end": 56.75}, {"text": "MCCG", "type": "word", "start": 56.831, "end": 57.702}, {"text": "d\u00e8s", "type": "word", "start": 57.911, "end": 58.096}, {"text": "maintenant", "type": "word", "start": 58.247, "end": 58.7}, {"text": "sur", "type": "word", "start": 58.747, "end": 58.967}, {"text": "WhatsApp", "type": "word", "start": 59.014, "end": 59.409}, {"text": "au", "type": "word", "start": 59.618, "end": 59.815}, {"text": "z\u00e9ro", "type": "word", "start": 59.873, "end": 60.152}, {"text": "cinq,", "type": "word", "start": 60.21, "end": 60.558}, {"text": "z\u00e9ro", "type": "word", "start": 60.837, "end": 61.115}, {"text": "trois,", "type": "word", "start": 61.173, "end": 61.498}, {"text": "trente-deux,", "type": "word", "start": 61.673, "end": 62.195}, {"text": "trente", "type": "word", "start": 62.369, "end": 62.683}, {"text": "et", "type": "word", "start": 62.706, "end": 62.752}, {"text": "un,", "type": "word", "start": 62.799, "end": 62.95}, {"text": "trente", "type": "word", "start": 63.124, "end": 63.495}, {"text": "et", "type": "word", "start": 63.53, "end": 63.588}, {"text": "un.", "type": "word", "start": 63.635, "end": 63.797}, {"text": "MCCG.", "type": "word", "start": 64.076, "end": 65.121}, {"text": "Parlez", "type": "word", "start": 65.33, "end": 65.655}, {"text": "anglais.", "type": "word", "start": 65.69, "end": 66.096}, {"text": "Ouvrez-vous", "type": "word", "start": 66.34, "end": 66.874}, {"text": "au", "type": "word", "start": 66.92, "end": 66.99}, {"text": "monde.", "type": "word", "start": 67.048, "end": 67.71}]}
+{
+"words": [
+{
+"text": "Combien",
+"type": "word",
+"start": 0.0,
+"end": 0.36
+},
+{
+"text": "d'opportunités",
+"type": "word",
+"start": 0.395,
+"end": 1.096
+},
+{
+"text": "avez-vous",
+"type": "word",
+"start": 1.126,
+"end": 1.533
+},
+{
+"text": "déjà",
+"type": "word",
+"start": 1.591,
+"end": 1.916
+},
+{
+"text": "laissées",
+"type": "word",
+"start": 1.962,
+"end": 2.252
+},
+{
+"text": "passer",
+"type": "word",
+"start": 2.299,
+"end": 2.647
+},
+{
+"text": "parce",
+"type": "word",
+"start": 2.717,
+"end": 2.949
+},
+{
+"text": "que",
+"type": "word",
+"start": 2.984,
+"end": 3.077
+},
+{
+"text": "vous",
+"type": "word",
+"start": 3.135,
+"end": 3.274
+},
+{
+"text": "ne",
+"type": "word",
+"start": 3.309,
+"end": 3.402
+},
+{
+"text": "parliez",
+"type": "word",
+"start": 3.471,
+"end": 3.808
+},
+{
+"text": "pas",
+"type": "word",
+"start": 3.878,
+"end": 4.075
+},
+{
+"text": "suffisamment",
+"type": "word",
+"start": 4.11,
+"end": 4.76
+},
+{
+"text": "anglais",
+"type": "word",
+"start": 4.795,
+"end": 5.132
+},
+{
+"text": "?",
+"type": "word",
+"start": 5.201,
+"end": 5.283
+},
+{
+"text": "Un",
+"type": "word",
+"start": 5.608,
+"end": 5.759
+},
+{
+"text": "entretien",
+"type": "word",
+"start": 5.817,
+"end": 6.286
+},
+{
+"text": "d'embauche,",
+"type": "word",
+"start": 6.316,
+"end": 6.85
+},
+{
+"text": "une",
+"type": "word",
+"start": 7.094,
+"end": 7.308
+},
+{
+"text": "promotion,",
+"type": "word",
+"start": 7.338,
+"end": 7.999
+},
+{
+"text": "des",
+"type": "word",
+"start": 8.208,
+"end": 8.348
+},
+{
+"text": "études",
+"type": "word",
+"start": 8.429,
+"end": 8.742
+},
+{
+"text": "à",
+"type": "word",
+"start": 8.87,
+"end": 8.94
+},
+{
+"text": "l'étranger",
+"type": "word",
+"start": 9.021,
+"end": 9.648
+},
+{
+"text": "ou",
+"type": "word",
+"start": 9.822,
+"end": 9.966
+},
+{
+"text": "encore",
+"type": "word",
+"start": 9.996,
+"end": 10.472
+},
+{
+"text": "un",
+"type": "word",
+"start": 10.588,
+"end": 10.762
+},
+{
+"text": "voyage...",
+"type": "word",
+"start": 10.809,
+"end": 11.389
+},
+{
+"text": "Et",
+"type": "word",
+"start": 11.564,
+"end": 11.714
+},
+{
+"text": "si",
+"type": "word",
+"start": 11.761,
+"end": 11.877
+},
+{
+"text": "l'anglais",
+"type": "word",
+"start": 11.935,
+"end": 12.272
+},
+{
+"text": "devenait",
+"type": "word",
+"start": 12.341,
+"end": 12.713
+},
+{
+"text": "enfin",
+"type": "word",
+"start": 12.794,
+"end": 13.073
+},
+{
+"text": "votre",
+"type": "word",
+"start": 13.131,
+"end": 13.375
+},
+{
+"text": "force",
+"type": "word",
+"start": 13.433,
+"end": 13.775
+},
+{
+"text": "?",
+"type": "word",
+"start": 13.805,
+"end": 13.839
+},
+{
+"text": "Avec",
+"type": "word",
+"start": 14.048,
+"end": 14.443
+},
+{
+"text": "MCCG",
+"type": "word",
+"start": 14.617,
+"end": 16.707
+},
+{
+"text": "Sarl,",
+"type": "word",
+"start": 16.951,
+"end": 18.182
+},
+{
+"text": "apprenez",
+"type": "word",
+"start": 18.507,
+"end": 18.971
+},
+{
+"text": "l'anglais",
+"type": "word",
+"start": 19.006,
+"end": 19.401
+},
+{
+"text": "et",
+"type": "word",
+"start": 19.61,
+"end": 19.772
+},
+{
+"text": "développez",
+"type": "word",
+"start": 19.807,
+"end": 20.283
+},
+{
+"text": "votre",
+"type": "word",
+"start": 20.318,
+"end": 20.562
+},
+{
+"text": "confiance",
+"type": "word",
+"start": 20.608,
+"end": 21.049
+},
+{
+"text": "à",
+"type": "word",
+"start": 21.084,
+"end": 21.107
+},
+{
+"text": "l'oral,",
+"type": "word",
+"start": 21.154,
+"end": 21.641
+},
+{
+"text": "quel",
+"type": "word",
+"start": 21.885,
+"end": 22.071
+},
+{
+"text": "que",
+"type": "word",
+"start": 22.152,
+"end": 22.257
+},
+{
+"text": "soit",
+"type": "word",
+"start": 22.303,
+"end": 22.459
+},
+{
+"text": "votre",
+"type": "word",
+"start": 22.489,
+"end": 22.756
+},
+{
+"text": "niveau.",
+"type": "word",
+"start": 22.802,
+"end": 23.186
+},
+{
+"text": "Débutant",
+"type": "word",
+"start": 23.464,
+"end": 24.126
+},
+{
+"text": "ou",
+"type": "word",
+"start": 24.277,
+"end": 24.439
+},
+{
+"text": "avancé,",
+"type": "word",
+"start": 24.497,
+"end": 25.066
+},
+{
+"text": "étudiant,",
+"type": "word",
+"start": 25.159,
+"end": 25.833
+},
+{
+"text": "professionnel",
+"type": "word",
+"start": 26.007,
+"end": 26.692
+},
+{
+"text": "ou",
+"type": "word",
+"start": 26.843,
+"end": 26.982
+},
+{
+"text": "entrepreneur,",
+"type": "word",
+"start": 27.017,
+"end": 27.771
+},
+{
+"text": "bénéficiez",
+"type": "word",
+"start": 28.015,
+"end": 28.589
+},
+{
+"text": "de",
+"type": "word",
+"start": 28.619,
+"end": 28.677
+},
+{
+"text": "formations",
+"type": "word",
+"start": 28.723,
+"end": 29.234
+},
+{
+"text": "adaptées",
+"type": "word",
+"start": 29.281,
+"end": 29.873
+},
+{
+"text": "à",
+"type": "word",
+"start": 30.047,
+"end": 30.117
+},
+{
+"text": "vos",
+"type": "word",
+"start": 30.186,
+"end": 30.302
+},
+{
+"text": "objectifs.",
+"type": "word",
+"start": 30.36,
+"end": 31.01
+},
+{
+"text": "Apprenez",
+"type": "word",
+"start": 31.125,
+"end": 31.525
+},
+{
+"text": "en",
+"type": "word",
+"start": 31.555,
+"end": 31.613
+},
+{
+"text": "présentiel",
+"type": "word",
+"start": 31.659,
+"end": 32.147
+},
+{
+"text": "à",
+"type": "word",
+"start": 32.24,
+"end": 32.263
+},
+{
+"text": "Abidjan,",
+"type": "word",
+"start": 32.437,
+"end": 33.099
+},
+{
+"text": "en",
+"type": "word",
+"start": 33.134,
+"end": 33.308
+},
+{
+"text": "ligne,",
+"type": "word",
+"start": 33.354,
+"end": 33.679
+},
+{
+"text": "ou",
+"type": "word",
+"start": 34.062,
+"end": 34.236
+},
+{
+"text": "vivez",
+"type": "word",
+"start": 34.329,
+"end": 34.566
+},
+{
+"text": "une",
+"type": "word",
+"start": 34.596,
+"end": 34.689
+},
+{
+"text": "véritable",
+"type": "word",
+"start": 34.747,
+"end": 35.223
+},
+{
+"text": "expérience",
+"type": "word",
+"start": 35.281,
+"end": 35.855
+},
+{
+"text": "d'immersion",
+"type": "word",
+"start": 35.885,
+"end": 36.326
+},
+{
+"text": "linguistique",
+"type": "word",
+"start": 36.361,
+"end": 36.895
+},
+{
+"text": "à",
+"type": "word",
+"start": 37.104,
+"end": 37.22
+},
+{
+"text": "Accra,",
+"type": "word",
+"start": 37.348,
+"end": 37.719
+},
+{
+"text": "au",
+"type": "word",
+"start": 37.836,
+"end": 37.975
+},
+{
+"text": "Ghana.",
+"type": "word",
+"start": 38.033,
+"end": 38.516
+},
+{
+"text": "Vous",
+"type": "word",
+"start": 38.546,
+"end": 38.725
+},
+{
+"text": "préparez",
+"type": "word",
+"start": 38.755,
+"end": 39.219
+},
+{
+"text": "le",
+"type": "word",
+"start": 39.266,
+"end": 39.347
+},
+{
+"text": "TOEFL,",
+"type": "word",
+"start": 39.405,
+"end": 40.009
+},
+{
+"text": "l'IELTS,",
+"type": "word",
+"start": 40.218,
+"end": 40.752
+},
+{
+"text": "le",
+"type": "word",
+"start": 40.926,
+"end": 41.065
+},
+{
+"text": "TOEIC",
+"type": "word",
+"start": 41.123,
+"end": 41.541
+},
+{
+"text": "ou",
+"type": "word",
+"start": 41.785,
+"end": 41.936
+},
+{
+"text": "le",
+"type": "word",
+"start": 42.006,
+"end": 42.087
+},
+{
+"text": "Duolingo",
+"type": "word",
+"start": 42.145,
+"end": 42.609
+},
+{
+"text": "English",
+"type": "word",
+"start": 42.691,
+"end": 42.981
+},
+{
+"text": "Test",
+"type": "word",
+"start": 43.027,
+"end": 43.259
+},
+{
+"text": "?",
+"type": "word",
+"start": 43.329,
+"end": 43.387
+},
+{
+"text": "MCCG",
+"type": "word",
+"start": 43.561,
+"end": 44.664
+},
+{
+"text": "vous",
+"type": "word",
+"start": 44.943,
+"end": 45.105
+},
+{
+"text": "accompagne",
+"type": "word",
+"start": 45.163,
+"end": 45.609
+},
+{
+"text": "dans",
+"type": "word",
+"start": 45.639,
+"end": 45.76
+},
+{
+"text": "votre",
+"type": "word",
+"start": 45.79,
+"end": 46.069
+},
+{
+"text": "préparation.",
+"type": "word",
+"start": 46.104,
+"end": 46.812
+},
+{
+"text": "Profitez",
+"type": "word",
+"start": 47.091,
+"end": 47.555
+},
+{
+"text": "également",
+"type": "word",
+"start": 47.59,
+"end": 48.013
+},
+{
+"text": "de",
+"type": "word",
+"start": 48.043,
+"end": 48.112
+},
+{
+"text": "nos",
+"type": "word",
+"start": 48.159,
+"end": 48.28
+},
+{
+"text": "services",
+"type": "word",
+"start": 48.31,
+"end": 48.663
+},
+{
+"text": "de",
+"type": "word",
+"start": 48.693,
+"end": 48.786
+},
+{
+"text": "traduction",
+"type": "word",
+"start": 48.844,
+"end": 49.378
+},
+{
+"text": "de",
+"type": "word",
+"start": 49.436,
+"end": 49.494
+},
+{
+"text": "documents",
+"type": "word",
+"start": 49.552,
+"end": 50.028
+},
+{
+"text": "et",
+"type": "word",
+"start": 50.272,
+"end": 50.481
+},
+{
+"text": "d'interprétation.",
+"type": "word",
+"start": 50.516,
+"end": 51.317
+},
+{
+"text": "N'attendez",
+"type": "word",
+"start": 51.7,
+"end": 52.164
+},
+{
+"text": "plus",
+"type": "word",
+"start": 52.211,
+"end": 52.396
+},
+{
+"text": "que",
+"type": "word",
+"start": 52.431,
+"end": 52.536
+},
+{
+"text": "les",
+"type": "word",
+"start": 52.571,
+"end": 52.698
+},
+{
+"text": "opportunités",
+"type": "word",
+"start": 52.78,
+"end": 53.43
+},
+{
+"text": "passent.",
+"type": "word",
+"start": 53.465,
+"end": 53.778
+},
+{
+"text": "Préparez-vous",
+"type": "word",
+"start": 53.987,
+"end": 54.602
+},
+{
+"text": "à",
+"type": "word",
+"start": 54.637,
+"end": 54.66
+},
+{
+"text": "les",
+"type": "word",
+"start": 54.695,
+"end": 54.823
+},
+{
+"text": "saisir",
+"type": "word",
+"start": 54.893,
+"end": 55.322
+},
+{
+"text": "!",
+"type": "word",
+"start": 55.403,
+"end": 55.427
+},
+{
+"text": "Contactez",
+"type": "word",
+"start": 55.67,
+"end": 56.228
+},
+{
+"text": "MCCG",
+"type": "word",
+"start": 56.309,
+"end": 57.18
+},
+{
+"text": "dès",
+"type": "word",
+"start": 57.389,
+"end": 57.574
+},
+{
+"text": "maintenant",
+"type": "word",
+"start": 57.725,
+"end": 58.178
+},
+{
+"text": "sur",
+"type": "word",
+"start": 58.225,
+"end": 58.445
+},
+{
+"text": "WhatsApp",
+"type": "word",
+"start": 58.492,
+"end": 58.887
+},
+{
+"text": "au",
+"type": "word",
+"start": 59.096,
+"end": 59.293
+},
+{
+"text": "zéro",
+"type": "word",
+"start": 59.351,
+"end": 59.63
+},
+{
+"text": "cinq,",
+"type": "word",
+"start": 59.688,
+"end": 60.036
+},
+{
+"text": "zéro",
+"type": "word",
+"start": 60.315,
+"end": 60.593
+},
+{
+"text": "trois,",
+"type": "word",
+"start": 60.651,
+"end": 60.976
+},
+{
+"text": "trente-deux,",
+"type": "word",
+"start": 61.151,
+"end": 61.673
+},
+{
+"text": "trente",
+"type": "word",
+"start": 61.847,
+"end": 62.154
+},
+{
+"text": "et",
+"type": "word",
+"start": 62.184,
+"end": 62.23
+},
+{
+"text": "un,",
+"type": "word",
+"start": 62.277,
+"end": 62.428
+},
+{
+"text": "trente",
+"type": "word",
+"start": 62.602,
+"end": 62.973
+},
+{
+"text": "et",
+"type": "word",
+"start": 63.008,
+"end": 63.066
+},
+{
+"text": "un.",
+"type": "word",
+"start": 63.113,
+"end": 63.275
+},
+{
+"text": "MCCG.",
+"type": "word",
+"start": 63.554,
+"end": 64.599
+},
+{
+"text": "Parlez",
+"type": "word",
+"start": 64.808,
+"end": 65.133
+},
+{
+"text": "anglais.",
+"type": "word",
+"start": 65.168,
+"end": 65.574
+},
+{
+"text": "Ouvrez-vous",
+"type": "word",
+"start": 65.818,
+"end": 66.352
+},
+{
+"text": "au",
+"type": "word",
+"start": 66.398,
+"end": 66.468
+},
+{
+"text": "monde.",
+"type": "word",
+"start": 66.526,
+"end": 67.188
+}
+]
+}
